@@ -1,13 +1,20 @@
 import requests
-from models.constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY, GEMINI_API_KEY
+from models.constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY
 
 PLACEHOLDER_PROPMT = "Hi! How's it going?"
+
+### TODOs (May 19 Sprint): 
+    # add system and user prompts in functions/files
+    # add claude, llama-3-70B (?)
 
 class Model: 
     def __init__(self, model): 
         self.MODEL = model
 
     def query_gpt(self, system_prompt="", user_prompt=PLACEHOLDER_PROPMT): 
+        with open("./prompts/gpt_system_prompt.txt") as f:         
+            system_prompt = f.read()
+
         headers = {
             "Authorization": f"Bearer {OPENAI_API_KEY}",
             "Content-Type": "application/json",
@@ -24,7 +31,7 @@ class Model:
     def query_llama(self, prompt=PLACEHOLDER_PROPMT): 
         headers = {
             "Authorization": f"Bearer {HF_API_KEY}"
-        }            
+        }
         data = {
             "inputs": prompt
         }
@@ -42,7 +49,7 @@ class Model:
         response = requests.post(ENDPOINTS["GEMINI"], json=data)
         return response.json()["candidates"][0]["content"]["parts"][0]["text"]
 
-    def query(self): 
+    def query(self, system_prompt=None, user_prompt=None): 
         if self.MODEL == "LLAMA": 
             return self.query_llama()
         if self.MODEL == "GPT-4": 
