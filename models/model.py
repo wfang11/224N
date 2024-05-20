@@ -1,5 +1,5 @@
 import requests
-from constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY
+from models.constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY
 
 PLACEHOLDER_PROPMT = "Hi! How's it going?"
 
@@ -32,6 +32,7 @@ class Model:
         return response.json()[0]["generated_text"]
 
     def query_gemini(self, prompt=PLACEHOLDER_PROPMT): 
+        ### TODO!
         pass
 
     def query(self): 
@@ -41,13 +42,3 @@ class Model:
             return self.query_gpt()
         if self.MODEL == "GEMINI": 
             return self.query_gemini()
-
-def main(): 
-    print(HF_API_KEY)
-    print(OPENAI_API_KEY)
-    print(ENDPOINTS)
-    llama = Model("LLAMA")
-    print(llama.query())
-
-if __name__ == "__main__": 
-    main()
