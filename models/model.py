@@ -32,6 +32,7 @@ class Model:
         return response.json()[0]["generated_text"]
 
     def query_gemini(self, prompt=PLACEHOLDER_PROPMT):
+        print(ENDPOINTS["GEMINI"])
         data = {
             "contents": [{
                 "parts":[{
