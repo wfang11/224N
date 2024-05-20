@@ -49,10 +49,17 @@ class Model:
         response = requests.post(ENDPOINTS["GEMINI"], json=data)
         return response.json()["candidates"][0]["content"]["parts"][0]["text"]
 
-    def query(self, system_prompt=None, user_prompt=None): 
+
+    #### WILL TODO: make this into a generate_principle function
+    def query(self, system_prompt=None, user_prompt=None):
         if self.MODEL == "LLAMA": 
             return self.query_llama()
         if self.MODEL == "GPT-4": 
             return self.query_gpt()
         if self.MODEL == "GEMINI": 
             return self.query_gemini()
+        
+
+    #### WILL TODO: make this into an evaluate function
+    def evaluate(self, data): 
+        pass
