@@ -21,7 +21,7 @@ def generate_principles(data_points, model, num_clusters):
         harmful_prompt, undesirable_response, better_response  = process_datapoint(data_point)
         user_prompt = f"{harmful_prompt} Undesirable Response: {undesirable_response} Better Response: {better_response}"
         principle = generate_principle(model, user_prompt)
-        principles.append(principle)
+        principles.append(principle)  # change this line to add_principle_to_principles(principle), which also calls entailment
     return cluster_principles(principles, num_clusters)
 
 
