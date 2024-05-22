@@ -2,9 +2,7 @@ from models.model import Model
 from data.cai import CAI
 import json
 
-
 def process_datapoint(data_point):
-
     harmful_prompt = data_point['init_prompt']
     undesirable_response = data_point['init_response']
     better_response = data_point['revision_response']

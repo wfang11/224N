@@ -1,6 +1,6 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
-from model import Model
+from models.model import Model
 
 model_query = Model()
 
