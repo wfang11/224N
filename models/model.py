@@ -43,44 +43,25 @@ class Model:
         return response.json()[0]["generated_text"]
 
     def query_gemini(self, prompt=PLACEHOLDER_PROPMT):
-
-        prompt_parts = [
-            "Hello! Give me a fun fact about cows."
-        ]
-        
         response = self.gemini.generate_content(prompt)
         return response.text
 
-#****** ADDED BY VIKRAM *********
-    def check_entailment_gpt(self, principle1, principle2):
-        with open("./prompts/entailment_prompt.txt") as f:
-            system_prompt = f.read().format(principle1=principle1, principle2=principle2)
-        user_prompt = "Evaluate the entailment."
-
-        return self.query_gpt(system_prompt, user_prompt)
-
-    def check_entailment_gemini(self, principle1, principle2):
+    def check_entailment(self, principle1, principle2): 
         with open("./prompts/entailment_prompt.txt") as f:
             prompt = f.read().format(principle1=principle1, principle2=principle2)
-
-        data = {
-            "contents": [{
-                "parts": [{"text": prompt}]
-            }]
-        }
-        response = requests.post(ENDPOINTS["GEMINI"], json=data)
-        return response.json()["candidates"][0]["content"]["parts"][0]["text"]
-
-#****** [END] ADDED BY VIKRAM *********
+        if self.model == "GPT-4": 
+            return self.query_gpt(prompt)
+        elif self.mdoel == "GEMINI":
+            return self.query_gemini(prompt)
 
     #### WILL TODO: make this into a generate_principle function
-    def query(self, system_prompt=None, user_prompt=None):
+    def query(self, prompt):
         if self.MODEL == "LLAMA": 
-            return self.query_llama()
+            return self.query_llama(prompt)
         if self.MODEL == "GPT-4": 
-            return self.query_gpt()
+            return self.query_gpt(prompt)
         if self.MODEL == "GEMINI": 
-            return self.query_gemini()
+            return self.query_gemini(prompt)
         
 
     #### WILL TODO: make this into an evaluate function
