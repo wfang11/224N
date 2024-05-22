@@ -2,7 +2,7 @@ from models.model import Model
 from data.cai import CAI
 
 def __main__(): 
-    for name in "LLAMA", "GPT-4", "GEMINI": 
+    for name in "GEMINI", "GPT-4": 
         print()
         model = Model(name)
         print(model.query())
