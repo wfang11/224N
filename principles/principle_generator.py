@@ -1,9 +1,11 @@
 from models.model import Model
 import json
+from evaluation.entailment import EntailmentChecker
 
 class PrincipleGenerator: 
-    def __init__(self, model): 
+    def __init__(self, model, entail_model="GEMINI"): 
         self.model = Model(model)
+        self.entail_model = EntailmentChecker(entail_model)
 
     def process_datapoint(self, data_point):
         harmful_prompt = data_point['init_prompt']
@@ -19,6 +21,11 @@ class PrincipleGenerator:
         prompt = sys + '\n' + user
         response = self.model.query(prompt)
         return json.loads(response)['result']['principle']
+    
+    ## TODO: add only if it is entailed. 
+    def add_principle_to_principles(): 
+        ## perform an entailment check!
+        pass
 
     def generate_principles(self, data_points):
         i = 0
@@ -31,7 +38,3 @@ class PrincipleGenerator:
             principles.append(principle)  
             i += 1
         return principles
-    
-    ## TODO: add only if it is entailed. 
-    def add_principle_to_principles(): 
-        pass
