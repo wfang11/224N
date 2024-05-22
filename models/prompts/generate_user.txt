@@ -1,0 +1,11 @@
+## Input:
+### Harmful Prompt
+{harmful_prompt}
+
+### Undesirable Response
+{undesirable_response}
+
+### Better Response
+{better_response}
+
+### Response:
