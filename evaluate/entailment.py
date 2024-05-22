@@ -5,28 +5,24 @@ from models.model import Model
 model_query = Model()
 
 class EntailmentChecker:
-    def __init__(self):
+    def __init__(self, model):
         self.tokenizer = AutoTokenizer.from_pretrained('cross-encoder/nli-roberta-base')
-        self.model = AutoModelForSequenceClassification.from_pretrained('cross-encoder/nli-roberta-base')
-        self.model.eval()
+        self.bert = AutoModelForSequenceClassification.from_pretrained('cross-encoder/nli-roberta-base')
+        self.bert.eval()
+
+        self.model = Model(model)
 
     def check_entailment_bert(self, principle1, principle2):
         label_mapping = ['contradiction', 'entailment', 'neutral']
         tokenized_input = self.tokenizer(principle1, principle2, return_tensors='pt', padding=True, truncation=True)
         
         with torch.no_grad():
-            outputs = self.model(**tokenized_input).logits
+            outputs = self.bert(**tokenized_input).logits
             result_label = label_mapping[outputs.argmax(dim=1).item()]
-        
         return result_label
 
-    def check_entailment_api(self, principle1, principle2, model_type):
-        if model_type == "GPT":
-            return model_query.check_entailment_gpt(principle1, principle2)
-        elif model_type == "LLAMA":
-            return model_query.check_entailment_llama(principle1, principle2)
-        elif model_type == "GEMINI":
-            return model_query.check_entailment_gemini(principle1, principle2)
+    def check_entailment_api(self, principle1, principle2):
+        return self.model.check_entailment(principle1, principle2)
 
     def evaluate_entailment(self, principles1, principles2, mode='pairwise', method='GPT'):
         results = []

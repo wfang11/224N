@@ -2,8 +2,6 @@ import requests
 from models.constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY, GEMINI_API_KEY
 import google.generativeai as genai
 
-PLACEHOLDER_PROPMT = "Hi! How's it going?"
-
 class Model: 
     def __init__(self, model): 
         self.MODEL = model
@@ -18,7 +16,7 @@ class Model:
         }
         self.gemini = genai.GenerativeModel(model_name="gemini-1.5-flash-latest", generation_config=generation_config)
 
-    def query_gpt(self, system_prompt="", user_prompt=PLACEHOLDER_PROPMT): 
+    def query_gpt(self, prompt): 
         headers = {
             "Authorization": f"Bearer {OPENAI_API_KEY}",
             "Content-Type": "application/json",
@@ -26,13 +24,12 @@ class Model:
         data = {
             "model": "gpt-4-turbo",
             "messages": [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt}]
+                {"role": "user", "content": prompt}]
         }
         response = requests.post(ENDPOINTS["GPT-4"], headers=headers, json=data)
         return response.json()['choices'][0]['message']['content']
 
-    def query_llama(self, prompt=PLACEHOLDER_PROPMT): 
+    def query_llama(self, prompt): 
         headers = {
             "Authorization": f"Bearer {HF_API_KEY}"
         }
@@ -42,9 +39,17 @@ class Model:
         response = requests.post(ENDPOINTS["LLAMA"], headers=headers, json=data)
         return response.json()[0]["generated_text"]
 
-    def query_gemini(self, prompt=PLACEHOLDER_PROPMT):
+    def query_gemini(self, prompt=""):
         response = self.gemini.generate_content(prompt)
         return response.text
+    
+    def query(self, prompt):
+        if self.MODEL == "LLAMA": 
+            return self.query_llama(prompt)
+        if self.MODEL == "GPT-4": 
+            return self.query_gpt(prompt)
+        if self.MODEL == "GEMINI": 
+            return self.query_gemini(prompt)
 
     def check_entailment(self, principle1, principle2): 
         with open("./prompts/entailment_prompt.txt") as f:
@@ -53,17 +58,3 @@ class Model:
             return self.query_gpt(prompt)
         elif self.mdoel == "GEMINI":
             return self.query_gemini(prompt)
-
-    #### WILL TODO: make this into a generate_principle function
-    def query(self, prompt):
-        if self.MODEL == "LLAMA": 
-            return self.query_llama(prompt)
-        if self.MODEL == "GPT-4": 
-            return self.query_gpt(prompt)
-        if self.MODEL == "GEMINI": 
-            return self.query_gemini(prompt)
-        
-
-    #### WILL TODO: make this into an evaluate function
-    def evaluate(self, data): 
-        pass

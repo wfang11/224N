@@ -1,7 +1,7 @@
 from data.cai import CAI
 from models.model import Model
-from principle_generator import generate_principles, cluster_principles
-from entailment import EntailmentChecker
+from principles.principle_generator import generate_principles, cluster_principles
+from evaluate import EntailmentChecker
 
 def run_evaluation(num_clusters):
     cai_dataset = CAI(dataset="train_sft")
@@ -11,12 +11,10 @@ def run_evaluation(num_clusters):
     # first, generate the principles using generate_principles from principle_generator.py
     summary_principles = generate_principles(data_points, model, num_clusters)
 
-
     # gotta extract real principles from dataset, we need to figure out how to do this!! they're not formatted well. 
-
     real_principles = cai_dataset.extract_real_principles()
     entailment_checker = EntailmentChecker()
-
+    
     # checks if single generated princ entails single real princ
     pairwise_generated_to_real = entailment_checker.evaluate_entailment(summary_principles, real_principles, mode='pairwise', method='GPT')
  
