@@ -18,14 +18,21 @@ class EntailmentChecker:
             result_label = label_mapping[outputs.argmax(dim=1).item()]
         return result_label
 
-    def check_entailment_api(self, principle1, principle2):
-        return self.model.check_entailment(principle1, principle2)
-
-    def evaluate_entailment(self, principles1, principles2, mode='pairwise', method='GPT-4'):
+    def check_entailment_api(self, principle1, principle2): 
+        with open("./prompts/entailment_prompt.txt") as f:
+            prompt = f.read().format(principle1=principle1, principle2=principle2)
+        return self.model.query(prompt)
+    
+    ### WILL TODOs: fix the joining and the methodology 
+    def evaluate_entailment(self, real_principles, generated_principles, mode='pairwise', method='GPT-4'):
+        """ 
+        principles1: a list of principles (real)
+        principles2: a list of principles (generated)
+        """
         results = []
         if mode == 'pairwise':
-            for princ1 in principles1:
-                for princ2 in principles2:
+            for princ1 in real_principles:
+                for princ2 in generated_principles:
                     if method == 'bert':
                         result_label = self.check_entailment_bert(princ1, princ2)
                     else:
@@ -36,8 +43,8 @@ class EntailmentChecker:
                         'result': result_label
                     })
         elif mode == 'aggregate':
-            concatenated_principles2 = '. '.join(principles2) + '.'
-            for princ1 in principles1:
+            concatenated_principles2 = '. '.join(generated_principles) + '.'
+            for princ1 in real_principles:
                 if method == 'bert':
                     result_label = self.check_entailment_bert(princ1, concatenated_principles2)
                 else:

@@ -6,4 +6,3 @@ class CAI:
 
     def extract_real_principles(self):
         return [dp['revision_prompt'] for dp in self.dataset]
-

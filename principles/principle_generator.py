@@ -1,6 +1,6 @@
 from models.model import Model
+
 class PrincipleGenerator: 
-    
     def __init__(self, model): 
         self.model = Model(model)
 
@@ -16,6 +16,7 @@ class PrincipleGenerator:
     def generate_principles(self, data_points):
         principles = []
         for data_point in data_points:
+            print(data_point)
             harmful_prompt, undesirable_response, better_response = self.process_datapoint(data_point)
             user_prompt = f"{harmful_prompt} Undesirable Response: {undesirable_response} Better Response: {better_response}"
             principle = self.generate_principle(user_prompt)

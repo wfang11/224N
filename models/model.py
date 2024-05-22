@@ -5,8 +5,7 @@ import google.generativeai as genai
 class Model: 
     def __init__(self, model): 
         self.MODEL = model
-
-        # configure gemini
+        
         genai.configure(api_key=GEMINI_API_KEY)
         generation_config = {
             "temperature": 0,
@@ -49,15 +48,4 @@ class Model:
         if self.MODEL == "GPT-4": 
             return self.query_gpt(prompt)
         if self.MODEL == "GEMINI": 
-            return self.query_gemini(prompt)
-
-    def generate_principles(self, data_point): 
-        pass
-
-    def check_entailment(self, principle1, principle2): 
-        with open("./prompts/entailment_prompt.txt") as f:
-            prompt = f.read().format(principle1=principle1, principle2=principle2)
-        if self.model == "GPT-4": 
-            return self.query_gpt(prompt)
-        elif self.mdoel == "GEMINI":
             return self.query_gemini(prompt)
