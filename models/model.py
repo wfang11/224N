@@ -51,6 +51,9 @@ class Model:
         if self.MODEL == "GEMINI": 
             return self.query_gemini(prompt)
 
+    def generate_principles(self, data_point): 
+        pass
+
     def check_entailment(self, principle1, principle2): 
         with open("./prompts/entailment_prompt.txt") as f:
             prompt = f.read().format(principle1=principle1, principle2=principle2)

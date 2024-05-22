@@ -2,14 +2,11 @@ from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 from models.model import Model
 
-model_query = Model()
-
 class EntailmentChecker:
     def __init__(self, model):
         self.tokenizer = AutoTokenizer.from_pretrained('cross-encoder/nli-roberta-base')
         self.bert = AutoModelForSequenceClassification.from_pretrained('cross-encoder/nli-roberta-base')
         self.bert.eval()
-
         self.model = Model(model)
 
     def check_entailment_bert(self, principle1, principle2):
@@ -24,7 +21,7 @@ class EntailmentChecker:
     def check_entailment_api(self, principle1, principle2):
         return self.model.check_entailment(principle1, principle2)
 
-    def evaluate_entailment(self, principles1, principles2, mode='pairwise', method='GPT'):
+    def evaluate_entailment(self, principles1, principles2, mode='pairwise', method='GPT-4'):
         results = []
         if mode == 'pairwise':
             for princ1 in principles1:
@@ -38,7 +35,6 @@ class EntailmentChecker:
                         'to_principle': princ2,
                         'result': result_label
                     })
-
         elif mode == 'aggregate':
             concatenated_principles2 = '. '.join(principles2) + '.'
             for princ1 in principles1:
