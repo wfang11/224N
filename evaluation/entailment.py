@@ -20,7 +20,6 @@ class EntailmentChecker:
         return result_label
 
     def check_entailment_api(self, principle1, principle2): 
-
         with open("models/prompts/entailment_system.txt") as f:
             sys = f.read()
         with open("models/prompts/entailment_user.txt") as f:
@@ -31,10 +30,6 @@ class EntailmentChecker:
         return json.loads(response)['result']['entailment']
     
     def evaluate_entailment(self, from_principles, to_principles, mode='pairwise', method='GPT-4'):
-        """ 
-        principles1: a list of principles (real)
-        principles2: a list of principles (generated)
-        """
         results = []
         if mode == 'pairwise':
             for princ1 in from_principles:

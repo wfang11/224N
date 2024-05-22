@@ -3,13 +3,17 @@ from models.model import Model
 from principles.principle_generator import PrincipleGenerator
 from evaluation.entailment import EntailmentChecker
 import datetime
+import json
 
-NUM_EXAMPLES = 2
-DEBUG = True # turn this flag on to only compare to just 1 CAI principle
+DEBUG = True # turn this flag on to only compare to just 1 CAI principle, NUM_EXAMPLE training examples
+
 cai_dataset = CAI(dataset="train_sft")
 data_points = cai_dataset.dataset
-subset = [y for x, y in enumerate(data_points) if x < NUM_EXAMPLES] # weird hack to slice the dataset 
 entailment_checker = EntailmentChecker("GEMINI")
+
+NUM_CAI_PRINCIPLES = 1
+NUM_EXAMPLES = 1
+subset = [y for x, y in enumerate(data_points) if x < NUM_EXAMPLES] if DEBUG else data_points # weird hack to slice the dataset 
 
 def generate_principles():
     principle_generator = PrincipleGenerator(model="GEMINI")
@@ -24,17 +28,15 @@ def get_real_principles():
     real_principles = cai_dataset.extract_real_principles()
     unique_principles = list(set(real_principles))
 
-    ## run once!
+    ## run once! --> after written, no need
     # with open("principles/real_cai_principles.txt", "w") as f: 
     #     f.write('\n'.join(unique_principles))
 
     if DEBUG:
-        return unique_principles[:2]
+        return unique_principles[:NUM_CAI_PRINCIPLES]
     return unique_principles
 
-## WILL TODO: add more prompts fpr checking entailment
 def get_entailment_score(generated_principles, real_principles, mode='aggregate'):
-
     if mode == "pairwise": 
         # # checks if single generated princ entails single real princ
         pairwise_generated_to_real = entailment_checker.evaluate_entailment(generated_principles, real_principles, mode='pairwise')
@@ -53,10 +55,25 @@ def get_entailment_score(generated_principles, real_principles, mode='aggregate'
         return results
 
 def __main__(): 
-    generated_principles = generate_principles()
+    # make principles
+    generated_principles = generate_principles() 
+
+    # get cai principles
     real_principles = get_real_principles()
+
+    # generate entailment scores
     scores = get_entailment_score(generated_principles, real_principles, mode='aggregate')
+    with open(f"evaluation/entailment_score_logs/{datetime.datetime.now().json}", "a") as f:
+        json.dumps(f)
+
+    ### TODO: interpret this score and quantify it somehow? 
     print(scores)
+
+    ### TODO: BLEU score? 
+
+    ### TODO: manually log the principles and validate 
+        # 1) principle generation
+        # 2) entailment 
 
 if __name__ == "__main__": 
     __main__()

@@ -23,10 +23,14 @@ class PrincipleGenerator:
         print(response)
         return json.loads(response)['result']['principle']
     
-    ## TODO: add only if it is entailed. 
-    def add_principle_to_principles(): 
-        ## perform an entailment check!
-        pass
+    ## TODO: should test this functionality and make sure that it works.
+    def should_add_principle(self, principle, existing_principles):  
+        concatenated_principles = '. '.join(existing_principles) + '.'
+        entailing = self.entail_model.check_entailment_api(concatenated_principles, principle)
+        ## ESPECIALLY this call here --> dependent on formatting and types. 
+        if str(entailing) == "1": 
+            return True
+        return False
 
     def generate_principles(self, data_points):
         i = 0
@@ -36,6 +40,7 @@ class PrincipleGenerator:
                 print(f"Generating principle for data point {i}")
             harmful_prompt, undesirable_response, better_response = self.process_datapoint(data_point)
             principle = self.generate_principle(harmful_prompt, undesirable_response, better_response)
-            principles.append(principle)  
+            if self.should_add_principle(): 
+                principles.append(principle)  
             i += 1
         return principles
