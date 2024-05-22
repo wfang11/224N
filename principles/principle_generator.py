@@ -20,6 +20,7 @@ class PrincipleGenerator:
             user = f.read().format(harmful_prompt=harmful_prompt, undesirable_response=undesirable_response, better_response=better_response)
         prompt = sys + '\n' + user
         response = self.model.query(prompt)
+        print(response)
         return json.loads(response)['result']['principle']
     
     ## TODO: add only if it is entailed. 

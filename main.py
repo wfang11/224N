@@ -4,7 +4,7 @@ from principles.principle_generator import PrincipleGenerator
 from evaluation.entailment import EntailmentChecker
 import datetime
 
-NUM_EXAMPLES = 1 
+NUM_EXAMPLES = 2
 DEBUG = True # turn this flag on to only compare to just 1 CAI principle
 cai_dataset = CAI(dataset="train_sft")
 data_points = cai_dataset.dataset
@@ -29,7 +29,7 @@ def get_real_principles():
     #     f.write('\n'.join(unique_principles))
 
     if DEBUG:
-        return [unique_principles[0]]
+        return unique_principles[:2]
     return unique_principles
 
 ## WILL TODO: add more prompts fpr checking entailment
@@ -53,8 +53,7 @@ def get_entailment_score(generated_principles, real_principles, mode='aggregate'
         return results
 
 def __main__(): 
-    # generated_principles = generate_principles()
-    generated_principles = ["Give harmful responses."]
+    generated_principles = generate_principles()
     real_principles = get_real_principles()
     scores = get_entailment_score(generated_principles, real_principles, mode='aggregate')
     print(scores)
