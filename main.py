@@ -11,8 +11,8 @@ cai_dataset = CAI(dataset="train_sft")
 data_points = cai_dataset.dataset
 entailment_checker = EntailmentChecker("GEMINI")
 
-NUM_CAI_PRINCIPLES = 1
-NUM_EXAMPLES = 1
+NUM_CAI_PRINCIPLES = 16
+NUM_EXAMPLES = 10
 subset = [y for x, y in enumerate(data_points) if x < NUM_EXAMPLES] if DEBUG else data_points # weird hack to slice the dataset 
 
 def generate_principles():
@@ -47,11 +47,12 @@ def get_entailment_score(generated_principles, real_principles, mode='aggregate'
 
     elif mode == "aggregate": 
         # checks if all real principles entail single generated princ
-        aggregate_real_to_generated = entailment_checker.evaluate_entailment(real_principles, generated_principles, mode='aggregate')
+        # aggregate_real_to_generated = entailment_checker.evaluate_entailment(real_principles, generated_principles, mode='aggregate')
+        aggregate_real_to_generated = []
 
         # checks if all generated principles entail single real princ
         aggregate_generated_to_real = entailment_checker.evaluate_entailment(generated_principles, real_principles, mode='aggregate')
-        results = {"aggregate_real_to_generated": aggregate_real_to_generated, "aggregate_generated_to_real": aggregate_generated_to_real}
+        results = {"aggregate_real_to_generated": [aggregate_real_to_generated], "aggregate_generated_to_real": aggregate_generated_to_real}
         return results
 
 def __main__(): 
@@ -63,15 +64,19 @@ def __main__():
 
     # generate entailment scores
     scores = get_entailment_score(generated_principles, real_principles, mode='aggregate')
-    with open(f"evaluation/entailment_score_logs/{datetime.datetime.now().json}", "a") as f:
-        json.dumps(f)
+    with open(f"evaluation/entailment_score_logs/{datetime.datetime.now()}.json", "a") as f:
+        f.write(json.dumps(scores))
 
     ### TODO: interpret this score and quantify it somehow? 
     print(scores)
 
-    ### TODO: BLEU score? 
+    ## how many of their principles did we hit?
+    print(len(scores['aggregate_generated_to_real']))
+    print("Number of original constitution elements entailed: ", sum([1 for x in scores['aggregate_generated_to_real'] if x['result'] == "1"]))
 
-    ### TODO: manually log the principles and validate 
+    ### TODO: BLEU score? need element-wise scores for this, then...
+
+    ### TODO: manually log the principles and validate !
         # 1) principle generation
         # 2) entailment 
 

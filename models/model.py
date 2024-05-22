@@ -1,6 +1,7 @@
 import requests
 from models.constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY, GEMINI_API_KEY
 import google.generativeai as genai
+import time 
 
 class Model: 
     def __init__(self, model): 
@@ -32,7 +33,8 @@ class Model:
         }
         ]
 
-        self.gemini = genai.GenerativeModel(model_name="gemini-1.5-flash-latest", generation_config=generation_config, safety_settings=safety_settings)
+        # self.gemini = genai.GenerativeModel(model_name="gemini-1.5-flash-latest", generation_config=generation_config, safety_settings=safety_settings)
+        self.gemini = genai.GenerativeModel(model_name="gemini-1.0-pro", generation_config=generation_config, safety_settings=safety_settings)
 
     def query_gpt(self, prompt): 
         headers = {
@@ -58,16 +60,20 @@ class Model:
         return response.json()[0]["generated_text"]
 
     def query_gemini(self, prompt=""):
-        response = self.gemini.generate_content(prompt)
+        try: 
+            response = self.gemini.generate_content(prompt)
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+        # time.sleep(4)
         return response.text
     
     def query(self, prompt):
-        try: 
-            if self.MODEL == "LLAMA": 
-                return self.query_llama(prompt)
-            if self.MODEL == "GPT-4": 
-                return self.query_gpt(prompt)
-            if self.MODEL == "GEMINI": 
-                return self.query_gemini(prompt)
-        except: 
-            print("REQUEST FAILED.")
+        response = None
+        if self.MODEL == "LLAMA": 
+            response = self.query_llama(prompt)
+        if self.MODEL == "GPT-4": 
+            response = self.query_gpt(prompt)
+        if self.MODEL == "GEMINI": 
+            response = self.query_gemini(prompt)
+        return response
+    

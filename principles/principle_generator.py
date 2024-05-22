@@ -29,8 +29,11 @@ class PrincipleGenerator:
         entailing = self.entail_model.check_entailment_api(concatenated_principles, principle)
         ## ESPECIALLY this call here --> dependent on formatting and types. 
         if str(entailing) == "1": 
-            return True
-        return False
+            print("I SHOULD NOT ADD THIS TO PRINCIPLES")
+            return False
+        print("I AM ADDING THIS TO PRINCIPLES")
+        print(entailing)
+        return True
 
     def generate_principles(self, data_points):
         i = 0
@@ -39,8 +42,17 @@ class PrincipleGenerator:
             if i % 5 == 0: 
                 print(f"Generating principle for data point {i}")
             harmful_prompt, undesirable_response, better_response = self.process_datapoint(data_point)
+            #### also give ground truth principle?? idk --> need to have this for eval on utterance level 
             principle = self.generate_principle(harmful_prompt, undesirable_response, better_response)
-            if self.should_add_principle(): 
-                principles.append(principle)  
+            print("running entailment check for ..")
+            print(f"principle: {principle}")
+            print(f"principles: {principles}")
+
+
+            if len(principles) == 0 or self.should_add_principle(principle, principles):
+                principles.append(principle)
+                
             i += 1
+        print("FINAL PRINCIPLES")
+        print(principles)
         return principles

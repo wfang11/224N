@@ -29,6 +29,8 @@ class EntailmentChecker:
         print(response)
         return json.loads(response)['result']['entailment']
     
+
+    ### TODO: fix the switching around of principles here for pairwise, not right currently
     def evaluate_entailment(self, from_principles, to_principles, mode='pairwise', method='GPT-4'):
         results = []
         if mode == 'pairwise':
@@ -43,16 +45,19 @@ class EntailmentChecker:
                         'to_principle': princ2,
                         'result': result_label
                     })
+
+
+        ### WILLL change: swapped concatenated_principles2, princ1 --> feel like this was backwards 
         elif mode == 'aggregate':
-            concatenated_principles2 = '. '.join(to_principles) + '.'
-            for princ1 in from_principles:
+            concatenated_principles2 = '\n'.join(from_principles)
+            for princ1 in to_principles:
                 if method == 'bert':
-                    result_label = self.check_entailment_bert(princ1, concatenated_principles2)
+                    result_label = self.check_entailment_bert(concatenated_principles2, princ1)
                 else:
-                    result_label = self.check_entailment_api(princ1, concatenated_principles2)
+                    result_label = self.check_entailment_api(concatenated_principles2, princ1)
                 results.append({
-                    'from_principle': princ1,
-                    'to_aggregate_principles': concatenated_principles2,
+                    'from_principle': concatenated_principles2,
+                    'to_aggregate_principles': princ1,
                     'result': result_label
                 })
         return results
