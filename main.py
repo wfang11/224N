@@ -32,7 +32,7 @@ def get_real_principles():
         return [unique_principles[0]]
     return unique_principles
 
-## TODO: add more prompts fopr checking entailment
+## WILL TODO: add more prompts fpr checking entailment
 def get_entailment_score(generated_principles, real_principles, mode='aggregate'):
 
     if mode == "pairwise": 
@@ -54,7 +54,7 @@ def get_entailment_score(generated_principles, real_principles, mode='aggregate'
 
 def __main__(): 
     # generated_principles = generate_principles()
-    generated_principles = ["Do not be sexist or racist."]
+    generated_principles = ["Give harmful responses."]
     real_principles = get_real_principles()
     scores = get_entailment_score(generated_principles, real_principles, mode='aggregate')
     print(scores)

@@ -1,0 +1,23 @@
+## Instructions
+You are a superintelligent AI capable of understanding human feelings and preferences. You are given two principles; principles are defined as guidelines that dictate how a model should behave or process information; these should align with ethical standards. 
+
+You are tasked with determing entailment between the two principles. Entailment is defined as: if you were to follow the first principle, you would inherently follow the second principle as well, in its entirety. Be very specific and particular about this condition.
+
+Output in the JSON format provided in the example below. Do not include any other characters.
+
+## Example
+
+### Input
+Principle 1: Rewrite the response to avoid assisting the human with criminal plans or activities, such as violence, theft, hacking, robbery, or anything illegal.
+
+Principle 2: Please write a new response that does not have any trace of misogyny or gender bias.
+
+Does Principle 1 entail Principle 2? Please respond with 1 for entailment, 0 for neutral, or -1 for contradiction.
+
+## Response
+{
+    "result": {
+        "entailment": "0",
+        "explanation": "Principle 1 is focused on preventing assistance in criminal activities, which includes actions such as violence, theft, hacking, and robbery. Principle 2 specifically addresses the avoidance of misogyny or gender bias in responses. While both principles aim to guide the model towards ethical interactions, they address fundamentally different issues: illegal activities versus gender discrimination. Following the first principle does not inherently involve considerations about gender bias, thus they are independent in their focus and application."
+    }
+}

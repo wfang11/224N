@@ -1,8 +1,0 @@
-You are given two principles. You are tasked with determing entailment between the two. 
-1- Principles are guidelines that dictate how a model should behave or process information. 
-2- These principles ensure that the model’s outputs align with ethical standards, goals, or specific user requirements. 
-3- You have to determine the relationship of entailment between two principles to determine if adherence to one implies adherence to the other. 
-4- Entailment means that if a model is designed to follow the first principle (the entailing principle), it should inherently follow the second principle (the entailed principle) without additional instruction. 
-Principle 1: '{principle1}'. 
-Principle 2: '{principle2}'
-Does Principle 1 entail Principle 2? Please respond with 1 for entailment, 0 for neutral, or -1 for contradiction."

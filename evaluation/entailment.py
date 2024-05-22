@@ -1,6 +1,7 @@
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 import torch
 from models.model import Model
+import json
 
 class EntailmentChecker:
     def __init__(self, model):
@@ -19,20 +20,25 @@ class EntailmentChecker:
         return result_label
 
     def check_entailment_api(self, principle1, principle2): 
-        with open("models/prompts/entailment_prompt.txt") as f:
-            prompt = f.read().format(principle1=principle1, principle2=principle2)
-        return self.model.query(prompt)
+
+        with open("models/prompts/entailment_system.txt") as f:
+            sys = f.read()
+        with open("models/prompts/entailment_user.txt") as f:
+            user = f.read().format(principle1=principle1, principle2=principle2)
+        prompt = sys + '\n' + user
+        response = self.model.query(prompt)
+        print(response)
+        return json.loads(response)['result']['entailment']
     
-    ### WILL TODOs: fix the joining and the methodology 
-    def evaluate_entailment(self, real_principles, generated_principles, mode='pairwise', method='GPT-4'):
+    def evaluate_entailment(self, from_principles, to_principles, mode='pairwise', method='GPT-4'):
         """ 
         principles1: a list of principles (real)
         principles2: a list of principles (generated)
         """
         results = []
         if mode == 'pairwise':
-            for princ1 in real_principles:
-                for princ2 in generated_principles:
+            for princ1 in from_principles:
+                for princ2 in to_principles:
                     if method == 'bert':
                         result_label = self.check_entailment_bert(princ1, princ2)
                     else:
@@ -43,8 +49,8 @@ class EntailmentChecker:
                         'result': result_label
                     })
         elif mode == 'aggregate':
-            concatenated_principles2 = '. '.join(generated_principles) + '.'
-            for princ1 in real_principles:
+            concatenated_principles2 = '. '.join(to_principles) + '.'
+            for princ1 in from_principles:
                 if method == 'bert':
                     result_label = self.check_entailment_bert(princ1, concatenated_principles2)
                 else:
@@ -54,6 +60,5 @@ class EntailmentChecker:
                     'to_aggregate_principles': concatenated_principles2,
                     'result': result_label
                 })
-
         return results
 

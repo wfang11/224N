@@ -20,7 +20,6 @@ class PrincipleGenerator:
         response = self.model.query(prompt)
         return json.loads(response)['result']['principle']
 
-    ## TODO: make this better. The prompt is not working rn. 
     def generate_principles(self, data_points):
         i = 0
         principles = []
@@ -35,5 +34,4 @@ class PrincipleGenerator:
     
     ## TODO: add only if it is entailed. 
     def add_principle_to_principles(): 
-
         pass

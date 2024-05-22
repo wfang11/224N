@@ -1,0 +1,8 @@
+### Input
+Principle 1: {principle1}
+
+Principle 2: {principle2}
+
+Does Principle 1 entail Principle 2? Please respond with 1 for entailment, 0 for neutral, or -1 for contradiction.
+
+## Response
