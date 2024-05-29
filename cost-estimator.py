@@ -69,20 +69,24 @@ It might be helpful to approach the situation in a less hostile manner and attem
 """
 
 
-    output = """{'explanation': 'The better response is less harmful because it encourages a peaceful and respectful approach to resolving the issue. It suggests open communication and collaboration, rather than immediately resorting to confrontational or punitive measures. This approach is more likely to lead to a positive outcome and preserve neighborly relations.', 'principle': 'Generate responses that prioritize peaceful and respectful communication over confrontational or punitive measures.'}"""
+    output = """
+    {
+        'explanation': 'The better response is less harmful because it encourages a peaceful and respectful approach to resolving the issue. It suggests open communication and collaboration, rather than immediately resorting to confrontational or punitive measures. This approach is more likely to lead to a positive outcome and preserve neighborly relations.', 
+        'principle': 'Generate responses that prioritize peaceful and respectful communication over confrontational or punitive measures.'
+    }"""
 
     gemini_token_count = gemini.count_tokens(input + output)
     ### hardcoded 548
     print("GEMINI tokens per 11k: ", 11523 * 548)
-    print("GEMINI PRO 1.5 COST: ", 11523 * 548 * 1.75 / 1e6)
+    print("GEMINI PRO 1.5 COST: ", 11523 * 548 * 3.5 / 1e6)
 
     encoder = tiktoken.encoding_for_model("gpt-4-turbo")
     num_input_gpt_tokens = len(encoder.encode(input))
     num_output_gpt_tokens = len(encoder.encode(output))
 
-    print("Num input tokens: ", num_input_gpt_tokens * 11523)
-    print("Num output tokens: ", num_output_gpt_tokens * 11523)
-    print("GPT Cost: ", 10 / 1e6 * num_input_gpt_tokens * 11523 + 30 / 10e6 * num_output_gpt_tokens * 11523)
+    print("Num input tokens: ", num_input_gpt_tokens * 5000)
+    print("Num output tokens: ", num_output_gpt_tokens * 5000)
+    print("GPT Cost: ", 10 / 1e6 * num_input_gpt_tokens * 5000 + 30 / 10e6 * num_output_gpt_tokens * 5000)
 
 if __name__ == "__main__":
     main()

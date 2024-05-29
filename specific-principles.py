@@ -25,13 +25,13 @@ def generate_principles(subset):
 
 def __main__(): 
     START = 0
-    END = 1
+    END = 10
 
     # subset = [y for x, y in enumerate(data_points) if x in errored]
     subset = [y for x, y in enumerate(data_points) if START <= x < END] if DEBUG else data_points 
 
     # make principles --> validate how specific these are!
-    principle_generator = PrincipleGenerator(model="GEMINI")
+    principle_generator = PrincipleGenerator(model="GPT-4")
 
     principles = []
     errored = []
@@ -49,7 +49,6 @@ def __main__():
             principles.append(principle)
         except: 
             print("Errored on data point ", idx)
-            errored.append(data_point)
             error_indices.append(idx)
 
     error_indices = [x + START for x in error_indices]
@@ -59,7 +58,7 @@ def __main__():
     with open(f"principles/generation_logs/{datetime.datetime.now()}.txt", "a") as f: 
         f.write('\n'.join(principles))
     with open(f"principles/errored/{datetime.datetime.now()}.txt", "a") as f: 
-        f.write('\n'.join(errored))
+        f.write('\n'.join(error_indices))
 
 if __name__ == "__main__": 
     __main__()
