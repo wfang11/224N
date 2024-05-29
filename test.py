@@ -4,16 +4,17 @@ from raptor.SBertEmbeddingModel import SBertEmbeddingModel
 from raptor.GeminiQAModel import GeminiQAModel
 
 RAC = RetrievalAugmentationConfig(
-    summarization_model=GeminiSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=GeminiQAModel(), tb_max_tokens=30)
+    summarization_model=GeminiSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=GeminiQAModel(), tb_max_tokens=22)
 
 
 #Comment out the following lines if you are loading in straight from the trees
 RA = RetrievalAugmentation(config=RAC)
-file_path = '../principles/real_cai_principles.txt'
+# file_path = '../principles/real_cai_principles.txt'
+file_path = 'principles/generation_logs/BEAVERTAILS_0-to-19.txt'
 with open(file_path, 'r') as file:
     text = file.read()
 RA.add_documents(text)
-SAVE_PATH = "trees"
+SAVE_PATH = "raptor/trees"
 RA.save(SAVE_PATH)
 #Comment till here 
 
