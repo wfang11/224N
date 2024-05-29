@@ -8,5 +8,5 @@ class CAI:
         return [dp['revision_prompt'] for dp in self.dataset]
     
 class BeaverTails:
-    def __init__(self, dataset="train_sft"): 
+    def __init__(self, dataset="train"): 
         self.dataset = load_dataset("PKU-Alignment/PKU-SafeRLHF")[dataset]
