@@ -6,3 +6,7 @@ class CAI:
 
     def extract_real_principles(self):
         return [dp['revision_prompt'] for dp in self.dataset]
+    
+class BeaverTails:
+    def __init__(self, dataset="train"): 
+        self.dataset = load_dataset("PKU-Alignment/PKU-SafeRLHF")[dataset]

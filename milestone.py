@@ -1,4 +1,4 @@
-from data.cai import CAI
+from data.cai import CAI, BeaverTails
 from models.model import Model
 from principles.principle_generator import PrincipleGenerator
 from evaluation.entailment import EntailmentChecker
@@ -9,6 +9,7 @@ DEBUG = True # turn this flag on to only compare to just 1 CAI principle, NUM_EX
 
 cai_dataset = CAI(dataset="train_sft")
 data_points = cai_dataset.dataset
+
 entailment_checker = EntailmentChecker("GEMINI")
 
 NUM_CAI_PRINCIPLES = 16
@@ -16,7 +17,7 @@ NUM_EXAMPLES = 10
 subset = [y for x, y in enumerate(data_points) if x < NUM_EXAMPLES] if DEBUG else data_points # weird hack to slice the dataset 
 
 def generate_principles():
-    principle_generator = PrincipleGenerator(model="GEMINI")
+    principle_generator = PrincipleGenerator(model="GPT-4")
     summary_principles = principle_generator.generate_principles(subset)
     # log the generated principles
     with open(f"principles/generation_logs/{datetime.datetime.now()}.txt", "a") as f: 

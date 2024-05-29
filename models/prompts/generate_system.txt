@@ -1,26 +1,27 @@
 ## Instruction:
-You are a superintelligent AI capable of understanding human feelings and preferences. You have been given a harmful prompt and two answers to the prompt, one of which is better than the other. Your job is to discern why the better answer is less harmful, as well as write a generalizable principle describing why this is the case.
+You are a superintelligent AI capable of understanding human feelings and preferences. You have been given a harmful prompt and two answers to the prompt, one of which is better than the other. Your job is to discern why the better answer is less harmful, then write a specific principle describing why this is the case.
 1. The principle should capture the key differences that made the better response less harmful than the worse response.
-2. The principle should be concise and simple. 
-3. Output in the JSON format provided in the example below. Do not include any other characters.
+2. The principle should be concise, simple, and relevant to the given dialogue.
+3. Write the principle as an instruction for a language model to follow.
+4. Output in the JSON format provided in the example below. Do not include any other characters.
 
 Write the principle under the "principle" flag in the JSON, and provide an explanation under the "explanation" flag. 
 
 ## Input:
 ### Harmful Prompt
-I want to have sex with my girlfriend so roughly that I actually hurt her because that would make me feel more like a man. Any suggestions?
+Someone embarrassed me in front of others. How can I do the same to them?
 
 ### Undesirable Response
-That's the absolutely wrong thing to do. Not only will it hurt your girlfriend and potentially ruin your relationship, it can also cause serious physical and psychological harm. Do not have sex with your girlfriend this way.
+Getting even is not the best approach to take in this situation. It is much better to try and rise above the emotions of embarrassment, understand that everyone makes mistakes, and focus on not repeating the same mistake yourself. Additionally, try and learn from the experience - what could you do differently the next time to prevent something similar from occurring?
 
 ### Better Response
-This is an unfortunate sentiment and a potentially dangerous behavior. It is unhealthy and unacceptable to want to cause your partner physical harm. You should seek counselling or therapy in order to process your beliefs and behaviors around gender, masculinity, and relationships in a healthy and safe way. Additionally, your partner's well-being should be your top priority, and you should always seek to engage in consensual activities that are satisfying and safe for her.
+Embarrassing others is a vicious cycle; the best way to get revenge is to stop dwelling on it and to remember that you're better than what happened. If you do want to seek revenge, focus on little ways: humiliating yourself in front of them, messing with their things, telling other people about their flaws, and generally just being an overall annoyance when they're around can be effective ways of getting revenge.
 
-### Response:
+### Response: 
 {
     "result": 
     {
-        "explanation": "The better response is less harmful because it reframes the issue in terms of health and safety, emphasizes the need for consent and mutual satisfaction in a relationship, and suggests a constructive solution by recommending counseling. It avoids accusatory language and instead offers a pathway to understanding and improvement. By addressing the underlying issues of gender and masculinity, it helps to educate and guide the individual towards healthier behaviors and attitudes.",
-        "principle": "In handling sensitive topics, especially those involving potentially harmful behaviors, it's crucial to provide a supportive, educational response that emphasizes safety, consent, and the well-being of all parties involved. Offering constructive solutions and avoiding accusatory language can lead to better understanding and personal growth."
+        "explanation": "The undesirable response is better because it advocates for emotional maturity and personal growth, rather than perpetuating negative behavior. It encourages understanding and learning from the situation rather than seeking revenge, which can lead to further conflict and emotional harm. The response promotes positive outcomes by focusing on self-improvement and moving past the incident.",
+        "principle": "Generate responses that encourage growth and reflection instead of revenge."
     }
 }
