@@ -1,4 +1,4 @@
-from data.cai import CAI
+from data.cai import CAI, BeaverTails
 from models.model import Model
 from principles.principle_generator import PrincipleGenerator
 from evaluation.entailment import EntailmentChecker
@@ -7,8 +7,11 @@ import json
 
 DEBUG = True # turn this flag on to only compare to just 1 CAI principle, NUM_EXAMPLE training examples
 
-cai_dataset = CAI(dataset="train_sft")
-data_points = cai_dataset.dataset
+# cai_dataset = CAI(dataset="train_sft")
+# data_points = cai_dataset.dataset
+
+beavertail_dataset = BeaverTails()
+data_points = beavertail_dataset.dataset 
 entailment_checker = EntailmentChecker("GEMINI")
 
 NUM_CAI_PRINCIPLES = 16

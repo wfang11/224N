@@ -34,6 +34,7 @@ class PrincipleGenerator:
         print(entailing)
         return True
 
+    ### TODO: update this!!
     def generate_principles(self, data_points):
         i = 0
         principles = []
@@ -47,7 +48,7 @@ class PrincipleGenerator:
             print(f"principle: {principle}")
             print(f"principles: {principles}")
 
-
+            ### REMOVE THIS CALL! 
             if len(principles) == 0 or self.should_add_principle(principle, principles):
                 principles.append(principle)
                 
