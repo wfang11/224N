@@ -20,9 +20,11 @@ class PrincipleGenerator:
         with open("models/prompts/generate_user.txt") as f:
             user = f.read().format(harmful_prompt=harmful_prompt, undesirable_response=undesirable_response, better_response=better_response)
         prompt = sys + '\n' + user
+        print("\n\nprompt fed to LLM: ", prompt)
         response = self.model.query(prompt)
-        print(response)
-        return json.loads(response)['result']['principle']
+        response = json.loads(response)['result']
+        print("\n\nresponse from LLM: ", response)
+        return response['principle']
 
     ### TODO: update this!!
     def generate_principles(self, data_points):
