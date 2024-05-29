@@ -16,7 +16,7 @@ data_points = beavertail_dataset.dataset
 ### Filter data points to highest quality: safer response (classified: safe) is aligned with better response, other response is not safe
 data_points = [x for x in data_points if x['is_response_0_safe'] != x['is_response_1_safe'] and x['safer_response_id'] == x['better_response_id']]
 
-NUM_EXAMPLES = 10
+# NUM_EXAMPLES = 10
 
 
 ### Generate all principles!
@@ -30,7 +30,10 @@ def generate_principles(subset):
 
 
 def __main__(): 
-    subset = [y for x, y in enumerate(data_points) if x < NUM_EXAMPLES] if DEBUG else data_points # weird hack to slice the dataset 
+
+    START = 10
+    END = 20
+    subset = [y for x, y in enumerate(data_points) if START <= x < END] if DEBUG else data_points # weird hack to slice the dataset 
 
     # make principles --> validate how specific these are!
     principle_generator = PrincipleGenerator(model="GEMINI")
