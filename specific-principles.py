@@ -7,17 +7,11 @@ import json
 
 DEBUG = True # turn this flag on to only compare to just 1 CAI principle, NUM_EXAMPLE training examples
 
-# cai_dataset = CAI(dataset="train_sft")
-# data_points = cai_dataset.dataset
-
 beavertail_dataset = BeaverTails("train")
 data_points = beavertail_dataset.dataset 
 
 ### Filter data points to highest quality: safer response (classified: safe) is aligned with better response, other response is not safe
 data_points = [x for x in data_points if x['is_response_0_safe'] != x['is_response_1_safe'] and x['safer_response_id'] == x['better_response_id']]
-
-# NUM_EXAMPLES = 10
-
 
 ### Generate all principles!
 def generate_principles(subset):
