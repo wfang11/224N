@@ -22,8 +22,7 @@ class PrincipleGenerator:
         response = self.model.query(prompt)
         print(response)
         return json.loads(response)['result']['principle']
-    
-    ## TODO: should test this functionality and make sure that it works.
+
     def should_add_principle(self, principle, existing_principles):  
         concatenated_principles = '. '.join(existing_principles) + '.'
         entailing = self.entail_model.check_entailment_api(concatenated_principles, principle)
@@ -56,3 +55,8 @@ class PrincipleGenerator:
         print("FINAL PRINCIPLES")
         print(principles)
         return principles
+    
+
+    ### TODO: create self-critique mechanism
+    def self_critique(): 
+        pass
