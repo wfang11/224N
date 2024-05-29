@@ -24,12 +24,11 @@ def generate_principles(subset):
 
 
 def __main__(): 
-    START = 20
-    END = 200
+    START = 0
+    END = 1
 
-    errored = [34, 46, 52, 82, 93, 95, 103, 109, 110, 126, 146, 159, 175, 176, 179, 193, 195]
-    subset = [y for x, y in enumerate(data_points) if x in errored]
-    # subset = [y for x, y in enumerate(data_points) if START <= x < END] if DEBUG else data_points 
+    # subset = [y for x, y in enumerate(data_points) if x in errored]
+    subset = [y for x, y in enumerate(data_points) if START <= x < END] if DEBUG else data_points 
 
     # make principles --> validate how specific these are!
     principle_generator = PrincipleGenerator(model="GEMINI")
