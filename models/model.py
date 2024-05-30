@@ -1,7 +1,8 @@
 import requests
-from models.constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY, GEMINI_API_KEY
+from models.constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY, GEMINI_API_KEY, AZURE_OPENAI_KEY, AZURE_OPENAI_ENDPOINT
 import google.generativeai as genai
-import time 
+import os
+from openai import AzureOpenAI
 
 class Model: 
     def __init__(self, model): 
@@ -37,17 +38,36 @@ class Model:
         self.gemini = genai.GenerativeModel(model_name="gemini-1.0-pro", generation_config=generation_config, safety_settings=safety_settings)
 
     def query_gpt(self, prompt): 
-        headers = {
-            "Authorization": f"Bearer {OPENAI_API_KEY}",
-            "Content-Type": "application/json",
-        }
-        data = {
-            "model": "gpt-4-turbo",
-            "messages": [
-                {"role": "user", "content": prompt}]
-        }
-        response = requests.post(ENDPOINTS["GPT-4"], headers=headers, json=data)
-        return response.json()['choices'][0]['message']['content']
+
+        OPENAI_CLIENT = AzureOpenAI(
+            api_key=os.getenv("AZURE_OPENAI_KEY"),
+            api_version="2023-12-01-preview",
+            azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+        )
+            
+        deployment_name="gpt-4-turbo"
+            
+        response = OPENAI_CLIENT.chat.completions.create(
+            model = deployment_name,
+            messages=[
+                {"role": "user", "content": prompt}
+            ]
+        )
+        # print(response.json())
+        return response.choices[0].message.content
+
+        ### call using Will's OpenAI endpoint
+        # headers = {
+        #     "Authorization": f"Bearer {OPENAI_API_KEY}",
+        #     "Content-Type": "application/json",
+        # }
+        # data = {
+        #     "model": "gpt-4-turbo",
+        #     "messages": [
+
+        # }
+        # response = requests.post(ENDPOINTS["GPT-4"], headers=headers, json=data)
+        # return response.json()['choices'][0]['message']['content']
 
     def query_llama(self, prompt): 
         headers = {

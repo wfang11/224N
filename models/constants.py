@@ -11,3 +11,6 @@ ENDPOINTS = {
     "GEMINI": f"https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key={GEMINI_API_KEY}",
     "GPT-4": "https://api.openai.com/v1/chat/completions",
 }
+
+AZURE_OPENAI_KEY = os.getenv("AZURE_OPENAI_KEY")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")

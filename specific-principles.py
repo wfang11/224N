@@ -13,19 +13,9 @@ data_points = beavertail_dataset.dataset
 ### Filter data points to highest quality: safer response (classified: safe) is aligned with better response, other response is not safe
 data_points = [x for x in data_points if x['is_response_0_safe'] != x['is_response_1_safe'] and x['safer_response_id'] == x['better_response_id']]
 
-### Generate all principles!
-def generate_principles(subset):
-    principle_generator = PrincipleGenerator(model="GPT-4")
-    summary_principles = principle_generator.generate_principles(subset)
-    # log the generated principles
-    with open(f"principles/generation_logs/{datetime.datetime.now()}.txt", "a") as f: 
-        f.write('\n'.join(summary_principles))
-    return summary_principles
-
-
 def __main__(): 
     START = 0
-    END = 10
+    END = 1
 
     # subset = [y for x, y in enumerate(data_points) if x in errored]
     subset = [y for x, y in enumerate(data_points) if START <= x < END] if DEBUG else data_points 
