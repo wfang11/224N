@@ -4,13 +4,14 @@ from raptor.SBertEmbeddingModel import SBertEmbeddingModel
 from raptor.GeminiQAModel import GeminiQAModel
 from raptor.utils import reverse_mapping
 RAC = RetrievalAugmentationConfig(
-    summarization_model=GeminiSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=GeminiQAModel(), tb_max_tokens=22)
+    summarization_model=GeminiSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=GeminiQAModel(), tb_max_tokens=5)
+import json
 
 
 #Comment out the following lines if you are loading in straight from the trees
 RA = RetrievalAugmentation(config=RAC)
-# file_path = '../principles/real_cai_principles.txt'
-file_path = 'principles/generation_logs/BEAVERTAILS_0-200.txt'
+file_path = 'principles/generation_logs/GPT_TEMP_BEAVERTAILS.txt'
+
 with open(file_path, 'r') as file:
     text = file.read()
 RA.add_documents(text)
@@ -23,16 +24,26 @@ RA.save(SAVE_PATH)
 
 #Loads in all nodes from the tree, sorts them and then prints their text
 myDict = {}
+children = {}
+
 nodes_to_layer = reverse_mapping(RA.tree.layer_to_nodes)
 for key, node in RA.tree.all_nodes.items():
-    # print(f"Node {key}: {node.text}\n")
+    children[key] = node.children
     myDict[key] = node.text
+
+node_info = {}
 for i in range(len(myDict)):
+    node_info[i] = {
+        "Node": i,
+        "Layer": nodes_to_layer[i],
+        "Text": myDict[i],
+        "Children": list(children[i])
+    }
+
     print(f"Node {i}, Layer {nodes_to_layer[i]}: {myDict[i]}\n")
+    print(f"Children of Node {i}: {children[i]}")
 
+json_data = json.dumps(node_info, indent=4)
 
-#If you want to test out QA functionality:
-    
-# question = "How should an LLM respond to a general question?"
-# answer = RA.answer_question(question=question)
-# print("Answer: ", answer)
+with open("GPT_1000_node_data.json", "w") as json_file:
+    json_file.write(json_data)
