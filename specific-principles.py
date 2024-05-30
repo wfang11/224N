@@ -7,23 +7,34 @@ import json
 import logging
 import random
 
-DEBUG = True # turn this flag on to only compare to just 1 CAI principle, NUM_EXAMPLE training examples
-
 beavertail_dataset = BeaverTails("train")
 data_points = beavertail_dataset.dataset 
+
+ERROR_RUN = True
 
 ### Filter data points to highest quality: safer response (classified: safe) is aligned with better response, other response is not safe
 data_points = [x for x in data_points if x['is_response_0_safe'] != x['is_response_1_safe'] and x['safer_response_id'] == x['better_response_id']]
 
 def __main__(): 
     START = 0
-    END = 1000
+    END = 0
 
     # prepare data subset
     subset = [y for _, y in enumerate(data_points)]
     random.seed(42)
     random.shuffle(subset)
-    subset = [y for x, y in enumerate(subset) if START <= x < END] if DEBUG else data_points 
+
+    ### READ ERRORED
+    with open("principles/errored/GPT_0-999.txt", "r") as f: 
+        errored = f.readlines()
+    errored = [int(x.strip()) for x in errored]
+    print(errored)
+    
+    ### Either subset of data or error
+    if ERROR_RUN:
+        subset = [y for x, y in enumerate(subset) if x in errored]
+    else: 
+        subset = [y for x, y in enumerate(subset) if START <= x < END]
 
     # make principles --> validate how specific these are!
     principle_generator = PrincipleGenerator(model="GPT-4")
@@ -42,7 +53,7 @@ def __main__():
                 f.write(principle + "\n")
         except: 
             print("Errored on data point ", idx + START)
-            with open(f"principles/errored/GPT_TEMP_BEAVERTAILS", "a") as f: 
+            with open(f"principles/errored/GPT_TEMP_BEAVERTAILS.txt", "a") as f: 
                 f.write(str(idx + START) + "\n")
     print("all done!")
 
