@@ -4,6 +4,8 @@ from principles.principle_generator import PrincipleGenerator
 from evaluation.entailment import EntailmentChecker
 import datetime
 import json
+import logging
+import random
 
 DEBUG = True # turn this flag on to only compare to just 1 CAI principle, NUM_EXAMPLE training examples
 
@@ -15,40 +17,39 @@ data_points = [x for x in data_points if x['is_response_0_safe'] != x['is_respon
 
 def __main__(): 
     START = 0
-    END = 1
-
-    # subset = [y for x, y in enumerate(data_points) if x in errored]
+    END = 250
+    subset = [y for _, y in enumerate(data_points)]
+    random.seed(42)
+    random.shuffle(subset)
+    print(subset[100])
     subset = [y for x, y in enumerate(data_points) if START <= x < END] if DEBUG else data_points 
 
     # make principles --> validate how specific these are!
     principle_generator = PrincipleGenerator(model="GPT-4")
 
     principles = []
-    errored = []
     error_indices = []
-    ### TODO: migrate this functionality to the principle generation file
+    ### TODO: migrate this functionality to the principle generation file --> or not. 
     for idx, data_point in enumerate(subset): 
-        if idx % 10 == 0: 
-            print("\n\n\n\n\Working on data point: ", idx)
+        print("\n\n\n\nWorking on data point: ", idx + START)
         ## get harmful prompt
         prompt = data_point['prompt']
         better_response = data_point['response_0'] if data_point['safer_response_id'] == 0 else data_point['response_1']
         worse_response = data_point['response_1'] if data_point['safer_response_id'] == 0 else data_point['response_0']
+
         try: 
-            principle = principle_generator.generate_principle(prompt, worse_response, better_response)
+            # try: 
+            principle = principle_generator.generate_principle(prompt, worse_response, better_response, idx + START)
             principles.append(principle)
+            with open(f"principles/generation_logs/GPT_ALL_BEAVERTAILS.txt", "a") as f: 
+                f.write(principle + "\n")
         except: 
-            print("Errored on data point ", idx)
-            error_indices.append(idx)
+            print("Errored on data point ", idx + START)
+            with open(f"principles/errored/GPT_ALL_BEAVERTAILS.txt", "a") as f: 
+                f.write(str(idx + START) + "\n")
 
-    error_indices = [x + START for x in error_indices]
     print("Principles at the end: ", principles)
-    print("Errored on: ", error_indices)
 
-    with open(f"principles/generation_logs/{datetime.datetime.now()}.txt", "a") as f: 
-        f.write('\n'.join(principles))
-    with open(f"principles/errored/{datetime.datetime.now()}.txt", "a") as f: 
-        f.write('\n'.join(error_indices))
 
 if __name__ == "__main__": 
     __main__()

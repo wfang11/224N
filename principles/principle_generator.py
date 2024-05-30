@@ -14,16 +14,28 @@ class PrincipleGenerator:
         better_response = data_point['revision_response']
         return harmful_prompt, undesirable_response, better_response
 
-    def generate_principle(self, harmful_prompt, undesirable_response, better_response):
+    def generate_principle(self, harmful_prompt, undesirable_response, better_response, idx=None):
+        ## Read prompts
         with open("models/prompts/generate_system.txt") as f:
             sys = f.read()
         with open("models/prompts/generate_user.txt") as f:
             user = f.read().format(harmful_prompt=harmful_prompt, undesirable_response=undesirable_response, better_response=better_response)
+
+        ## LOGGING
+        with open(f"models/gpt_dump.txt", "a") as f: 
+            if idx: 
+                f.write(f"\n\n\nRUNNING FOR DATA POINT {idx}:\n")
+            f.write(user + "\n")
+
         prompt = sys + '\n' + user
-        print("\n\nprompt fed to LLM: ", prompt)
         response = self.model.query(prompt)
         response = json.loads(response)['result']
-        print("\n\nresponse from LLM: ", response)
+        print(response)
+
+        ## Error handling
+        if "```" in response and "json" in response: 
+            response = response.replace("```", "")
+            response = response.replace("json", "")
         return response['principle']
 
     ### TODO: update this!!

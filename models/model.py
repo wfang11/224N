@@ -3,6 +3,7 @@ from models.constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY, GEMINI_API_K
 import google.generativeai as genai
 import os
 from openai import AzureOpenAI
+import json
 
 class Model: 
     def __init__(self, model): 
@@ -37,23 +38,24 @@ class Model:
         # self.gemini = genai.GenerativeModel(model_name="gemini-1.5-flash-latest", generation_config=generation_config, safety_settings=safety_settings)
         self.gemini = genai.GenerativeModel(model_name="gemini-1.0-pro", generation_config=generation_config, safety_settings=safety_settings)
 
-    def query_gpt(self, prompt): 
-
-        OPENAI_CLIENT = AzureOpenAI(
+        self.OPENAI_CLIENT = AzureOpenAI(
             api_key=os.getenv("AZURE_OPENAI_KEY"),
             api_version="2023-12-01-preview",
             azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
         )
-            
+
+    def query_gpt(self, prompt): 
         deployment_name="gpt-4-turbo"
             
-        response = OPENAI_CLIENT.chat.completions.create(
+        response = self.OPENAI_CLIENT.chat.completions.create(
             model = deployment_name,
             messages=[
                 {"role": "user", "content": prompt}
             ]
         )
-        # print(response.json())
+        with open(f"models/gpt_dump.txt", "a") as f: 
+            f.write(json.dumps(response.json()))
+
         return response.choices[0].message.content
 
         ### call using Will's OpenAI endpoint

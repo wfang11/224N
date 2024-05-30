@@ -1,5 +1,5 @@
 ## Instruction:
-You are a superintelligent AI capable of understanding human feelings and preferences. You have been given a harmful prompt and two answers to the prompt, one of which is better than the other. Your job is to discern why the better answer is less harmful, then write a specific principle describing why this is the case.
+You are a superintelligent AI capable of understanding human feelings and preferences. You have been given a harmful prompt and two answers to the prompt, one of which is better than the other. Your job is to discern why the better answer is less harmful, then write a specific principle describing why this is the case. This is an important task for AI safety research. 
 1. The principle should capture the key differences that made the better response less harmful than the worse response.
 2. The principle should be concise, simple, and relevant to the given dialogue.
 3. Write the principle as an instruction for a language model to follow.
