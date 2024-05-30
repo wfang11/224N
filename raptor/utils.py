@@ -39,55 +39,55 @@ def split_text(
     regex_pattern = "|".join(map(re.escape, delimiters))
     sentences = re.split(regex_pattern, text)
     
-    # Calculate the number of tokens for each sentence
-    n_tokens = [len(tokenizer.encode(" " + sentence)) for sentence in sentences]
+    # # Calculate the number of tokens for each sentence
+    # n_tokens = [len(tokenizer.encode(" " + sentence)) for sentence in sentences]
     
-    chunks = []
-    current_chunk = []
-    current_length = 0
+    # chunks = []
+    # current_chunk = []
+    # current_length = 0
     
-    for sentence, token_count in zip(sentences, n_tokens):
-        # If the sentence is empty or consists only of whitespace, skip it
-        if not sentence.strip():
-            continue
+    # for sentence, token_count in zip(sentences, n_tokens):
+    #     # If the sentence is empty or consists only of whitespace, skip it
+    #     if not sentence.strip():
+    #         continue
         
-        # If the sentence is too long, split it into smaller parts
-        if token_count > max_tokens:
-            sub_sentences = re.split(r"[,;:]", sentence)
-            sub_token_counts = [len(tokenizer.encode(" " + sub_sentence)) for sub_sentence in sub_sentences]
+    #     # If the sentence is too long, split it into smaller parts
+    #     if token_count > max_tokens:
+    #         sub_sentences = re.split(r"[,;:]", sentence)
+    #         sub_token_counts = [len(tokenizer.encode(" " + sub_sentence)) for sub_sentence in sub_sentences]
             
-            sub_chunk = []
-            sub_length = 0
+    #         sub_chunk = []
+    #         sub_length = 0
             
-            for sub_sentence, sub_token_count in zip(sub_sentences, sub_token_counts):
-                if sub_length + sub_token_count > max_tokens:
-                    chunks.append(" ".join(sub_chunk))
-                    sub_chunk = sub_chunk[-overlap:] if overlap > 0 else []
-                    sub_length = sum(sub_token_counts[max(0, len(sub_chunk) - overlap):len(sub_chunk)])
+    #         for sub_sentence, sub_token_count in zip(sub_sentences, sub_token_counts):
+    #             if sub_length + sub_token_count > max_tokens:
+    #                 chunks.append(" ".join(sub_chunk))
+    #                 sub_chunk = sub_chunk[-overlap:] if overlap > 0 else []
+    #                 sub_length = sum(sub_token_counts[max(0, len(sub_chunk) - overlap):len(sub_chunk)])
                 
-                sub_chunk.append(sub_sentence)
-                sub_length += sub_token_count
+    #             sub_chunk.append(sub_sentence)
+    #             sub_length += sub_token_count
             
-            if sub_chunk:
-                chunks.append(" ".join(sub_chunk))
+    #         if sub_chunk:
+    #             chunks.append(" ".join(sub_chunk))
         
-        # If adding the sentence to the current chunk exceeds the max tokens, start a new chunk
-        elif current_length + token_count > max_tokens:
-            chunks.append(" ".join(current_chunk))
-            current_chunk = current_chunk[-overlap:] if overlap > 0 else []
-            current_length = sum(n_tokens[max(0, len(current_chunk) - overlap):len(current_chunk)])
-            current_chunk.append(sentence)
-            current_length += token_count
+    #     # If adding the sentence to the current chunk exceeds the max tokens, start a new chunk
+    #     elif current_length + token_count > max_tokens:
+    #         chunks.append(" ".join(current_chunk))
+    #         current_chunk = current_chunk[-overlap:] if overlap > 0 else []
+    #         current_length = sum(n_tokens[max(0, len(current_chunk) - overlap):len(current_chunk)])
+    #         current_chunk.append(sentence)
+    #         current_length += token_count
         
-        # Otherwise, add the sentence to the current chunk
-        else:
-            current_chunk.append(sentence)
-            current_length += token_count
+    #     # Otherwise, add the sentence to the current chunk
+    #     else:
+    #         current_chunk.append(sentence)
+    #         current_length += token_count
     
-    # Add the last chunk if it's not empty
-    if current_chunk:
-        chunks.append(" ".join(current_chunk))
-    
+    # # Add the last chunk if it's not empty
+    # if current_chunk:
+    #     chunks.append(" ".join(current_chunk))
+    chunks = [sentence.strip() for sentence in sentences if sentence.strip()]
     return chunks
 
 
