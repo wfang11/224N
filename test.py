@@ -10,12 +10,15 @@ import json
 
 #Comment out the following lines if you are loading in straight from the trees
 RA = RetrievalAugmentation(config=RAC)
-file_path = 'principles/generation_logs/GPT_0-999.txt'
+# file_path = 'principles/generation_logs/GPT_0-999.txt'
+
+# This is testing RAPTOR with updated summarization, prompt engineering to see if there are better summaries possible
+file_path = 'layer_1_principles.txt'
 
 with open(file_path, 'r') as file:
     text = file.read()
 RA.add_documents(text)
-SAVE_PATH = "raptor/trees"
+SAVE_PATH = "raptor/tree_layer_1_test"
 RA.save(SAVE_PATH)
 #Comment till here 
 
@@ -45,5 +48,5 @@ for i in range(len(myDict)):
 
 json_data = json.dumps(node_info, indent=4)
 
-with open("GPT_1000_node_data.json", "w") as json_file:
+with open("GPT_Layer_1_onwards_node_data.json", "w") as json_file:
     json_file.write(json_data)
