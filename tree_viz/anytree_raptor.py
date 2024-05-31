@@ -6,6 +6,12 @@ import json
 with open("trees/GPT_1000_node_data.json", "r") as f:
     data = json.loads(f.read())
 
+## filter out layer 0 and 1 and 2 ?
+filtered_data = {}
+for key, value in data.items():
+    if int(value['Layer']) > 3: 
+        filtered_data[key] = value
+
 # Determine the maximum layer among all nodes to help define the root node
 MAX_LAYER = max(int(node['Layer']) for node in data.values())
 
