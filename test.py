@@ -10,7 +10,7 @@ import json
 
 #Comment out the following lines if you are loading in straight from the trees
 RA = RetrievalAugmentation(config=RAC)
-file_path = 'principles/generation_logs/GPT_TEMP_BEAVERTAILS.txt'
+file_path = 'principles/generation_logs/GPT_0-999.txt'
 
 with open(file_path, 'r') as file:
     text = file.read()
