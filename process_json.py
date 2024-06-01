@@ -5,7 +5,6 @@ filename = 'trees/GPT_1000_node_data.json'
 with open(filename, 'r') as file:
     DATA = json.load(file)
 
-
 def get_layer_1(data):
     layer_1_principles = []
     for key in data.keys():

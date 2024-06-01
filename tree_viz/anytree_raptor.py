@@ -2,35 +2,47 @@ from anytree import Node, RenderTree
 from anytree.exporter import UniqueDotExporter
 import json
 
+def wrap_text(text, max_words=5):
+    words = text.split()
+    wrapped_text = ""
+    for i in range(0, len(words), max_words):
+        wrapped_text += " ".join(words[i:i+max_words]) + "\n"
+    return wrapped_text.strip()
+
 # Load the tree data from a JSON file
 with open("trees/GPT_1000_node_data.json", "r") as f:
     data = json.loads(f.read())
 
-## filter out layer 0 and 1 and 2 ?
+# Filter out layer 0 nodes and adjust children lists
 filtered_data = {}
 for key, value in data.items():
-    if int(value['Layer']) > 3: 
+    if int(value['Layer']) > 0:  # Include only nodes above layer 0
         filtered_data[key] = value
 
-# Determine the maximum layer among all nodes to help define the root node
-MAX_LAYER = max(int(node['Layer']) for node in data.values())
+# Clear children for nodes that were originally at layer 1
+for key, value in filtered_data.items():
+    if int(value['Layer']) == 1:
+        value['Children'] = []  # Make layer 1 nodes leaf nodes
+
+# Determine the maximum layer among all remaining nodes
+MAX_LAYER = max(int(node['Layer']) for node in filtered_data.values())
 
 # Identify nodes that are located at the maximum layer to set them as children of the new root node
-max_layer_nodes = [int(key) for key, value in data.items() if value['Layer'] == MAX_LAYER]
+max_layer_nodes = [int(key) for key, value in filtered_data.items() if value['Layer'] == MAX_LAYER]
 
 # Add a new root node with children that are the nodes from the maximum layer
-data['-1'] = {
+filtered_data['-1'] = {
     'Node': -1,
     'Layer': MAX_LAYER + 1,
     'Text': 'ROOT',
     'Children': max_layer_nodes
 }
 
-# Initialize nodes without parents from the data
-nodes = {int(key): Node(name=data[key]['Text']) for key in data}
+# Initialize nodes with wrapped text and no parents from the filtered data
+nodes = {int(key): Node(name=wrap_text(filtered_data[key]['Text'], max_words=6)) for key in filtered_data}
 
-# Establish parent-child relationships based on the 'Children' list in the data
-for key, value in data.items():
+# Establish parent-child relationships based on the 'Children' list in the filtered data
+for key, value in filtered_data.items():
     for child in value['Children']:
         nodes[child].parent = nodes[int(key)]
 
@@ -38,12 +50,11 @@ for key, value in data.items():
 dot_exporter = UniqueDotExporter(
     nodes[-1],
     graph="digraph",
-    options=["rankdir=TB;", "ranksep=10", "nodesep=0.5"],  # Adjusted spacing for better vertical layout
+    options=["rankdir=TB;", "ranksep=10", "nodesep=0.5"],
     nodenamefunc=lambda node: f'{node.name}',
-    nodeattrfunc=lambda node: 'shape=box, fontsize=40, width=2, height=1',  # Increased node size
+    nodeattrfunc=lambda node: 'shape=box, fontsize=40, width=2, height=1',
     edgeattrfunc=lambda parent, child: 'arrowhead=none'
 )
 
-# Export the tree to a DOT file and then render to an image
-dot_exporter.to_dotfile("tree_viz/raptor_mini.dot")
-# dot_exporter.to_picture("tree_viz/raptor_mini_large_nodes.png")
+# Export the tree to a DOT file
+dot_exporter.to_dotfile("tree_viz/raptor_tree.dot")

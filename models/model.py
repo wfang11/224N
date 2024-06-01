@@ -4,6 +4,7 @@ import google.generativeai as genai
 import os
 from openai import AzureOpenAI
 import json
+from transformers import AutoModelForCausalLM, AutoTokenizer
 
 class Model: 
     def __init__(self, model): 
@@ -43,6 +44,16 @@ class Model:
             api_version="2023-12-01-preview",
             azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
         )
+
+    def query_mixtral(self, prompt): 
+        headers = {
+            "Authorization": f"Bearer {HF_API_KEY}"
+        }
+        data = {
+            "inputs": prompt
+        }
+        response = requests.post(ENDPOINTS["MIXTRAL"], headers=headers, json=data)
+        return response.json()[0]["generated_text"]
 
     def query_gpt(self, prompt): 
         deployment_name="gpt-4-turbo"
@@ -97,5 +108,7 @@ class Model:
             response = self.query_gpt(prompt)
         if self.MODEL == "GEMINI": 
             response = self.query_gemini(prompt)
+        if self.MODEL == "MIXTRAL":
+            response = self.query_mixtral(prompt)
         return response
     
