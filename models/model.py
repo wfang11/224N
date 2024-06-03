@@ -46,13 +46,18 @@ class Model:
         )
 
     def query_mixtral(self, prompt): 
+        MAX_TOKENS = 512
         headers = {
             "Authorization": f"Bearer {HF_API_KEY}"
         }
         data = {
-            "inputs": prompt
+            "inputs": prompt,
+              "parameters": {
+                "max_new_tokens": MAX_TOKENS,
+            } 
         }
         response = requests.post(ENDPOINTS["MIXTRAL"], headers=headers, json=data)
+        # print(response.json())
         return response.json()[0]["generated_text"]
 
     def query_gpt(self, prompt): 
