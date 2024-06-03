@@ -7,16 +7,14 @@ You are given principles that an LLM should follow to enhance safety when genera
 4. Find common threads between all of them and provide a summary based on the commonalities. 
 4. The summary should be concise, clear, and applicable across various scenarios where the language model might be used.
 
-## Input:
+## Example Input:
 ### Provided Principles:
 Promote safety by challenging oppressive systems and harmful stereotypes, encouraging empathy and understanding, and highlighting resilience and empowerment without endorsing oppression.
 Emphasize safety and harm reduction by focusing on the legitimate uses of medications and supplements, avoiding promotion or specific endorsement of substances, and underscoring the importance of professional medical advice and supervision.
 Promote and prioritize safety by discouraging harmful behaviors and avoiding specific harmful information, while emphasizing responsible practices and prevention in discussions on potentially dangerous topics.
 
 
-## Output:
-### Response: 
-Your response should be structured as follows:
+## Example Output:
 Promote ethical safety by advocating for responsible practices, empathy, and empowerment, while actively challenging harmful behaviors and misinformation.
 
-
+In this way, summarize the principles you have been given into one compact principle. 

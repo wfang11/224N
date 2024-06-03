@@ -30,12 +30,11 @@ def configure_and_query(ra, start_layer, num_layers, prompt):
 
     #can optionally add top_k parameter. need to discuss whether or not to include this
 
-    return ra.answer_question(question=prompt, start_layer=start_layer, num_layers=num_layers)
+    return ra.answer_question(question=prompt, start_layer=start_layer, num_layers=num_layers, collapse_tree=False)
 
 
 #takes in a prompt. then loops through all layers; configs an RA object for each layer. outputs the response
 
-##NOT WORKING!! All calls seem to get access to all nodes somehow. not sure why the start_layer and num_layers doesn't work
 def compare_layers(prompt):
     ra = RetrievalAugmentation(tree=SAVE_PATH, config=ra_config)
     results = {}
