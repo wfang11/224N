@@ -24,13 +24,13 @@ ra_config = RetrievalAugmentationConfig(
     )
 
 #Configure raptor for a specific start layer and query the model. if we want to test just one layer, layer_start should be that layer and num_layers should be 1
-def configure_and_query(ra, start_layer, num_layers, prompt):
+def configure_and_query(ra, start_layer, num_layers, prompt, collapse_tree):
     
     #Note: mistral is the QA model. all prompts we want to put into mistral, we pass through the QA model of the RA object corresponding to that layer
 
     #can optionally add top_k parameter. need to discuss whether or not to include this
 
-    return ra.answer_question(question=prompt, start_layer=start_layer, num_layers=num_layers, collapse_tree=False)
+    return ra.answer_question(question=prompt, start_layer=start_layer, num_layers=num_layers, collapse_tree=collapse_tree, return_layer_information=True)
 
 
 #takes in a prompt. then loops through all layers; configs an RA object for each layer. outputs the response
@@ -41,9 +41,12 @@ def compare_layers(prompt):
     results['No Principles'] = mistral.query(prompt)
     # Goes through all layers. then, 
     for i in range(4):
-        results[f'Layer {i}'] = configure_and_query(ra, i, 1, prompt)    
+        results[f'Layer {i}'] = configure_and_query(ra, i, 1, prompt, collapse_tree=False)    
     # Save or print results; we should discuss how we want to save results. 
+        
+    results['All layers'] = ra.answer_question(question=prompt, collapse_tree=True, return_layer_information=True)
     print(json.dumps(results, indent=4))
+
 
     return results
 
