@@ -5,7 +5,7 @@ from raptor.GeminiQAModel import GeminiQAModel
 from raptor.MistralQAModel import MistralQAModel
 from raptor.utils import reverse_mapping
 RAC = RetrievalAugmentationConfig(
-    summarization_model=GPTSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=GeminiQAModel(), tb_max_tokens=5)
+    summarization_model=GPTSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=MistralQAModel(), tb_max_tokens=5)
 import json
 
 
