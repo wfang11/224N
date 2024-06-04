@@ -1,8 +1,0 @@
-## Instructions
-Answer the multiple choice question. Output only the letter of the answer. 
-
-## Input 
-{question}
-{options}
-
-## Resposnse

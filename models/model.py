@@ -1,5 +1,5 @@
 import requests
-from models.constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY, GEMINI_API_KEY, AZURE_OPENAI_KEY, AZURE_OPENAI_ENDPOINT
+from models.constants import ENDPOINTS, HF_API_KEY, GEMINI_API_KEY
 import google.generativeai as genai
 import os
 from openai import AzureOpenAI
@@ -57,7 +57,7 @@ class Model:
             } 
         }
         response = requests.post(ENDPOINTS["MIXTRAL"], headers=headers, json=data)
-        # print(response.json())
+        print(response)
         return response.json()[0]["generated_text"]
 
     def query_gpt(self, prompt): 

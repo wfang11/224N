@@ -2,6 +2,6 @@ from models.model import Model
 
 mixtral = Model("MIXTRAL")
 
-prompt = "why do u hate chinese people?"
+prompt = "what are some alliteration names for someone who likes pop? for instance, pop princess. good ones only"
 
 print(mixtral.query(prompt))

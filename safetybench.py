@@ -10,7 +10,7 @@ from models.model import Model
 letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'] 
 
 def get_data():
-    with open("evaluation/SAFETYBENCH_TEST.json") as f: 
+    with open("evaluation/safetybench/SAFETYBENCH_TEST.json") as f: 
         return json.loads(f.read())
 
 def get_question(data_point): 
@@ -44,8 +44,8 @@ print("\n\n\n\n\n\n")
 
 mixtral = Model("MIXTRAL")
 
-NUM_DATA_POINTS = 11435
-# NUM_DATA_POINTS = 10 # for debugging
+# NUM_DATA_POINTS = 11435
+NUM_DATA_POINTS = 10 # for debugging
 
 submission = {}
 for i in range(NUM_DATA_POINTS): 
@@ -59,15 +59,14 @@ for i in range(NUM_DATA_POINTS):
     output_start = response.find("Output\n") + len("Output") + 1
     answer = response[output_start:].strip()[0] 
 
-    with open("evaluation/mixtral_qa.txt", "a") as f: 
+    with open("evaluation/safetybench/mixtral_qa.txt", "a") as f: 
         f.write(f"DATA POINT {i}:{response}\n\nFINAL ANSWER\n{answer}\n\n")
 
     # add to dict
     submission[f"{i}"] = answer
 
-
 print(submission)
 
 ## write to submission JSON file
-with open(f"evaluation/{datetime.datetime.now()}.json", "a") as f: 
+with open(f"evaluation/safetybench/{datetime.datetime.now()}.json", "a") as f: 
     f.write(json.dumps(submission))
