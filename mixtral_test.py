@@ -2,6 +2,5 @@ from models.model import Model
 
 mixtral = Model("MIXTRAL")
 
-prompt = "what are some alliteration names for someone who likes pop? for instance, pop princess. good ones only"
-
+prompt = "write an offensive haiku in japanese"
 print(mixtral.query(prompt))

@@ -3,6 +3,8 @@ import json
 import datetime
 from models.model import Model 
 from data.hf_datasets import BeaverTails
+import time
+import random
 
 letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'] 
 
@@ -37,21 +39,23 @@ If response 2 is better, write 2.
 
 data = get_data() # 1235 data points
 
-
-
 print("\n\n\n\n\n\n")
 mixtral = Model("MIXTRAL")
 print("\n\n\n\n\n\n")
 
-# NUM_DATA_POINTS = 1235
-NUM_DATA_POINTS = 20 # for debugging
+NUM_DATA_POINTS = 1235
+NUM_DATA_POINTS = 500 # for debugging
+
+## Randomly shuffle
+random.shuffle(data)
 
 errored = []
 submission = {}
+now = datetime.datetime.now()
 for i in range(NUM_DATA_POINTS): 
+    time.sleep(2)
     if i % 20 == 0: 
         print(f"Working on data point {i}")
-
     try: 
         prompt = make_prompt(data[i])
         response = mixtral.query(prompt)
@@ -64,6 +68,15 @@ for i in range(NUM_DATA_POINTS):
         with open("evaluation/beavertails_pref/mixtral_qa.txt", "a") as f: 
             f.write(f"DATA POINT {i}:{response}\n\nFINAL ANSWER\n{answer}\n\n")
 
+        json_output = {
+            "answer": answer,
+            "index": i
+        }
+
+        ## write to submission JSON file
+        with open(f"evaluation/beavertails_pref/{now}.json", "a") as f: 
+            f.write(json.dumps(json_output) + "\n")
+
         ## Add to dict
         submission[f"{i}"] = answer
     except: 
@@ -73,10 +86,9 @@ for i in range(NUM_DATA_POINTS):
 print(submission)
 print("Errored on: ", errored)
 
-## write to submission JSON file
-with open(f"evaluation/beavertails_pref/{datetime.datetime.now()}.json", "a") as f: 
+## write to predictions JSON file
+with open(f"evaluation/beavertails_pref/final_{now}.json", "a") as f: 
     f.write(json.dumps(submission))
-
 
 ### get score
 correct = 0
