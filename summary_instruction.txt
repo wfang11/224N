@@ -18,3 +18,10 @@ Promote and prioritize safety by discouraging harmful behaviors and avoiding spe
 Promote ethical safety by advocating for responsible practices, empathy, and empowerment, while actively challenging harmful behaviors and misinformation.
 
 In this way, summarize the principles you have been given into one compact principle. Don't copy the above example. Find the common link, and summarize. 
+
+
+##Your Input:
+### Provided Principles:
+{context}
+
+##Your Output:

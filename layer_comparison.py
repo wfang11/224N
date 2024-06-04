@@ -3,7 +3,7 @@
     # - create four RA objects (dynamically?) maybe have vars treeconfigl1, treeconfigl2,.... in t
 
 from raptor import BaseSummarizationModel, BaseQAModel, BaseEmbeddingModel, RetrievalAugmentationConfig, RetrievalAugmentation
-from raptor.GeminiSummarizationModel import GeminiSummarizationModel
+from raptor.GPTSummarizationModel import GPTSummarizationModel
 from raptor.SBertEmbeddingModel import SBertEmbeddingModel
 from raptor.GeminiQAModel import GeminiQAModel
 from raptor.MistralQAModel import MistralQAModel
@@ -20,7 +20,7 @@ SAVE_PATH = "raptor/raptor_final_tree"
 
 #ra config. initializing outside function so that i need to initialize only once
 ra_config = RetrievalAugmentationConfig(
-    summarization_model=GeminiSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=MistralQAModel()
+    summarization_model=GPTSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=MistralQAModel()
     )
 
 #Configure raptor for a specific start layer and query the model. if we want to test just one layer, layer_start should be that layer and num_layers should be 1

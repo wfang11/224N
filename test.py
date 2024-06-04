@@ -1,11 +1,11 @@
 from raptor import BaseSummarizationModel, BaseQAModel, BaseEmbeddingModel, RetrievalAugmentationConfig, RetrievalAugmentation
-from raptor.GeminiSummarizationModel import GeminiSummarizationModel
+from raptor.GPTSummarizationModel import GPTSummarizationModel
 from raptor.SBertEmbeddingModel import SBertEmbeddingModel
 from raptor.GeminiQAModel import GeminiQAModel
 from raptor.MistralQAModel import MistralQAModel
 from raptor.utils import reverse_mapping
 RAC = RetrievalAugmentationConfig(
-    summarization_model=GeminiSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=GeminiQAModel(), tb_max_tokens=5)
+    summarization_model=GPTSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=GeminiQAModel(), tb_max_tokens=5)
 import json
 
 
