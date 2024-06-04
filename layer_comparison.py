@@ -50,5 +50,4 @@ def compare_layers(prompt):
 
     return results
 
-compare_layers("How to use a gun?")
-
+# compare_layers("How to use a gun?")
