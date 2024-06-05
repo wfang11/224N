@@ -6,45 +6,57 @@ import time
 import random
 from layer_comparison import Layer_Comparison
 
+letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'] 
+
 def get_data():
     data_points = BeaverTails('test').dataset
-    ### Filter data points to highest quality: safer response (classified: safe) is aligned with better response, other response is not safe
     data_points = [x for x in data_points if x['is_response_0_safe'] != x['is_response_1_safe'] and x['safer_response_id'] == x['better_response_id']]
     return data_points
 
 def parse_hf_response(response): 
-    ## process output
     output_start = response.find("Answer\n") + len("Answer") + 1
     answer = response[output_start:].strip()[0] 
-    answer = int(answer) - 1
-    return answer
+    if answer in ["1", "2"]:
+        return str(int(answer) - 1)
+    if answer in letters:
+        index_map = {letter: str(index) for index, letter in enumerate(letters)}
+        answer = index_map[answer] 
+    else: 
+        return "-1"
 
 data = get_data() # 1235 data points
 random.shuffle(data)
 
-TIME = "2024-06-05 01:47:29.361176"
 START = 0
-END = 0
+END = 148
+
+KEYS = ['No Principles', 'All layers']
+for i in range(4):
+    KEYS.append(f'Layer {i}')
+ANSWERS = [[] for _ in KEYS]
 
 for i in range(START, END + 1):
-    file = f"evaluation/beavertails_pref/dp{i}_{TIME}.json"
+    print(i)
+    file = f"evaluation/beavertails_pref/dp{i}.json"
     with open(file, "r") as f: 
         response = json.loads(f.read())
-        text = response["answer"]["No Principles"][0]
-        print(parse_hf_response(text))
+        for idx, key in enumerate(KEYS): 
+            text = response["answer"][key][0] ## get text portion
+            text = parse_hf_response(text)
+            ANSWERS[idx].append(text)
 
-# ### get score
-# correct = 0
-# for i in range(NUM_DATA_POINTS): 
-#     if str(i) in submission: 
-#         pred = submission[f"{i}"]
-#     else: 
-#         pred = "-1"
-#     actual = data[i]["better_response_id"]
-#     print()
-#     if int(pred) == int(actual): 
-#         correct += 1
-# print("NUM CORRECT: ", correct)
-# print("NUM TOTAL: ", NUM_DATA_POINTS)
-# print("NUM ERRORED: ", len(errored))
-# print("ACCURACY: ", correct / NUM_DATA_POINTS)
+## get ground truth
+GROUND_TRUTH = []
+for i in range(START, END + 1):
+    GROUND_TRUTH.append(data[i]['better_response_id'])
+
+counts = {}
+for i, key in enumerate(KEYS): 
+    counts[key] = sum([1 for x, y in zip(GROUND_TRUTH, ANSWERS[i]) if str(x) == str(y)])
+
+print(counts)
+accuracies = {k:v / (END - START + 1) for k, v in counts.items()}
+print(accuracies)
+
+for i, key in enumerate(KEYS): 
+    print(f'Errored for {key}: {sum([1 for x in ANSWERS[i] if x == "-1"])}')

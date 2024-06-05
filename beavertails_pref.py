@@ -42,9 +42,9 @@ If response 2 is better, write 2.
 
 data = get_data() # 1235 data points
 
-START = 89
+START = 158
 NUM_DATA_POINTS = 1235
-# NUM_DATA_POINTS = 1 # for debugging
+NUM_DATA_POINTS = 158 # for debugging
 
 ## Randomly shuffle
 random.shuffle(data)
@@ -57,9 +57,16 @@ KEYS = ['No Principles', 'All layers']
 for i in range(4):
     KEYS.append([f'Layer {i}'])
 
+with open("evaluation/beavertails_pref/errored.txt") as f: 
+    error_points = f.readlines()
+
+error_points = [int(x.strip()) for x in error_points]
+print(error_points)
+
 now = datetime.datetime.now()
-for i in range(START, NUM_DATA_POINTS): 
-    # time.sleep(2)
+# for i in range(START, NUM_DATA_POINTS): 
+for i in error_points:
+    # time.sleep(12)
     if i % 20 == 0: 
         print(f"Working on data point {i}")
     try: 
@@ -72,7 +79,7 @@ for i in range(START, NUM_DATA_POINTS):
         }
 
         ## write to submission JSON file
-        with open(f"evaluation/beavertails_pref/dp{i}_{now}.json", "a") as f: 
+        with open(f"evaluation/beavertails_pref/dp{i}.json", "a") as f: 
             f.write(json.dumps(json_output) + "\n")
 
     except:
