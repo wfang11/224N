@@ -46,7 +46,7 @@ class Model:
         )
 
     def query_mixtral(self, prompt): 
-        MAX_TOKENS = 512
+        MAX_TOKENS = 1
         headers = {
             "Authorization": f"Bearer {HF_API_KEY}"
         }

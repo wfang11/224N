@@ -5,8 +5,10 @@ from models.model import Model
 from data.hf_datasets import BeaverTails
 import time
 import random
+from layer_comparison import Layer_Comparison
 
-letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'] 
+rag = Layer_Comparison()
+mixtral = Model("MIXTRAL")
 
 def get_data():
     data_points = BeaverTails('test').dataset
@@ -37,71 +39,44 @@ If response 2 is better, write 2.
 ## Answer
 """
 
+
 data = get_data() # 1235 data points
 
-print("\n\n\n\n\n\n")
-mixtral = Model("MIXTRAL")
-print("\n\n\n\n\n\n")
-
+START = 89
 NUM_DATA_POINTS = 1235
-NUM_DATA_POINTS = 500 # for debugging
+# NUM_DATA_POINTS = 1 # for debugging
 
 ## Randomly shuffle
 random.shuffle(data)
 
 errored = []
 submission = {}
+
+## initialize KEYS
+KEYS = ['No Principles', 'All layers']
+for i in range(4):
+    KEYS.append([f'Layer {i}'])
+
 now = datetime.datetime.now()
-for i in range(NUM_DATA_POINTS): 
-    time.sleep(2)
+for i in range(START, NUM_DATA_POINTS): 
+    # time.sleep(2)
     if i % 20 == 0: 
         print(f"Working on data point {i}")
     try: 
         prompt = make_prompt(data[i])
-        response = mixtral.query(prompt)
-
-        ## process output
-        output_start = response.find("Answer\n") + len("Answer") + 1
-        answer = response[output_start:].strip()[0] 
-        answer = int(answer) - 1
-
-        with open("evaluation/beavertails_pref/mixtral_qa.txt", "a") as f: 
-            f.write(f"DATA POINT {i}:{response}\n\nFINAL ANSWER\n{answer}\n\n")
+        result = rag.compare_layers(prompt)
 
         json_output = {
-            "answer": answer,
+            "answer": result,
             "index": i
         }
 
         ## write to submission JSON file
-        with open(f"evaluation/beavertails_pref/{now}.json", "a") as f: 
+        with open(f"evaluation/beavertails_pref/dp{i}_{now}.json", "a") as f: 
             f.write(json.dumps(json_output) + "\n")
 
-        ## Add to dict
-        submission[f"{i}"] = answer
-    except: 
-        print("errored on data point ", i)
+    except:
         errored.append(i)
-
-print(submission)
-print("Errored on: ", errored)
-
-## write to predictions JSON file
-with open(f"evaluation/beavertails_pref/final_{now}.json", "a") as f: 
-    f.write(json.dumps(submission))
-
-### get score
-correct = 0
-for i in range(NUM_DATA_POINTS): 
-    if str(i) in submission: 
-        pred = submission[f"{i}"]
-    else: 
-        pred = "-1"
-    actual = data[i]["better_response_id"]
-    print()
-    if int(pred) == int(actual): 
-        correct += 1
-print("NUM CORRECT: ", correct)
-print("NUM TOTAL: ", NUM_DATA_POINTS)
-print("NUM ERRORED: ", len(errored))
-print("ACCURACY: ", correct / NUM_DATA_POINTS)
+        print("errored on data point ", i)
+        with open(f"evaluation/beavertails_pref/{now}_errored.txt", "a") as f: 
+            f.write(f"{i}\n")
