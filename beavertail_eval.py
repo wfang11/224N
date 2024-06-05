@@ -14,21 +14,24 @@ def get_data():
     return data_points
 
 def parse_hf_response(response): 
-    output_start = response.find("Answer\n") + len("Answer") + 1
-    answer = response[output_start:].strip()[0] 
-    if answer in ["1", "2"]:
-        return str(int(answer) - 1)
-    if answer in letters:
-        index_map = {letter: str(index) for index, letter in enumerate(letters)}
-        answer = index_map[answer] 
-    else: 
+    try: 
+        output_start = response.find("Answer\n") + len("Answer") + 1
+        answer = response[output_start:].strip()[0] 
+        if answer in ["1", "2"]:
+            return str(int(answer) - 1)
+        if answer in letters:
+            index_map = {letter: str(index) for index, letter in enumerate(letters)}
+            answer = index_map[answer] 
+            return answer
+    except:
         return "-1"
+    return "-1"
 
 data = get_data() # 1235 data points
 random.shuffle(data)
 
 START = 0
-END = 148
+END = 1235
 
 KEYS = ['No Principles', 'All layers']
 for i in range(4):
@@ -36,13 +39,14 @@ for i in range(4):
 ANSWERS = [[] for _ in KEYS]
 
 for i in range(START, END + 1):
-    print(i)
     file = f"evaluation/beavertails_pref/dp{i}.json"
     with open(file, "r") as f: 
         response = json.loads(f.read())
         for idx, key in enumerate(KEYS): 
             text = response["answer"][key][0] ## get text portion
             text = parse_hf_response(text)
+            if text == "-1": 
+                print(f"ERRORED FOR THIS DATA POINT {i} on condition {key}")
             ANSWERS[idx].append(text)
 
 ## get ground truth

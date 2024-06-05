@@ -1,9 +1,9 @@
 from raptor import BaseQAModel
 from models.model import Model
 
-class MistralQAModel(BaseQAModel):
+class GPTQAModel(BaseQAModel):
     def __init__(self):
-        self.model = Model("MIXTRAL")
+        self.model = Model("GPT-4")
 
     def answer_question(self, context, question):
         """

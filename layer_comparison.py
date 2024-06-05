@@ -4,6 +4,7 @@
 
 from raptor import BaseSummarizationModel, BaseQAModel, BaseEmbeddingModel, RetrievalAugmentationConfig, RetrievalAugmentation
 from raptor.GPTSummarizationModel import GPTSummarizationModel
+from raptor.GPTQAModel import GPTQAModel
 from raptor.SBertEmbeddingModel import SBertEmbeddingModel
 from raptor.GeminiQAModel import GeminiQAModel
 from raptor.MistralQAModel import MistralQAModel
@@ -14,13 +15,15 @@ from raptor.tree_retriever import TreeRetriever, TreeRetrieverConfig
 from models.model import Model
 
 mistral = Model("MIXTRAL")
+gpt = Model("GPT-4")
 
 # Load the RAPTOR tree
 SAVE_PATH = "raptor/raptor_final_tree"
 
 #ra config. initializing outside function so that i need to initialize only once
 ra_config = RetrievalAugmentationConfig(
-    summarization_model=GPTSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=MistralQAModel()
+    # summarization_model=GPTSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=MistralQAModel()
+    summarization_model=GPTSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=GPTQAModel()
 )
 
 class Layer_Comparison:
@@ -36,12 +39,11 @@ class Layer_Comparison:
 
         return ra.answer_question(question=prompt, start_layer=start_layer, num_layers=num_layers, collapse_tree=collapse_tree, return_layer_information=True)
 
-
     #takes in a prompt. then loops through all layers; configs an RA object for each layer. outputs the response
 
     def compare_layers(self, prompt):
         results = {}
-        results['No Principles'] = (mistral.query(prompt), [])
+        results['No Principles'] = (gpt.query(prompt), [])
         # Goes through all layers. then, 
         for i in range(4):
             results[f'Layer {i}'] = self.configure_and_query(self.ra, i, 1, prompt, collapse_tree=False)    

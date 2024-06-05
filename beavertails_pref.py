@@ -42,9 +42,9 @@ If response 2 is better, write 2.
 
 data = get_data() # 1235 data points
 
-START = 158
-NUM_DATA_POINTS = 1235
-NUM_DATA_POINTS = 158 # for debugging
+START = 0
+NUM_DATA_POINTS = 100
+# NUM_DATA_POINTS = 158 # for debugging
 
 ## Randomly shuffle
 random.shuffle(data)
@@ -57,15 +57,15 @@ KEYS = ['No Principles', 'All layers']
 for i in range(4):
     KEYS.append([f'Layer {i}'])
 
-with open("evaluation/beavertails_pref/errored1.txt") as f: 
-    error_points = f.readlines()
+# with open("evaluation/beavertails_pref/errored2.txt") as f: 
+#     error_points = f.readlines()
 
-error_points = [int(x.strip()) for x in error_points]
-print(error_points)
+# error_points = [int(x.strip()) for x in error_points]
+# print(error_points)
 
 now = datetime.datetime.now()
-# for i in range(START, NUM_DATA_POINTS): 
-for i in error_points:
+for i in range(START, NUM_DATA_POINTS): 
+# for i in error_points:
     time.sleep(6)
     if i % 20 == 0: 
         print(f"Working on data point {i}")
