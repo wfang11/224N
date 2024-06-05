@@ -57,36 +57,35 @@ ANSWERS = [[] for _ in KEYS]
 # print(error_points)
 error_points = []
 
-### GPT may error on some responses...
-for i in range(START, END + 1):
-    if i in error_points: 
+with open("evaluation/beavertails_pref/gpt_not_errored.txt") as f:
+    data_points = f.readlines()
+data_points = [int(x.strip()) for x in data_points]
+
+for i in data_points:
+    with open(f"evaluation/beavertails_pref/mixtral/dp{i}.json", "r") as f: 
+        response = json.loads(f.read())
         for idx, key in enumerate(KEYS): 
-            ANSWERS[idx].append("-1")
-    else:
-        with open(f"evaluation/beavertails_pref/mixtral/dp{i}.json", "r") as f: 
-            response = json.loads(f.read())
-            for idx, key in enumerate(KEYS): 
-                text = response["answer"][key][0] ## get text portion
-                text = parse_hf_response(text)
-                # text = parse_gpt(text)
-                if text == "-1": 
-                    print(f"ERRORED FOR THIS DATA POINT {i} on condition {key}")
-                ANSWERS[idx].append(text)
+            text = response["answer"][key][0] ## get text portion
+            text = parse_hf_response(text)
+            # text = parse_gpt(text)
+            if text == "-1": 
+                print(f"ERRORED FOR THIS DATA POINT {i} on condition {key}")
+            ANSWERS[idx].append(text)
 
 ## get ground truth
 GROUND_TRUTH = []
-for i in range(START, END + 1):
+for i in data_points:
     GROUND_TRUTH.append(data[i]['better_response_id'])
 
 for answer in ANSWERS: 
-    assert len(answer) == END - START + 1
+    assert len(answer) == len(data_points)
 counts = {}
 for i, key in enumerate(KEYS): 
     counts[key] = sum([1 for x, y in zip(GROUND_TRUTH, ANSWERS[i]) if str(x) == str(y)])
 
 print(counts)
-accuracies = {k:v / (END - START + 1) for k, v in counts.items()}
-print(accuracies)
+# accuracies = {k:v / (END - START + 1) for k, v in counts.items()}
+# print(accuracies)
 
 for i, key in enumerate(KEYS): 
     print(f'Errored for {key}: {sum([1 for x in ANSWERS[i] if x == "-1"])}')
