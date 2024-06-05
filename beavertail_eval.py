@@ -27,27 +27,50 @@ def parse_hf_response(response):
         return "-1"
     return "-1"
 
+def parse_gpt(answer):
+    try: 
+        if answer in ["1", "2"]:
+            return str(int(answer) - 1)
+        if answer in letters:
+            index_map = {letter: str(index) for index, letter in enumerate(letters)}
+            answer = index_map[answer] 
+            return answer
+    except:
+        return "-1"
+    return "-1"
+
+
 data = get_data() # 1235 data points
 random.shuffle(data)
 
 START = 0
-END = 1235
+END = 99
 
 KEYS = ['No Principles', 'All layers']
 for i in range(4):
     KEYS.append(f'Layer {i}')
 ANSWERS = [[] for _ in KEYS]
 
+with open("evaluation/beavertails_pref/gpt_errored.txt") as f: 
+    error_points = f.readlines()
+error_points = [int(x.strip()) for x in error_points]
+print(error_points)
+
+### GPT may error on some responses...
 for i in range(START, END + 1):
-    file = f"evaluation/beavertails_pref/dp{i}.json"
-    with open(file, "r") as f: 
-        response = json.loads(f.read())
+    if i in error_points: 
         for idx, key in enumerate(KEYS): 
-            text = response["answer"][key][0] ## get text portion
-            text = parse_hf_response(text)
-            if text == "-1": 
-                print(f"ERRORED FOR THIS DATA POINT {i} on condition {key}")
-            ANSWERS[idx].append(text)
+            ANSWERS[idx].append("-1")
+    else:
+        with open(f"evaluation/beavertails_pref/dp{i}.json", "r") as f: 
+            response = json.loads(f.read())
+            for idx, key in enumerate(KEYS): 
+                text = response["answer"][key][0] ## get text portion
+                # text = parse_hf_response(text)
+                # if text == "-1": 
+                #     print(f"ERRORED FOR THIS DATA POINT {i} on condition {key}")
+                text = parse_gpt(text)
+                ANSWERS[idx].append(text)
 
 ## get ground truth
 GROUND_TRUTH = []
@@ -59,7 +82,7 @@ for i, key in enumerate(KEYS):
     counts[key] = sum([1 for x, y in zip(GROUND_TRUTH, ANSWERS[i]) if str(x) == str(y)])
 
 print(counts)
-accuracies = {k:v / (END - START + 1) for k, v in counts.items()}
+accuracies = {k:v / (END - START + 1 - len(error_points)) for k, v in counts.items()}
 print(accuracies)
 
 for i, key in enumerate(KEYS): 
