@@ -57,7 +57,7 @@ KEYS = ['No Principles', 'All layers']
 for i in range(4):
     KEYS.append([f'Layer {i}'])
 
-with open("evaluation/beavertails_pref/errored.txt") as f: 
+with open("evaluation/beavertails_pref/errored1.txt") as f: 
     error_points = f.readlines()
 
 error_points = [int(x.strip()) for x in error_points]
@@ -66,7 +66,7 @@ print(error_points)
 now = datetime.datetime.now()
 # for i in range(START, NUM_DATA_POINTS): 
 for i in error_points:
-    # time.sleep(12)
+    time.sleep(6)
     if i % 20 == 0: 
         print(f"Working on data point {i}")
     try: 
