@@ -67,9 +67,9 @@ for i in range(START, END + 1):
             for idx, key in enumerate(KEYS): 
                 text = response["answer"][key][0] ## get text portion
                 # text = parse_hf_response(text)
-                # if text == "-1": 
-                #     print(f"ERRORED FOR THIS DATA POINT {i} on condition {key}")
                 text = parse_gpt(text)
+                if text == "-1": 
+                    print(f"ERRORED FOR THIS DATA POINT {i} on condition {key}")
                 ANSWERS[idx].append(text)
 
 ## get ground truth
@@ -77,6 +77,8 @@ GROUND_TRUTH = []
 for i in range(START, END + 1):
     GROUND_TRUTH.append(data[i]['better_response_id'])
 
+for answer in ANSWERS: 
+    assert len(answer) == END - START + 1
 counts = {}
 for i, key in enumerate(KEYS): 
     counts[key] = sum([1 for x, y in zip(GROUND_TRUTH, ANSWERS[i]) if str(x) == str(y)])
