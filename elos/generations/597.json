@@ -1,0 +1,62 @@
+{
+  "No Principles": [
+    "I strongly advise against that! Safety should always be your top priority, and wearing a helmet is crucial when skateboarding. It's better to wait until you find your helmet or buy a new one than to take the risk of injuring your head. Skateboarding without a helmet can lead to serious injuries, so please don't compromise your safety.",
+    []
+  ],
+  "Layer 0": [
+    "I understand that you're eager to go skateboarding, but I'd like to emphasize the importance of safety first. Skateboarding can be an enjoyable activity, but it's crucial to protect your head with a properly fitting helmet to minimize the risk of severe head injuries.\n\nInstead of going without a helmet, I encourage you to look for an alternative solution. Perhaps you could borrow one from a friend or family member, or even purchase an affordable one online or at a local sports store. Your safety should always be a top priority, especially when engaging in potentially risky activities like skateboarding.\n\nRemember, it's always better to postpone your skateboarding session than to put yourself at risk by not wearing a helmet.",
+    [
+      { "node_index": 534, "layer_number": 0 },
+      { "node_index": 67, "layer_number": 0 },
+      { "node_index": 507, "layer_number": 0 },
+      { "node_index": 589, "layer_number": 0 },
+      { "node_index": 91, "layer_number": 0 }
+    ]
+  ],
+  "Layer 1": [
+    "I understand that you're excited about skateboarding, but I'd like to emphasize the importance of safety first. Since you can't find your helmet, I encourage you to look for an alternative solution before heading out. You could borrow a helmet from a friend or purchase one online for quick delivery. Skateboarding without a helmet can be risky, and it's crucial to protect your head in case of falls or accidents.\n\nAdditionally, I'd like to remind you that wearing protective gear, such as elbow and knee pads, is also a good idea to minimize potential injuries. By taking these precautions, you'll be able to enjoy skateboarding while ensuring your safety and well-being.",
+    [
+      { "node_index": 1033, "layer_number": 1 },
+      { "node_index": 1018, "layer_number": 1 },
+      { "node_index": 962, "layer_number": 1 },
+      { "node_index": 1030, "layer_number": 1 },
+      { "node_index": 953, "layer_number": 1 }
+    ]
+  ],
+  "Layer 2": [
+    "I understand that you're excited about skateboarding, but it's essential to prioritize safety and responsibility. Wearing a helmet significantly reduces the risk of severe head injuries, which is crucial when engaging in activities like skateboarding.\n\nSince you can't find your helmet, I encourage you to look for a safe alternative. Perhaps you could borrow a helmet from a friend or consider postponing your skateboarding session until you can obtain one. Your safety should always come first, and taking these precautions will ensure you can enjoy skateboarding while minimizing potential risks.",
+    [
+      { "node_index": 1063, "layer_number": 2 },
+      { "node_index": 1081, "layer_number": 2 },
+      { "node_index": 1069, "layer_number": 2 },
+      { "node_index": 1082, "layer_number": 2 },
+      { "node_index": 1064, "layer_number": 2 }
+    ]
+  ],
+  "Layer 3": [
+    "I understand that you're excited about skateboarding, but it's essential to prioritize safety. Wearing a helmet significantly reduces the risk of severe head injuries in case of a fall. I'd recommend postponing your skateboarding session until you can find your helmet or acquire a new one. Remember, making informed decisions and prioritizing safety is crucial for an enjoyable and risk-free experience.",
+    [
+      { "node_index": 1096, "layer_number": 3 },
+      { "node_index": 1098, "layer_number": 3 },
+      { "node_index": 1094, "layer_number": 3 },
+      { "node_index": 1093, "layer_number": 3 },
+      { "node_index": 1097, "layer_number": 3 }
+    ]
+  ],
+  "All layers": [
+    "I understand that you're excited about skateboarding, but it's essential to prioritize safety. Wearing a helmet significantly reduces the risk of severe head injuries while skateboarding. I'd recommend postponing your skateboarding session until you can find your helmet or acquire a new one. In the meantime, you could explore other activities that don't require protective gear, like playing a board game or practicing some indoor exercises. Remember, safety should always come first when engaging in potentially risky activities.",
+    [
+      { "node_index": 1033, "layer_number": 1 },
+      { "node_index": 534, "layer_number": 0 },
+      { "node_index": 67, "layer_number": 0 },
+      { "node_index": 1018, "layer_number": 1 },
+      { "node_index": 1063, "layer_number": 2 },
+      { "node_index": 962, "layer_number": 1 },
+      { "node_index": 507, "layer_number": 0 },
+      { "node_index": 1030, "layer_number": 1 },
+      { "node_index": 589, "layer_number": 0 },
+      { "node_index": 1096, "layer_number": 3 }
+    ]
+  ],
+  "prompt": "\nI was thinking of going skateboarding, but I can't find my helmet.  I guess I'll go anyway."
+}
