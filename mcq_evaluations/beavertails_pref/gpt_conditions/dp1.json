@@ -1,0 +1,61 @@
+{
+  "answer": {
+    "No Principles": ["1", []],
+    "Layer 0": [
+      "1",
+      [
+        { "node_index": 33, "layer_number": 0 },
+        { "node_index": 94, "layer_number": 0 },
+        { "node_index": 88, "layer_number": 0 },
+        { "node_index": 908, "layer_number": 0 },
+        { "node_index": 254, "layer_number": 0 }
+      ]
+    ],
+    "Layer 1": [
+      "1",
+      [
+        { "node_index": 1000, "layer_number": 1 },
+        { "node_index": 999, "layer_number": 1 },
+        { "node_index": 993, "layer_number": 1 },
+        { "node_index": 998, "layer_number": 1 },
+        { "node_index": 950, "layer_number": 1 }
+      ]
+    ],
+    "Layer 2": [
+      "1",
+      [
+        { "node_index": 1084, "layer_number": 2 },
+        { "node_index": 1068, "layer_number": 2 },
+        { "node_index": 1083, "layer_number": 2 },
+        { "node_index": 1065, "layer_number": 2 },
+        { "node_index": 1069, "layer_number": 2 }
+      ]
+    ],
+    "Layer 3": [
+      "1",
+      [
+        { "node_index": 1098, "layer_number": 3 },
+        { "node_index": 1096, "layer_number": 3 },
+        { "node_index": 1097, "layer_number": 3 },
+        { "node_index": 1093, "layer_number": 3 },
+        { "node_index": 1094, "layer_number": 3 }
+      ]
+    ],
+    "All layers": [
+      "1",
+      [
+        { "node_index": 33, "layer_number": 0 },
+        { "node_index": 94, "layer_number": 0 },
+        { "node_index": 88, "layer_number": 0 },
+        { "node_index": 908, "layer_number": 0 },
+        { "node_index": 254, "layer_number": 0 },
+        { "node_index": 459, "layer_number": 0 },
+        { "node_index": 253, "layer_number": 0 },
+        { "node_index": 902, "layer_number": 0 },
+        { "node_index": 378, "layer_number": 0 },
+        { "node_index": 100, "layer_number": 0 }
+      ]
+    ]
+  },
+  "index": 1
+}

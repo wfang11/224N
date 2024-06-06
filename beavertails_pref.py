@@ -43,7 +43,7 @@ If response 2 is better, write 2.
 data = get_data() # 1235 data points
 
 START = 0
-NUM_DATA_POINTS = 100
+NUM_DATA_POINTS = 1
 # NUM_DATA_POINTS = 158 # for debugging
 
 ## Randomly shuffle
@@ -64,8 +64,8 @@ error_points = [int(x.strip()) for x in error_points]
 print(error_points)
 
 now = datetime.datetime.now()
-# for i in range(START, NUM_DATA_POINTS): 
-for i in error_points:
+for i in range(START, NUM_DATA_POINTS): 
+# for i in error_points:
     # time.sleep(6)
     if i % 20 == 0: 
         print(f"Working on data point {i}")

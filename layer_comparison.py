@@ -23,7 +23,7 @@ SAVE_PATH = "raptor/raptor_final_tree"
 #ra config. initializing outside function so that i need to initialize only once
 ra_config = RetrievalAugmentationConfig(
     # summarization_model=GPTSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=MistralQAModel()
-    summarization_model=GPTSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=GPTQAModel()
+    summarization_model=GPTSummarizationModel(), embedding_model=SBertEmbeddingModel(), qa_model=MistralQAModel()
 )
 
 class Layer_Comparison:
