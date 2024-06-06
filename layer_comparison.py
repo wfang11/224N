@@ -43,8 +43,10 @@ class Layer_Comparison:
 
     def compare_layers(self, prompt):
         results = {}
-        results['No Principles'] = (mixtral.query(prompt), [])
-        # Goes through all layers. then, 
+        results['No Principles'] = (mixtral.query("[INST]" + prompt + "[/INST]"), [])
+        # Goes through all layers.
+        prompt = "Do not explicitly mention 'principles', but rather use the principles to guide your response." + prompt
+        prompt = "[INST]" + prompt + "[/INST]"
         for i in range(4):
             results[f'Layer {i}'] = self.configure_and_query(self.ra, i, 1, prompt, collapse_tree=False)    
         # Save or print results; we should discuss how we want to save results. 
