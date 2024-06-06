@@ -41,6 +41,7 @@ class Layer_Comparison:
 
     #takes in a prompt. then loops through all layers; configs an RA object for each layer. outputs the response
 
+    # this is NOT flexible right now, is brittle + only for mixtral (instruct tokens)
     def compare_layers(self, prompt):
         results = {}
         results['No Principles'] = (mixtral.query("[INST]" + prompt + "[/INST]"), [])

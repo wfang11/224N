@@ -1,16 +1,25 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from multielo import MultiElo
-recipes = ['Model 1', 'Model 2', 'Model 3']
+import random
+KEYS = ['No Principles', 'All layers']
+for i in range(4):
+    KEYS.append([f'Layer {i}'])
+print(KEYS)
 elo_ratings = np.array([1500, 1500, 1500, 1500, 1500, 1500])
 elo_history = [np.array([1500]), np.array([1500]), np.array([1500]), np.array([1500]), np.array([1500]), np.array([1500])]
 
 elo = MultiElo()
 
-### TODO! Read in ranks from a file
-rankings = [[]]
-for ranks in rankings:
+########### TODO: Replace with file ###############
+rankings = []
+for i in range(10):
+    ranks = [x for x in range(1, 7)]
+    random.shuffle(ranks)
+    rankings.append(ranks)
+###################################################
 
+for ranks in rankings:
     # Update ratings based on user input
     new_ratings = elo.get_new_ratings(elo_ratings, ranks)
     
@@ -22,7 +31,7 @@ for ranks in rankings:
     print("Current Elo Ratings:", elo_ratings)
 
     
-for idx, recipe in enumerate(recipes):
+for idx, recipe in enumerate(KEYS):
     plt.plot(elo_history[idx], label=recipe)
 
 plt.xlabel("Number of Iterations")
