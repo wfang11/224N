@@ -14,7 +14,7 @@ from raptor import RetrievalAugmentation, RetrievalAugmentationConfig
 from raptor.tree_retriever import TreeRetriever, TreeRetrieverConfig
 from models.model import Model
 
-mistral = Model("MIXTRAL")
+mixtral = Model("MIXTRAL")
 gpt = Model("GPT-4")
 
 # Load the RAPTOR tree
@@ -43,7 +43,7 @@ class Layer_Comparison:
 
     def compare_layers(self, prompt):
         results = {}
-        results['No Principles'] = (gpt.query(prompt), [])
+        results['No Principles'] = (mixtral.query(prompt), [])
         # Goes through all layers. then, 
         for i in range(4):
             results[f'Layer {i}'] = self.configure_and_query(self.ra, i, 1, prompt, collapse_tree=False)    

@@ -6,6 +6,7 @@ from data.hf_datasets import BeaverTails
 from models.model import Model
 import random
 from layer_comparison import Layer_Comparison
+import json
 
 ## initialize models and data
 beavertails = BeaverTails()
@@ -19,15 +20,32 @@ for i in range(4):
 random.seed(42)
 random.shuffle(data)
 
-## TODO: 
-prompt = f"Generate a response to the following: \n{data[4]['prompt']}"
-print(prompt)
-results = layer_comparison.compare_layers(prompt)
-## write this to a file
-text_responses = {k:v[0] for k,v in results.items()}
-print(mixtral.query(text_responses))
+## get only the response, not the prompt
+def parse_response(response, prompt): 
+    start_index = response.find(prompt) + len(prompt)
+    return response[start_index:].strip()
 
-# take in a beavertails prompt
-# get mixtral to generate 6 different conditions
-# feed it to mixtral
-# get GPT to rank it
+errored = []
+START = 0
+END = 10
+for i in range(START, END):
+    try: 
+        # obtain generations
+        prompt = f"\nGenerate a response to the following: \n{data[i]['prompt']}"
+        print(prompt)
+        response = layer_comparison.compare_layers(prompt)
+        results = {k:list(v) for k, v in response.items()}
+
+        # get only response
+        for k, v in results.items():
+            results[k][0] = parse_response(results[k][0], prompt)
+
+        # add prompt
+        results["prompt"] = prompt
+
+        with open(f"elos/generations/{i}.json", "a") as f: 
+            f.write(json.dumps(results))
+    except:
+        print("ERRORED on data point ", i)
+        with open(f"elos/generations/errored.txt", "a") as f: 
+            f.write(f"{i}\n")

@@ -57,7 +57,7 @@ class Model:
             } 
         }
         response = requests.post(ENDPOINTS["MIXTRAL"], headers=headers, json=data)
-        print(response)
+        # print(response.json())
         return response.json()[0]["generated_text"]
 
     def query_gpt(self, prompt): 
