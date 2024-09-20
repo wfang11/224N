@@ -9,6 +9,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 class Model: 
     def __init__(self, model): 
         self.MODEL = model
+        self.MOCK = True
         
         genai.configure(api_key=GEMINI_API_KEY)
         generation_config = {
@@ -106,6 +107,8 @@ class Model:
         return response.text
     
     def query(self, prompt):
+        if self.MOCK:
+            return "MOCKED RESPONSE FROM " + self.MODEL + " !"
         response = None
         if self.MODEL == "LLAMA": 
             response = self.query_llama(prompt)
