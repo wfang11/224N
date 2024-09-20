@@ -9,6 +9,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 class Model: 
     def __init__(self, model): 
         self.MODEL = model
+        self.MOCK = True
         
         genai.configure(api_key=GEMINI_API_KEY)
         generation_config = {
@@ -45,7 +46,7 @@ class Model:
             azure_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
         )
 
-    def query_mixtral(self, prompt): 
+    def _query_mixtral(self, prompt): 
         MAX_TOKENS = 256
         headers = {
             "Authorization": f"Bearer {HF_API_KEY}"
@@ -60,7 +61,7 @@ class Model:
         # print(response.json())
         return response.json()[0]["generated_text"]
 
-    def query_gpt(self, prompt): 
+    def _query_gpt(self, prompt): 
         deployment_name="gpt-4-turbo"
             
         response = self.OPENAI_CLIENT.chat.completions.create(
@@ -87,7 +88,7 @@ class Model:
         # response = requests.post(ENDPOINTS["GPT-4"], headers=headers, json=data)
         # return response.json()['choices'][0]['message']['content']
 
-    def query_llama(self, prompt): 
+    def _query_llama(self, prompt): 
         headers = {
             "Authorization": f"Bearer {HF_API_KEY}"
         }
@@ -97,7 +98,7 @@ class Model:
         response = requests.post(ENDPOINTS["LLAMA"], headers=headers, json=data)
         return response.json()[0]["generated_text"]
 
-    def query_gemini(self, prompt=""):
+    def _query_gemini(self, prompt=""):
         try: 
             response = self.gemini.generate_content(prompt)
         except Exception as e:
@@ -106,14 +107,15 @@ class Model:
         return response.text
     
     def query(self, prompt):
+        if self.MOCK:
+            return "MOCKED RESPONSE FROM " + self.MODEL + " !"
         response = None
         if self.MODEL == "LLAMA": 
-            response = self.query_llama(prompt)
+            response = self._query_llama(prompt)
         if self.MODEL == "GPT-4": 
-            response = self.query_gpt(prompt)
+            response = self._query_gpt(prompt)
         if self.MODEL == "GEMINI": 
-            response = self.query_gemini(prompt)
+            response = self._query_gemini(prompt)
         if self.MODEL == "MIXTRAL":
-            response = self.query_mixtral(prompt)
+            response = self._query_mixtral(prompt)
         return response
-    
