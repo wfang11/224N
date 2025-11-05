@@ -3,10 +3,6 @@ from models.constants import ENDPOINTS, OPENAI_API_KEY, HF_API_KEY
 
 PLACEHOLDER_PROPMT = "Hi! How's it going?"
 
-### TODOs (May 19 Sprint): 
-    # add system and user prompts in functions/files
-    # add claude, llama-3-70B (?)
-
 class Model: 
     def __init__(self, model): 
         self.MODEL = model

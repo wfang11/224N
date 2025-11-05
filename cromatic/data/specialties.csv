@@ -1,0 +1,985 @@
+name,definition,clinical_stage
+In Vitro Neurodegenerative Disease Models,"For studying diseases like Alzheimer's, Parkinson's, Huntington's, and ALS",PRECLINICAL
+Integration Site Analysis,,BOTH
+Immunoperoxidase Studies,,BOTH
+Failure Analysis,,BOTH
+Building Blocks Synthesis,,PRECLINICAL
+Steroids Manufacturing,,BOTH
+Cell and Gene Therapy Manufacturing,,BOTH
+Histone Modification Analysis,"Studying the chemical modifications of histone proteins, which affect chromatin structure and gene expression.",PRECLINICAL
+Food Supplement Manufacturing,,BOTH
+Protein Mass Spectrometry,Quantitative and qualitative analysis of proteins using LC-MS/MS; tandem mass spectrometry for protein identification and post-translational modification (PTM) analysis; Selected Reaction Monitoring (SRM) for quantifying specific proteins,PRECLINICAL
+ELISA Kit Development,,BOTH
+Food Manufacturing,,BOTH
+Exosome Research Services,"Exosome Isolation and Purification, Exosome Identification, Exosome Quantification, Exosome Analysis, Exosome Applications",PRECLINICAL
+Virucidal Efficacy,,PRECLINICAL
+PCR Reagents and Raw Materials Manufacturing,,BOTH
+RNA Design,Custom design and synthesis of novel RNA with specific functions,PRECLINICAL
+In Vitro Toxicology,Use of cell cultures and organotypic models to evaluate toxicity,PRECLINICAL
+Microscale Thermophoresis (MST),Quantification of biomolecular interactions in solution based on thermophoresis,PRECLINICAL
+Microgravity Experiments,,PRECLINICAL
+Antiviral Development,,PRECLINICAL
+RNA Sequencing (RNA-Seq),"Quantifying, profiling, and identifying novel RNA transcripts; analysis of gene expression, alternative splicing, and post-transcriptional modifications",BOTH
+Biologics Scale-Up Development,Translating small-scale culture processes to larger bioreactors while maintaining cell viability and product consistency,BOTH
+Computational Biology,Using structural modelling and virtual screening to identify druggable pockets on proteins and predict promising lead compounds,BOTH
+Tissue Biobanking,"The collection, preservation, and storage of tissue samples for research and clinical use, enabling the study of tissue-specific diseases, biomarker identification, and therapeutic development.",BOTH
+Metabolite Profiling Data by NMR,Analyzing the metabolic profile of a biological sample using Nuclear Magnetic Resonance spectroscopy to identify and quantify metabolites.,PRECLINICAL
+Wound Healing,,PRECLINICAL
+Phytotoxicity Efficacy Testing,,PRECLINICAL
+Clinical Trial Manufacturing,,CLINICAL
+Botanical Identity Testing,,BOTH
+Peptide Biomarker Discovery,,BOTH
+Women's Health Pathology,,CLINICAL
+Tissue Microarrays (TMA),,BOTH
+Peripheral Vascular Models,,PRECLINICAL
+Liquid Dosage Forms,"The formulation of liquid drug products, including solutions and suspensions, designed for oral, topical, or injectable administration, focusing on stability, efficacy, and ease of use.",BOTH
+Karl Fischer Titration (KF),,BOTH
+Microscopy Testing,,BOTH
+Fatty Acid Analysis,,BOTH
+Protein Function Assays,Functional assays to study the biological activity of proteins,PRECLINICAL
+Peptidomics,,PRECLINICAL
+Network Biology and Pathway Analysis,Network biology and pathway analysis for understanding complex biological systems,PRECLINICAL
+Biomarker Identification,The process of detecting and validating specific biological markers indicative of particular health conditions or diseases.,BOTH
+Fluorine Chemistry,,PRECLINICAL
+Chromatography,"Headspace GC-MS (HS-GC-MS), Purge & Trap GC-MS (PT-GC-MS), Pyrolysis GC-MS (Pyr–GC-MS), Gel Permeation Chromatography (GPC, SEC), Ion Chromatography (IC)",PRECLINICAL
+Sequence Optimization,,PRECLINICAL
+B-Cell Receptor Repertoire Sequencing,,PRECLINICAL
+Antibody Humanization Service,,PRECLINICAL
+Product Prototyping,,BOTH
+Medical Device Manufacturing,,CLINICAL
+Plastic and Polymer Analysis,,BOTH
+Ophthalmology,,CLINICAL
+Preventive Health and Wellness,,CLINICAL
+Manufacturing of Cosmetics,,BOTH
+"Fertilizers, Biocides, and Pesticides Manufacturing",,BOTH
+Buffer Formulation and Manufacturing,,BOTH
+Animal Pest Testing,,BOTH
+Renal Urinary System,,PRECLINICAL
+Osmotic Drug Delivery,,CLINICAL
+Micronization and Nanoization,,BOTH
+Amorphous Dispersions,,BOTH
+Drug-Polymer Extrudation,,BOTH
+Microspheres,,BOTH
+Liposomes,,BOTH
+Polymer Screenings,,BOTH
+In-Silico Development,,BOTH
+Respiratory,,CLINICAL
+Vaccines,,CLINICAL
+Solid-Form Screening,,BOTH
+Salt Form Selection and Characterization,,BOTH
+pKa and Partition Coefficient Determination,,BOTH
+Particle Size and Morphology Assessment,,BOTH
+Powder Flow Characterization,,BOTH
+Surface Area Analysis,,BOTH
+Electrical Conductivity,,BOTH
+Cardiology,,BOTH
+Organic and Polymer Testing,,BOTH
+Immediate Release Oral Formulations,,CLINICAL
+"Coal, Coke & Charcoal Analysis",,BOTH
+Vitamin Testing,,CLINICAL
+Gas Analysis,,BOTH
+Hematologic Malignancy Clinical Testing,,CLINICAL
+Regulatory Affairs and Compliance,"Ensuring that all testing and documentation comply with regulatory standards (e.g., FDA, EMA) and assisting in regulatory submissions.",CLINICAL
+Antibody Conjugation and Labeling,"Conjugation of antibodies with fluorescent dyes, enzymes, or other molecules for various applications",PRECLINICAL
+Electron Paramagnetic Resonance (EPR)/Electron Spin Resonance (ESR),,PRECLINICAL
+Atomic Force Microscopy (AFM),"A high-resolution imaging technique that uses a mechanical probe to scan the surface of a sample at the nanoscale, providing detailed topographical maps and information about the physical properties of materials.",PRECLINICAL
+Target Identification High-Throughput Screening (HTS),Screening large libraries of compounds or genetic elements to identify potential modulators of a biological target,PRECLINICAL
+Antibody Affinity Maturation,,PRECLINICAL
+Pesticide Residue Testing,"The analysis of food items for the presence of pesticide residues, ensuring that they are within permissible levels and compliant with safety regulations.",BOTH
+Copy Number Analysis,"Measuring copies of specific DNA segments in a sample, revealing gains, losses, or normal levels compared to a reference",BOTH
+Protein Biomarker Discovery,"Biomarker discovery for disease diagnosis, prognosis, and therapeutic response monitoring",BOTH
+Endotoxin Removal Service,,BOTH
+Waste Oil Analysis,,BOTH
+Host Cell Protein (HCP) Analysis,,BOTH
+Sperm Cryopreservation,"The process of freezing and storing sperm samples for future use, important for reproductive research, fertility treatments, and genetic studies.",BOTH
+"Biospecimen (blood, stool, etc) Banking","The collection and storage of biological samples such as blood, stool, and other bodily fluids",BOTH
+Vector Copy Number Determination,"Techniques used to quantify the number of viral vectors integrated into host cells, providing essential information on gene delivery efficiency and stability for gene therapy applications.",BOTH
+Identity and Purity Assays for Vectors and Cells,"Tests to confirm the identity and ensure the purity of viral vectors and cell lines, verifying that they meet specifications and are free from contaminants.",BOTH
+Transmission Electron Microscopy (TEM),Ultrastructural imaging of tissues at high magnification for detailed analysis of cellular and subcellular structures,PRECLINICAL
+Guinea Pig Models,Used for specific types of research where rodents are not suitable.,PRECLINICAL
+Orthopedic Disease Models,,PRECLINICAL
+Plasmid Production,"Subcloning, plasmid construction, and vector design.",BOTH
+Immune Cell Assays,"Immune cell assays are tests used to evaluate the function, response, or characteristics of different types of immune cells.",BOTH
+"Multiplexed Isobaric Tagging (e.g., TMT, iTRAQ)",Simultaneous quantification of proteins from different samples,PRECLINICAL
+mRNA and LNP Services,,BOTH
+Extracellular Vesicles (EVs) Functionalization,,BOTH
+Gene Therapy Bioanalytical Assays,"Development and validation of assays to measure gene expression, protein levels, and other critical parameters",BOTH
+SNP Genotyping,"Analyzing DNA by sequencing, PCR, microarrays, and other methods to detect single-nucleotide polymorphisms",BOTH
+Clinical Toxicology,"Assessment of adverse effects in humans, including overdose and exposure to toxins",CLINICAL
+Respiratory Disease Models,"Research on pharmacological treatments and mechanisms for diseases of the respiratory system, such as asthma, COPD, and pneumonia.",PRECLINICAL
+Protein Microarray,,PRECLINICAL
+Toxicology and Safety Pharmacology,Early safety assessments including in vitro genotoxicity and cardiotoxicity screens,PRECLINICAL
+In Silico ADME Prediction,Utilizing computational tools and databases to predict ADME properties based on molecular structure,PRECLINICAL
+Bispecific and Multispecific Antibody Development,Creating antibodies targeting multiple antigens or with additional functionalities,PRECLINICAL
+Small Molecule Chemical Synthesis,"The process of designing and producing small molecule compounds through chemical reactions, aiming to create APIs with desired properties for pharmaceutical applications.",BOTH
+Environmental Impact Mitigation,Developing mitigation strategies to reduce negative impacts of projects,BOTH
+VLP Vector Production and Packaging,Development and purification of VLP (virus-like particles) vectors and packaging of cargo into VLPs,BOTH
+CAR-T cell therapy development,"Development services encompassing vector design, T cell modification, expansion, and quality control, to create effective and safe personalized treatments for cancer and other diseases.",BOTH
+Metabolic Flux Analysis,Study of the rates of metabolic reactions within a cell.,PRECLINICAL
+Interface Product Design,,BOTH
+In Vitro Diagnostic (IVD) Kits and Device Manufacturing,,CLINICAL
+Protein Extraction,"Isolating proteins from cells or tissues, enabling their study and analysis for various applications including structural biology, functional assays, and proteomics.",BOTH
+mRNA Synthesis by in vitro transcription (IVT),A cell-free process to produce RNA by enzymatic reactions,BOTH
+"Plate Treatments, Coatings and Applications",,BOTH
+Exome Sequencing,"Targeted sequencing of the exome, ",BOTH
+Particle Engineering,"Spray Drying, Crystallization, Micronization, Jet Milling",BOTH
+Cytology,Examination of cells from bodily fluids or fine needle aspirates,BOTH
+Animal Origin Product Manufacturing,,BOTH
+Metagenomics Sequencing Analysis,,PRECLINICAL
+Modeling of Biological Processes,This involves using mathematical and computational techniques to simulate and understand complex biological systems and their interactions.,PRECLINICAL
+Biomarker Discovery,Identifying biological molecules that serve as indicators of a particular disease state or physiological condition.,BOTH
+Target Knockdown/Knockout Studies,"Application of CRISPR-Cas9, RNAi, and other gene editing technologies to validate target genes",PRECLINICAL
+Imaging Biomarkers,"Development of biomarkers based on imaging techniques such as MRI, PET, and CT scans",CLINICAL
+Antibody Chimerization,,PRECLINICAL
+Antigen Conjugation,,PRECLINICAL
+Microarray Products Manufacturing,,BOTH
+Wax Product Manufacturing,,BOTH
+"Proteolysis Targeting Chimeras (PROTAC) Service, Synthesis and Screening",,PRECLINICAL
+Custom Software Development,,BOTH
+Cell-Based Advanced Therapy Medicinal Products Manufacturing,,BOTH
+"Glass, Ceramics and Concrete Manufacturing",,BOTH
+Nutraceutical Bioavailability Studies,"Studies on how formulation, dosage form, and other factors affect absorption of ingredients",BOTH
+T Cell Activation & Proliferation Assay,,BOTH
+Nitrosamines Testing,,CLINICAL
+"Chemistry, Manufacturing and Controls (CMC) Service",,BOTH
+Powder Products,,BOTH
+Trace Metals Analysis,,BOTH
+Carbohydrate Chemistry,,PRECLINICAL
+Oral Thin Films Products,,BOTH
+Acetylation,,PRECLINICAL
+Medical Devices,,BOTH
+Solution-Phase Peptide Synthesis,"A traditional method where peptides are synthesized in a solution, requiring complex purification processes.",PRECLINICAL
+Iodonation,,PRECLINICAL
+Hybrid Capture Sequencing,A targeted sequencing technique that uses hybridization probes to capture specific DNA or RNA sequences from a sample,BOTH
+Biospecimen Sourcing,"The process of obtaining biological samples from various sources, including donors and clinical settings, to support research and development activities.",BOTH
+Antibody-Drug Conjugate (ADC) Technology,,BOTH
+SAR (Structure-Activity Relationship),For optimizing biological activity and pharmacokinetic properties,PRECLINICAL
+Electronic Chemicals Synthesis,,BOTH
+Antibody Licensing,,PRECLINICAL
+Bacterial Identification,"Identification and characterization of bacteria using traditional culture techniques and modern molecular methods, including 16S rRNA sequencing",PRECLINICAL
+Antibody Development,"Design and engineering monoclonal, polyclonal, and multispecific antibodies with desired antigen specificity and functional properties; establishing stable and high-yielding cell lines for efficient Ab production, and designing purification processes",BOTH
+Custom Adsorbents Manufacturing,,BOTH
+Excipient Screening,"The evaluation of excipients, which are inactive ingredients in pharmaceuticals and other products, to ensure they are suitable for formulation purposes, focusing on their compatibility, stability, and impact on the efficacy of the final product.",BOTH
+Immunoassay Development and Manufacturing,,BOTH
+Animal Culture Media and Reagents,,BOTH
+Chromosome Immunoprecipitation Sequencing (ChIP-Seq),A method that combines chromatin immunoprecipitation with DNA sequencing to identify the binding sites of DNA-associated proteins,PRECLINICAL
+Post-Translational Modification Analysis,"Identification and quantification of PTMs like phosphorylation, glycosylation, and ubiquitination; studies on how PTMs affect protein function and interactions",PRECLINICAL
+Neurovascular Research,Studies on blood-brain barrier integrity and neurovascular interactions,PRECLINICAL
+Cardiotoxicity,,PRECLINICAL
+Protein Purification,"Chromatographic techniques (affinity, ion exchange, size exclusion) for protein purification; tag removal and protein refolding services",BOTH
+Neutralizing Antibody Testing,"Assays to measure the presence and concentration of antibodies that can neutralize pathogens, used to assess immune response following vaccination or infection.",BOTH
+Withdrawal Symptom Models,Inducing withdrawal in animals to study symptoms and potential treatments.,PRECLINICAL
+Circular Dichroism (CD) Spectroscopy,Analysis of secondary and tertiary protein structures,PRECLINICAL
+Antibiotic Discovery,Screening for novel antibiotics,PRECLINICAL
+Protein Design,Custom design and synthesis of novel proteins with specific functions,PRECLINICAL
+Antigen Design and Selection,Identifying and characterizing target antigens for antibody development,PRECLINICAL
+Mammalian and Microbial Cell Manufacturing,,BOTH
+Purity and Impurity Profiling,Identifying and quantifying potential impurities in drug substances and products to meet regulatory requirements,BOTH
+Metabolomic Biomarker Discovery,Identification of small molecule metabolite profiles that change in response to disease or treatment,BOTH
+Quantitative Real-Time PCR (qRT-PCR),Targeted quantification of specific RNA molecules to validate RNA-Seq results; absolute and relative quantification of gene expression,BOTH
+Fermentation Technology,"For microbial systems, optimizing fermentation conditions to maximize product yield.",BOTH
+In Vivo Efficacy and Pharmacokinetic/Pharmacodynamic (PK/PD) Studies,Animal studies to evaluate the in vivo efficacy and pharmacokinetics/pharmacodynamics (PK/PD) relationships of lead therapeutics,PRECLINICAL
+Blending,,CLINICAL
+Coating,,CLINICAL
+Drug Product Contract Manufacturing,"Commercial-volume manufacturing of final drug product, packaging and labeling",BOTH
+Formulation Development,"Investigating different formulations of the drug formulation - solids, semi-solids, liquids, transdermal",PRECLINICAL
+Transcriptome Sequencing,"Identification, profiling, and quantification of mRNA transcripts",BOTH
+Biologics Cell Line Development,Developing and optimizing cell lines for biologic production.,PRECLINICAL
+Nuclear Magnetic Resonance (NMR) Spectroscopy,Structure determination of small to medium-sized proteins and nucleic acids,PRECLINICAL
+Screening for Immune Modulators,High-throughput screening for discovering new immune modulators,PRECLINICAL
+Mass Spectrometry,"Analysis of molecular masses and characterization of complex mixtures for protein identification, post-translational modification analysis, and interaction studies",PRECLINICAL
+Atomic Absorption Spectrophotometry (AAS),"An analytical technique used to measure the concentration of specific metal ions in a sample by detecting the amount of light absorbed by the atoms in their ground state, providing precise and accurate quantification of trace elements.",PRECLINICAL
+Formulation Characterization,"The analysis of drug formulations to determine their composition, stability, and performance, ensuring that the product maintains its intended efficacy and safety throughout its shelf life.",BOTH
+Stem Cell Quality Control,"Including Morphological Analysis, Pluripotency Marker Analysis, Differentiation Potential Evaluation, Genomic stability, Gene Expression Profiling, Mycoplasma Testing",BOTH
+Isothermal Chemical Denaturation (ICD),,PRECLINICAL
+Proteomics Data Analysis,Mass spectrometry data processing and protein identification,PRECLINICAL
+Differential Scanning Fluorimetry (DSF),,PRECLINICAL
+Clinical Pathology,Analyses of blood and other bodily fluids for biomarker identification and validation,CLINICAL
+Lyophilization,"The process of freeze-drying drug products to remove moisture, thereby stabilizing them for long-term storage and ensuring their efficacy and shelf life.",BOTH
+Dried and Frozen Food Manufacturing,,BOTH
+Responsive T Cell Trafficking Assay,,BOTH
+Arthritis Models,,PRECLINICAL
+Vaccine Development,"Research, formulation, testing, and regulatory approval processes to create safe and effective vaccines for preventing infectious diseases, ensuring comprehensive immunological protection.",BOTH
+Cryo-Electron Microscopy (Cryo-EM),For high-resolution structural insights into proteins and complexes,PRECLINICAL
+Hamster Models,,PRECLINICAL
+Personal Care Products Manufacturing,,BOTH
+Protein NMR Spectroscopy,Determining 3D structures of proteins,PRECLINICAL
+Microbial Strain Development,,PRECLINICAL
+3D Bioprinted Tissues,Creating three-dimensional cell-laden structures that mimic real tissues.,PRECLINICAL
+Preformulation Studies,"Solutiion stability, excipient-drug compatibility, solubility curve (pKa) studies",PRECLINICAL
+Bioconjugation,"Linking biologically active molecules to other compounds, often for drug delivery or diagnostics.",PRECLINICAL
+Neuroimaging,"Imaging studies using MRI, PET, and other modalities for brain structure and function analysis",PRECLINICAL
+Sterile Fill-Finish,The process of filling sterile drug products into containers (such as vials or syringes) and sealing them under sterile conditions to ensure the product remains uncontaminated.,CLINICAL
+Aerospace and Defence Components Manufacturing,,BOTH
+Immune Profiling of Multiplex Cytokines,Measurement and analysis of multiple cytokines in a single sample,BOTH
+Toll-Like Receptor Analysis,This involves studying specific proteins (TLRs) that play a key role in the immune system by recognizing pathogens and activating immune responses.,BOTH
+Karyotyping,,BOTH
+Adeno-Associated Virus (AAV) Vector Production and Packaging,Development and purification of AAV vectors and packaging of cargo into AAV,BOTH
+Organoid Culture,"Cultivation of miniaturized and simplified versions of organs in vitro from stem cells, providing a powerful tool for studying organ development, disease modeling, and drug testing in a controlled environment.",PRECLINICAL
+Ocular Toxicity,For detecting adverse reactions od drugs to the eye,BOTH
+Histology,"The study of the microscopic structure of normal tissues, involving the preparation, staining, and examination of tissue sections to understand tissue architecture, identify pathological changes, and support research and diagnostic processes.",BOTH
+Environmental Regulatory Compliance,Providing guidance and support for compliance with environmental regulations,BOTH
+Rare Disease Models,,PRECLINICAL
+Material Durability and Lifetime Analysis,"Evaluation of material degradation, corrosion, and aging; assessment of material lifespan under various environmental conditions",PRECLINICAL
+Stability Testing of Nutraceuticals,"Testing to determine the shelf-life and stability of nutraceutical products under various storage conditions, such as light, temperature and humidity",CLINICAL
+Quality Control Testing for Regulatory Submissions,"Comprehensive testing performed to verify the quality, safety, and efficacy of products before regulatory submission, ensuring they meet all necessary standards and specifications.",CLINICAL
+Protein Quantification,"Measuring protein expression (ELISA), Western Blot",BOTH
+Biomaterials Engineering,Development and testing of materials for medical applications like implants and prosthetics,BOTH
+Nanoparticle Tracking Analysis (NTA),"High resolution sizing, counting, and visualization of nanoparticles",PRECLINICAL
+Protein Post-Translational Modification Analysis,Analyzing the chemical modifications proteins undergo after their synthesis to understand their function and regulation.,PRECLINICAL
+Tissue Regeneration Model,,PRECLINICAL
+Immuno-inflammation Model,,PRECLINICAL
+Skin Models for Permeation Studies,,PRECLINICAL
+General Surgery Models,,PRECLINICAL
+Ophthalmology,,BOTH
+Neurology,,BOTH
+ELISPOT Assays,"ELISPOT assays are used to detect and quantify individual cells secreting specific molecules, often used in immunology.",BOTH
+Amino Acid Analysis,,BOTH
+Preparation of Regulatory Submissions,"The compilation and organization of data and documentation required for regulatory approval submissions, including Investigational New Drug (IND) applications, New Drug Applications (NDA), Abbreviated New Drug Applications (ANDA), and Biologics License Applications (BLA), to ensure compliance with regulatory standards and facilitate the approval process.",CLINICAL
+Environmental Policy Support,Development and implementation of environmental policies,BOTH
+Sustainability Assessments,"Studies on resource use, energy efficiency, and sustainability practices",BOTH
+AI-Driven Biomarker Discovery,The use of artificial intelligence and machine learning algorithms to identify novel biomarkers from complex biological data,BOTH
+Pre-Market Medical Device Testing,For demonstrating device compliance with established safety and performance standards set by regulatory bodies,BOTH
+Gut Microbiome Analysis,For impact on immune responses,BOTH
+DNase-Seq Chromatin Accessibility Studies,Using DNase I sequencing to study chromatin accessibility and identify regulatory DNA elements.,PRECLINICAL
+In Vitro Immune Tolerance,In vitro study of mechanisms immune tolerance,PRECLINICAL
+In Vivo Toxicology,Use of animal models to evaluate toxicity,PRECLINICAL
+Biolayer Interferometry (BLI),Real-time monitoring of biomolecular interactions for assessment of kinetics and affinity without requiring molecule immobilization,PRECLINICAL
+In Vivo Imaging,"Preclinical MRI, PET, and CT scanners",PRECLINICAL
+Veterinary Toxicology,"The study of the effects of chemicals, drugs, and other substances on animals, assessing their safety, identifying toxic exposures",BOTH
+In Vivo Efficacy of Leads,Animal studies to assess in vivo efficacy and side effects.,PRECLINICAL
+Metabolic Stability Assays,Evaluating the drug's susceptibility to metabolism by enzymes,PRECLINICAL
+Clinical Pharmacodynamics,"Analysis of drug interactions, safety, and efficacy in human subjects",CLINICAL
+Medical Device Design,"For conceptualizing, developing, and finalizing a medical device",PRECLINICAL
+Antibody Purification,Purification of antibodies using various chromatography techniques and characterization of their properties,PRECLINICAL
+Environmental Impact Assessments (EIAs),Conducting EIAs for proposed projects to predict environmental effects,BOTH
+Carbon Footprint Analysis,Systematic assessment of the greenhouse gas (GHG) emissions associated with a specific activity/location,BOTH
+Receptor Screening Assay,,BOTH
+Environmental Monitoring and Assessment,"Monitoring air, water, soil, and biodiversity to assess environmental quality and pollution levels",BOTH
+Cell Line Development,Engineering living cells to express a gene of interest or produce proteins of interest,BOTH
+Fluorescence Spectroscopy,Analysis of protein stability and folding,PRECLINICAL
+Large Scale Chemical Synthesis,Synthesizing chemicals and scaling up production for larger studies or preclinical testing.,PRECLINICAL
+Stable Isotope Labeling,"Incorporation of stable isotopes for metabolic studies, NMR, and mass spectrometry",PRECLINICAL
+Immune Cell Therapy Development,Development and evaluation of CAR-T cell therapies and other adoptive cell therapies,CLINICAL
+Addiction Treatment Assessment,"Evaluation of the effectiveness and outcomes of addiction treatment programs, involving the assessment of patient progress, treatment adherence, and overall impact on addiction recovery and quality of life.",PRECLINICAL
+Animal Models of Neurological Disease,Developing and using relevant animal models for disease study,PRECLINICAL
+Neuropathology,"Specializing in diseases and abnormalities of the nervous system, including the brain, spinal cord, and peripheral nerves",CLINICAL
+Oncologic Pathology,"Assessment of tumor tissues for diagnosis, staging, and grading",CLINICAL
+Pharmacokinetic (PK) Modeling,"Mathematical modeling of ADME data to predict drug behavior under various scenarios, such as different dosages, routes of administration, and in specific populations",PRECLINICAL
+Clinical Trial Site Management and Coordination,"Managing relationships with clinical trial sites and investigators, including training, site initiation, and ongoing support.",CLINICAL
+Nutraceutical Product Labeling,"Accurate and compliant product labeling, including nutritional facts and health claims",CLINICAL
+Synthetic Gene Circuits,Design and construction of synthetic gene networks to program cellular behavior,PRECLINICAL
+Wastewater Testing,,BOTH
+Toxicologic Pathology,For assessing drug or chemical toxicity or safety,BOTH
+Small Molecule Biocatalysis,"The use of biological catalysts, such as enzymes or cells, to facilitate and optimize the synthesis of small molecule APIs, offering environmentally friendly and efficient manufacturing methods.",BOTH
+Cell Signaling Pathway Reporter Screening,,PRECLINICAL
+Large Molecule (Biologics) Production,"The manufacturing of biologic drugs, such as proteins, monoclonal antibodies, and vaccines, using biological systems like cell cultures or microorganisms to produce complex therapeutic molecules.",BOTH
+Small Molecule Analysis,"Quantifying small-molecule drugs, metabolites, and biomarkers in biological matrices like blood, plasma, and tissues",BOTH
+Gene Editing and CRISPR Services,"CRISPR-Cas9 gene editing for targeted gene knockouts, knock-ins, and genome modifications",BOTH
+Nucleic Acid Biomarker Discovery,Identification of DNA or RNA markers that indicate a particular disease state or therapeutic response,BOTH
+De Novo DNA Sequencing,"The process of sequencing a novel genome from scratch without a reference sequence, allowing for the assembly and analysis of previously uncharacterized genomes",PRECLINICAL
+Environmental Metabolomics,Analysis of the metabolic responses of organisms to environmental stressors and pollutants,PRECLINICAL
+Animal Models for Neuroinflammatory Conditions,For studying conditions like multiple sclerosis and Parkinson’s disease,PRECLINICAL
+In Vitro Models of Neurodevelopment,Studies using iPSC-derived neurons and organoids,PRECLINICAL
+Developmental and Reproductive Toxicology (DART),"Examining effects on pregnancy, fetal development, and fertility",PRECLINICAL
+Analytical Ultracentrifugation (AUC),"Analysis of size, shape, and interactions of macromolecules in solution",PRECLINICAL
+Fungal Fermentation and Bioprocessing,Development and validation of fungal fermentation processes for the production of bioproducts,PRECLINICAL
+Bioburden and Sterility Testing,"Quality control testing assessing the microbial contamination of pharmaceutical products, medical devices, and other sterile environments",BOTH
+Pharmacokinetics and Pharmacodynamics (PK/PD) Modeling,"Optimization of drug properties for better absorption, distribution, metabolism, and excretion (ADME)",BOTH
+Pharmacodynamic Biomarkers,Identification of biomarkers that indicate a response to therapeutic intervention.,CLINICAL
+Alzheimer's Disease Models,,PRECLINICAL
+DC Migration Assay,,PRECLINICAL
+Neuromuscular Models,,PRECLINICAL
+Biopesticidal Testing,,PRECLINICAL
+Adenovirus Production and Packaging,,BOTH
+Cell Therapy Bioanalytical Services,,BOTH
+Fertilizer Testing,,BOTH
+Oral Solid Dosage Forms,"The formulation and manufacturing of solid dosage forms, including tablets and capsules, designed for oral administration and optimized for stability, release, and patient compliance.",BOTH
+Aptamer Design and Production,,BOTH
+Medical Equipment Manufacturing,,BOTH
+Inorganic and Organometallic Compounds Synthesis,,PRECLINICAL
+Molecular Surface Engineering,,PRECLINICAL
+Impurities Synthesis,,PRECLINICAL
+Spatial Phenotyping,,BOTH
+Viral Safety,,PRECLINICAL
+Focused Ion Beam (FIB),,PRECLINICAL
+Animal Model Breeding,"The controlled reproduction of laboratory animals to produce offspring with specific genetic traits, supporting research by providing consistent and genetically defined animal populations for experimental studies.",PRECLINICAL
+Clinical Investigations for Medical Devices and Diagnostics,,CLINICAL
+Animal Surgical Suites,"Specialized facilities equipped for performing surgical procedures on laboratory animals, ensuring sterile conditions and providing advanced surgical tools and anesthesia for precise and humane operations.",PRECLINICAL
+Rabbit Models,Used for specific types of research where rodents are not suitable.,PRECLINICAL
+Canine and Feline Models,Sometimes used in veterinary medicine research or for diseases shared with humans.,PRECLINICAL
+Cell Culture Model Development,Using human or animal cells grown in a lab to study cellular processes and drug interactions,PRECLINICAL
+Thermal Analysis,,BOTH
+Bioinformatics Consulting,,BOTH
+Autoimmune,,CLINICAL
+Hematology,,CLINICAL
+Antibody Characterization,"Analysis of properties of antibodies such as binding affinity, specificity, stability, isotype, modifications, functionality",PRECLINICAL
+Antibody sequencing,"The process of determining the amino acid sequence of antibody chains, including both heavy and light chains, to understand their specificity, develop new therapeutics, and study immune responses.",PRECLINICAL
+Protein Glycosylation Service,,BOTH
+Polymer Coating,,BOTH
+Electrospun Biomaterials Design and Development,,PRECLINICAL
+Autoimmunity Models,,PRECLINICAL
+"Mechanical Components, Optical Elements, Fibers, Semiconductors Manufacturing",,BOTH
+Optical Measurements,,BOTH
+"Cardiovascular, Renal and Metabolic (CVRM)",,CLINICAL
+Internal medicine,,CLINICAL
+Infectious Disease,,CLINICAL
+Tuberculosis,,CLINICAL
+Respiratory System,,CLINICAL
+Psychiatry,,CLINICAL
+Surgery,,CLINICAL
+Phase II-III,,CLINICAL
+Large-Scale Antibody Production,Scalable production of antibodies for preclinical and clinical studies using bioreactors and optimized cell culture protocols,PRECLINICAL
+Hardness Testing,,BOTH
+Softgel Technologies,"The development and production of soft gelatin capsules that encapsulate liquid or semi-solid ingredients, providing an alternative to traditional solid dosage forms with enhanced bioavailability and ease of ingestion.",BOTH
+Autologous and allogeneic cell therapy development,"Development services for both autologous and allogeneic cell therapies, including cell sourcing, processing, expansion, and characterization, meeting regulatory standards to ensure therapeutic efficacy and safety.",BOTH
+Bioanalytical Services,Development and validation of bioanalytical methods for drug and  quantification in biological matrices,BOTH
+Patient Recruitment and Retention,"Strategies and services to enhance patient enrollment and retention in clinical trials, including patient outreach and engagement.",CLINICAL
+Allergy Models,Research on hypersensitivity and allergic reactions,PRECLINICAL
+Custom Media Manufacturing,,BOTH
+Biomaterial Manufacturing,,BOTH
+Homecare Product Manufacturing,,BOTH
+Epitope Design,,PRECLINICAL
+Distillation Services,,BOTH
+Extracellular Vesicle (EV) Proteomics,,PRECLINICAL
+Weld Testing,,BOTH
+Lentivirus Vector Production and Packaging,Development and purification of lentiviral vectors and packaging of cargo into lentivirus,BOTH
+Suspensions and Emulsion,,BOTH
+Cell Line Authentification (STR),"Verification of cell line identity using Short Tandem Repeat (STR) profiling, confirming the genetic fingerprint of the cell line",BOTH
+Mycoplasma Testing,"Detection of mycoplasma contamination in cell cultures, ensuring the integrity and reliability of biological research and biomanufacturing processes by preventing false results and compromised data.",BOTH
+Photobiological Assessments,,PRECLINICAL
+Pharmaceutical Manufacturing,,BOTH
+Chemical Manufacturing,,BOTH
+Biologics Manufacturing,,BOTH
+Cosmetic Formulation,,BOTH
+Cosmetic Testing,,BOTH
+Lasers Imaging,,BOTH
+Renal Toxicity,,PRECLINICAL
+Spectroscopic Testing,"Including, X-Ray Photoelectron Spectroscopy (XPS, ESCA), Auger Electron Spectroscopy (AES), Time-of-Flight Secondary Ion Mass Spectrometry (Static) (TOF-SIMS)",BOTH
+Extracellular Vesicles (EVs) Isolation and Purification,,BOTH
+Extracellular Vesicles (EVs) Characterization,,BOTH
+T Cell Specificity Assay,,BOTH
+Macrophage Polarization Assay,,PRECLINICAL
+Comparative Genomics,Comparative genomics is the study of comparing the genetic material of different species to understand their evolutionary relationships and functional biology.,PRECLINICAL
+Cell Viability Assay,,PRECLINICAL
+Cell Cycle Assay,,PRECLINICAL
+Apoptosis Assay,,PRECLINICAL
+Electrophoretic Mobility Shift Assay (EMSA),"Studying DNA-protein, RNA-protein, or protein-protein interactions for analysis of binding specificity and affinity",PRECLINICAL
+Infectious Wound Screening,"Analysis of wound samples to identify infectious agents and assess the presence of pathogens, aiding in the diagnosis and treatment of infected wounds.",CLINICAL
+Antibiotic Resistance Testing,"Tests to determine the resistance of bacteria to various antibiotics, helping to guide effective treatment strategies and combat antibiotic-resistant infections.",BOTH
+Chemical Process Development,"Development and optimization of efficient, safe, and environmentally friendly chemical processes",PRECLINICAL
+Population Pharmacokinetics,Analysis of PK data from different populations to understand variability in drug responses,CLINICAL
+Life Sciences Consulting and Advisory Services,,BOTH
+Mechanical Testing,,BOTH
+SEM-EDS Analysis,,BOTH
+Physico-chemical Property Testing,"Including Thermal Gravimetric Analysis (TGA), Mercury Porosimetry (HgP), Surface Area & Porosity (BET), Melting Point (MP), Flash Point (FP), Coupon Corrosivity (CORR), Viscosity (VISC), Laser Light Scattering (LLS), Dynamic Vapor Sorption (DVS)",BOTH
+In Vitro Gene Therapy Studies,Evaluating the efficacy and safety of the gene therapy candidate in cells,PRECLINICAL
+Women’s Health,,CLINICAL
+Nanoparticle Toxicity Panel Testing,,PRECLINICAL
+Bioanalytical Testing,Quantitative analysis of drugs and their metabolites in biological samples,BOTH
+Frozen Sectioning,Rapid preparation of tissue sections for immediate diagnosis or analysis,CLINICAL
+Zebrafish Models,Increasingly popular for genetic and developmental studies.,PRECLINICAL
+Analytical Method Development and Method Transfer,"The creation and validation of analytical techniques for testing product quality and performance, and the transfer of these methods between laboratories or production sites to ensure consistency and reliability.",BOTH
+Sterilization,"The process of eliminating all forms of microbial life from equipment, surfaces, or materials to ensure a sterile environment and prevent contamination.",BOTH
+Bacterial Biobanking,"The preservation and storage of bacterial strains and cultures, providing a resource for studying microbial genetics, antibiotic resistance, and other bacterial behaviors.",PRECLINICAL
+Retrovirus Vector Production and Packaging,Development and purification of retroviral vectors and packaging of cargo into retrovirus,BOTH
+Wet Chemistry,"Content Uniformity (UV), pH, Viscosity, Specific gravity, Conductivity, Water (I), Karl Fisher Moisture (KF), Total Organic Carbon (TOC), Ion Selective Electrode Analysis (ISE), Total Carbon (TC)",PRECLINICAL
+BSL-4 Laboratory Capabilities,"Facilities designed for the highest level of biological containment, enabling the safe study and handling of highly dangerous and exotic pathogens that pose a high risk of aerosol-transmitted infections and for which there are no available vaccines or treatments.",PRECLINICAL
+Mass Spectrometry-Based Metabolomics,Use of LC-MS (Liquid Chromatography-Mass Spectrometry) and GC-MS (Gas Chromatography-Mass Spectrometry) for high-throughput metabolite profiling,PRECLINICAL
+Microbial Limit Tests,"Quality control testing assessing the microbial contamination of pharmaceutical products, medical devices, and other sterile environments",PRECLINICAL
+Ecotoxicology,"Testing the impact of chemicals on ecosysstems, wildlife, and various species, including fish, birds, and terrestrial animals",PRECLINICAL
+Hit-to-Lead High-Throughput Screening (HTS),"Development of robust, scalable assays for efficient hit identification",PRECLINICAL
+Regulatory Toxicology,"Design and conduct of studies to meet the requirements of regulatory agencies like FDA, EMA, and EPA",BOTH
+Electron Crystallography,Analysis of two-dimensional crystals for membrane proteins and large complexes,PRECLINICAL
+Exposomics,,PRECLINICAL
+In Vivo Immune Tolerance,In vivo models to study mechanisms of immune tolerance,PRECLINICAL
+Splicing Analysis,Splicing analysis examines the process by which introns are removed and exons are joined in RNA to understand how different mRNA variants are generated.,PRECLINICAL
+Soil and Sediment Analysis,"Testing for contaminants like heavy metals, pesticides, and hydrocarbons in soil and sediment",BOTH
+Bone and Soft Tissue Pathology,Specialized techniques for musculoskeletal tissues,BOTH
+Affinity Proteomics,Affinity capture assays to isolate and study proteins or protein complexes,PRECLINICAL
+Esterification,,PRECLINICAL
+Halogenation (Fluorination),,PRECLINICAL
+Hydrogenation,,PRECLINICAL
+Acylation,,PRECLINICAL
+Carboxylation,,PRECLINICAL
+Oxidation,,PRECLINICAL
+Cell Immortalization,,PRECLINICAL
+Cell-Based Assays,"Development and validation of in vitro assays for drug screening and toxicity testing, apoptosis, proliferation, migration, invasion, and angiogenesis",PRECLINICAL
+Protein Expression,"Expression of recombinant proteins in bacterial, yeast, insect, mammalian, or cell-free systems, including scale up",PRECLINICAL
+Spatial Proteomics,,PRECLINICAL
+Metabolic Pathway Analysis,Mapping of metabolomic data onto metabolic pathways to understand biological mechanisms,PRECLINICAL
+Monoclonal Antibody Production,Generation of antibodies derived from a unique cell and targeting a single epitope on an antigen,PRECLINICAL
+Botulinum NeuroToxin Test,,CLINICAL
+X-ray Photoelectron Spectroscopy (XPS),,PRECLINICAL
+X-ray Diffraction (XRD),,PRECLINICAL
+Immunofluorescence (IF),For visualizing the location and distribution of specific proteins within tissue sections,PRECLINICAL
+Peptide Chemistry,Synthesis and modification of peptides and peptide mimics for therapeutic applications,PRECLINICAL
+Stem Cell Therapy Development,Development of stem cell therapies and protocols for clinical applications,BOTH
+Elemental Analysis,Determining the elemental composition of materials for quality control and regulatory compliance,BOTH
+Drug-Target Interaction Studies,Measuring the direct interaction between identified compounds and their target proteins,BOTH
+Lipidomics,Specific focus on the analysis and characterization of the lipid components of cells and tissues,PRECLINICAL
+Circular Dichroism (CD),Analysis of protein stability and folding,PRECLINICAL
+Neuroimmunology,Research on the role of the immune system in neurological disorders,PRECLINICAL
+Stem Cell Toxicity,,PRECLINICAL
+Inhalation Toxicology,,PRECLINICAL
+Local Tolerance,,PRECLINICAL
+X-Ray Radiography (XRR),,PRECLINICAL
+Metabolite-Trait Associations,Studying correlations between specific metabolites and phenotypic traits or disease states.,PRECLINICAL
+Dermatological In Vitro Testing,,PRECLINICAL
+Mechanical Product Design,,PRECLINICAL
+Water Quality Testing,"Analysis of water samples for pollutants, microbial contamination, and chemical composition; assessing drinking water, wastewater, and surface water for environmental compliance",BOTH
+Lipid Nanoparticle Formulation,"The creation of lipid-based nanoparticles for drug delivery systems, such as mRNA vaccines, emphasizing the development of stable, biocompatible, and effective carriers for encapsulating and delivering therapeutic agents.",BOTH
+Labeling and Serialization,"The development and implementation of labeling strategies and serialization systems to ensure accurate product identification, traceability, and compliance with regulatory requirements, including unique codes for tracking and preventing counterfeiting.",CLINICAL
+Medical Imaging Analysis,,CLINICAL
+Antimicrobial Susceptibility Testing,"Microdilution, disk diffusion, E-test, and MIC determination",PRECLINICAL
+Phage Display Library Screening,Selection of antibodies from pre-existing phage display libraries targeting specific antigens,PRECLINICAL
+Single-Particle Cryo-Electron Microscopy (Cryo-EM),Sample preparation and single-particle analysis for high-resolution structure determination,PRECLINICAL
+Environmental Risk Assessment,Predictive modeling and risk analysis for ecological and human health impacts of chemicals and industrial activities,BOTH
+User Research in Product Design,,BOTH
+Dental and Oral Care,,CLINICAL
+Neuronal Cell Culture,"Neuronal cell culture; assays for neurotoxicity, synaptic function, and neuroinflammation",PRECLINICAL
+Particle Size Distribution (PSD),,PRECLINICAL
+Enzyme Activity Assays,Analysis of enzyme kinetics,PRECLINICAL
+Industrial Product Design,,PRECLINICAL
+Ferrets,,PRECLINICAL
+Liver Disease Model,,PRECLINICAL
+Ageing,,PRECLINICAL
+Assessment of Medical Devices,,BOTH
+Controlled Release Formulations,"The development of drug formulations designed to release active ingredients at a controlled rate over time, enhancing therapeutic effectiveness, reducing dosing frequency, and improving patient compliance.",BOTH
+Differential Scanning Calorimetry (DSC),"Measurement of heat flow associated with phase transitions in biomolecules to study protein folding, stability, and ligand binding effects",PRECLINICAL
+Inflammation Models,In vitro and in vivo models for studying autoimmune diseases,PRECLINICAL
+Epitranscriptomics,"Study of RNA modifications, their impact on gene expression and role in disease and development",PRECLINICAL
+Nutraceutical Clinical Trials,Design and execution of clinical studies to evaluate the health benefits and safety of nutraceutical products,CLINICAL
+Medical Device Prototype Development,"Creating a tangible, working model of a potential medical device to test its feasibility, function, and marketability",PRECLINICAL
+Raw Material Testing,"The analysis of raw materials used in manufacturing to ensure they meet quality and safety standards, verifying their identity, purity, and compliance with specifications before use in production.",BOTH
+Clinical Trial Consulting Services,"Expert advice on R&D strategy, trial design, regulatory compliance, and therapeutic areas.",CLINICAL
+BSL-2 and BSL-3 Laboratory Capabilities,For handling and testing potentially hazardous microorganisms,PRECLINICAL
+Interventional Radiology Models,,PRECLINICAL
+Pesticide and Insecticide Testing,,PRECLINICAL
+Biological Tissue Analysis (BIOTA),,PRECLINICAL
+Plasma Protein Binding Assays,"Determining the fraction of drug bound to plasma proteins, impacting distribution",PRECLINICAL
+Toxicokinetics,Assessment of systemic exposure to a drug and its correlation with toxicological findings,PRECLINICAL
+Patient PK and Clinical Endpoint Studies,,CLINICAL
+Circulating Tumour Cell (CTC) Diagnostic,,CLINICAL
+DNA Extraction,"Isolating DNA from various biological samples, such as blood, tissue, or cells, to obtain pure DNA for downstream applications like sequencing, cloning, or analysis.",BOTH
+Autoimmunity and Serology Profiling,,CLINICAL
+Electrical Components Analysis,,BOTH
+Biocompatibility Testing of Medical Devices,"For medical devices, assessing the compatibility of materials with biological systems to ensure they are safe for their intended use.",PRECLINICAL
+Hybridoma Generation and Screening,"Fusion of B cells with myeloma cells to produce hybridomas, followed by screening for specific antibody production",PRECLINICAL
+Petrochemical Analysis,,BOTH
+Encapsulation Technologies,"The techniques used to enclose active ingredients or sensitive compounds within a protective shell or matrix, aiming to improve stability, control release, and target delivery of pharmaceuticals, nutraceuticals, or other substances.",BOTH
+Corrosion and Abrasion Testing,,BOTH
+Metallography Testing,,BOTH
+Carbohydrate Analysis,,BOTH
+Sialic Acid Analysis,,BOTH
+Nitrosamines Analysis,,BOTH
+In Vitro Cell Therapy Studies,,PRECLINICAL
+Polymer Synthesis,"Creating custom polymers for various applications, including materials science and biotechnology",PRECLINICAL
+Quantitative Proteomics,Measuring and comparing the quantities of proteins in different samples to study cellular processes and disease states.,PRECLINICAL
+Gene Therapy Off Target Effect Analysis,Identifying and assessing unintended genomic modifications that occur outside the target site during gene therapy,BOTH
+Market Access Services,,BOTH
+Innate Immunity Animal Models,"These are animal models used to study the innate immune system, the body's first line of defense against infection, through genetically or experimentally modified organisms.",PRECLINICAL
+Electron Paramagnetic Resonance (EPR)/Electron Spin Resonance (ESR),,PRECLINICAL
+Periodontitis Model,,PRECLINICAL
+Microbiological Testing of Nutraceuticals,"Testing for pathogens, spoilage organisms, and microbial contaminants in nutraceutical products",CLINICAL
+Target Testing with Disease Models,Testing the efficacy of candidate drugs using relevant animal models,PRECLINICAL
+Dermatological In Vivo Testing,,PRECLINICAL
+Aptamer Engineering,,PRECLINICAL
+DNA Pooled and Arried Library Services,,PRECLINICAL
+Antibody Isotype switching,,PRECLINICAL
+Human Antibody Discovery from Serum,,PRECLINICAL
+Nanobody Production,"Generation of single-domain antibodies, typically from camelids",PRECLINICAL
+Hygroscopicity Evaluation,,BOTH
+Elemental Analysis,,BOTH
+Extractables and Leachables Studies,,BOTH
+Discriminating Dissolution Method Development,,BOTH
+Residual Solvent Analysis,,BOTH
+APIs Crystallization Process Development,,BOTH
+Pre-clinical and CMC,,CLINICAL
+APIs Solid Form Screening and Selection,,BOTH
+Thermo-Physical Measurement,,BOTH
+Solubility Profiling and Enhancement,Solid Dispersion Techniques: Utilizing carriers to increase the solubility of poorly soluble drugs.Cyclodextrin Complexation: Using cyclodextrins to enhance solubility and stability.Micronization: Reducing particle size to improve solubility and dissolution rate.,BOTH
+Rare Disease,,CLINICAL
+Bioinformatics for Biomarker Analysis,"Use of computational tools to analyze large datasets from genomics, proteomics, and metabolomics studies",BOTH
+"Custom Buffers, Solutions and Reagents Manufacturing",,BOTH
+Diabetic and Metabolic Models,,PRECLINICAL
+Cytotoxicity Testing,In vitro cytotoxicity assays for evaluating drug safety.,BOTH
+Rheumatology,,CLINICAL
+Hormone Testing,,CLINICAL
+Neurotransmitter Testing,,CLINICAL
+Immune Cell Proliferation Assays,"Immune cell proliferation assays assess the rate of growth and division of immune cells, often used to evaluate immune responses or the effect of drugs on these cells.",BOTH
+Whole Genome Sequencing,High-throughput sequencing of entire genomes; resequencing for variant identification,BOTH
+Specialty Enzymes and Probiotics Manufacturing,,BOTH
+"Custom CHO, Hybridoma and Insect Cells Media Manufacturing",,BOTH
+"Flexographic printing, Film and Laminate Manufacturing",,BOTH
+Molding and Processing,,BOTH
+Modified Oligonucleotide Synthesis,"Modifications like fluorescent labeling, phosphorylation, and conjugation",BOTH
+10X Genomics Provider,"Services utilizing 10X Genomics technology, including single-cell and spatial transcriptomics, to provide high-resolution insights into cellular diversity, gene expression, and tissue architecture.",PRECLINICAL
+DNA Methylation Sequencing (Bisulfite Sequencing) Analysis,Evaluating DNA methylation patterns using bisulfite sequencing to understand gene expression regulation and epigenetic changes.,PRECLINICAL
+Environmental Toxicology,Assessment of the impact of substances on the environment and wildlife,PRECLINICAL
+Laser Microdissection and Pressure Catapulting (LMPC),For single-cell analysis,PRECLINICAL
+Target Functional Assays,"For assessing the impact of target modulation on relevant cellular processes, including proliferation, migration, and signal transduction",PRECLINICAL
+Pharmacovigilance,Monitoring drug safety in clinical trials,BOTH
+Circulating tumor DNA (ctDNA) Diagnostic,,CLINICAL
+Allergen Testing,"Diagnostic tests to identify specific allergens causing allergic reactions, often through skin prick tests or serum-specific IgE tests.",CLINICAL
+Bilayer Formulations,,CLINICAL
+Taste Masking,,CLINICAL
+Container-Closure Compatibility Studies,,CLINICAL
+Lateral Flow Assay (LFA) Test Manufacturing,,BOTH
+Contaminant Testing,"The detection and analysis of harmful substances, such as heavy metals, pathogens, or industrial chemicals, in food products to ensure they are safe for consumption.",BOTH
+Stability Testing,"The evaluation of a product's stability over time under various environmental conditions to ensure it maintains its quality, efficacy, and safety throughout its shelf life.",BOTH
+Industrial Hygiene Testing,"The assessment of workplace environments to identify and measure exposure to hazardous substances, ensuring compliance with safety standards and protecting worker health.",BOTH
+Extractables and Leachables (E&L) Studies,Evaluating potential interactions between drug products and packaging materials,BOTH
+Antibody-Drug Conjugate (ADC) Production,"Design and engineering of ADCs with optimal antibody selectivity, linker stability, and drug payload potency, with cell culture, and purification processes",BOTH
+Small RNA and Non-Coding RNA Sequencing,"Sequencing, analysis, and study of small RNAs, such as miRNAs, siRNAs, piRNAs, and lncRNAs",PRECLINICAL
+Electrophysiology,"Patch-clamp, multi-electrode array (MEA), and EEG studies for neuronal activity analysis",PRECLINICAL
+Neurotoxicology for Neuroscience Studies,Assessment of neurotoxic effects of compounds and environmental factors,PRECLINICAL
+Scanning Electron Microscopy (SEM),"For producing detailed, magnified images to determine composition and physical features",PRECLINICAL
+Bacterial Fermentation and Bioprocessing,Development and validation of bacterial fermentation processes for the production of bioproducts,PRECLINICAL
+Urogenital Disease Models,"Research focused on pharmacological interventions and therapeutic approaches for diseases affecting the urogenital system, including urinary tract infections and reproductive disorders.",PRECLINICAL
+Chemical Optimization,Optimization of synthetic routes for efficient production of lead compounds,PRECLINICAL
+Large-Scale API Synthesis,Synthesizing chemicals and scaling up production for larger studies or preclinical testing.,PRECLINICAL
+Engineered Fc Domains,,PRECLINICAL
+Radiochemistry,"A crucial part of radiopharmaceutical development, involving the chemical processes to incorporate radioisotopes into pharmaceutical compounds.",PRECLINICAL
+Anti-Idiotype Antibody Development,,PRECLINICAL
+Mass Spectrometer Equipment Manufacturing,,BOTH
+Skin Microbiome Analysis,Examination and characterization of the microbial communities residing on the skin,BOTH
+Bacteriophages Development and Manufacturing,,BOTH
+Ophthalmic Products,,CLINICAL
+Residual Solvents Testing,,CLINICAL
+Human Plasma-Derived Products Manufacturing,,CLINICAL
+Food Allergen Testing,,BOTH
+Particle Sizing,,BOTH
+Inhalable Product Development and Testing,Determination of Aerodynamic Particle Size Distribution (APSD) and Delivered Dose (DD) for Dry Powder Inhalers (DPI) and Metered Dose Inhalers (MDI). Inhalation toxocology,BOTH
+Granule Products,,BOTH
+Sprays Products,,BOTH
+Reverse Engineering,,BOTH
+Patches Products,,BOTH
+Heterocyclic Chemistry,,PRECLINICAL
+Metabolites Synthesis,,PRECLINICAL
+Nasal Dosage Products,,BOTH
+Parenteral Dosage Products,,BOTH
+Custom Purification and Separation,,BOTH
+Reference Standard Synthesis,"Production of high-purity chemical standards used as benchmarks in analytical testing, ensuring the accuracy, reliability, and consistency of experimental results and quality control processes.",PRECLINICAL
+Organoboronic Acids and Derivatives,,PRECLINICAL
+Combinatorial Chemistry,Creation of large libraries of compounds for high-throughput screening,PRECLINICAL
+Petrochemicals Synthesis,,BOTH
+Glucuronides,,BOTH
+Mammalian Cell Culture,,PRECLINICAL
+Cell Proliferation Assay,,PRECLINICAL
+Cell Migration and Invasion Assay,,PRECLINICAL
+Extracellular Vesicle (EV) Transcriptomics,,PRECLINICAL
+Glycosylation Analysis,,PRECLINICAL
+UTI (Urinary Tract Infection) Screening,"Diagnostic tests to detect bacterial infections in the urinary tract, often using urine culture or rapid test methods to identify pathogens and guide treatment.",CLINICAL
+Viral Load Testing,"Measurement of the amount of viral RNA or DNA in a patient's sample, used to monitor the progression of viral infections and the effectiveness of antiviral treatments.",CLINICAL
+Neurodevelopmental Studies,Research on the development of the nervous system and neurodevelopmental disorders,PRECLINICAL
+ADMET Optimization,"Optimization of absorption, distribution, metabolism, excretion, and toxicity properties of drug candidates",PRECLINICAL
+Endotoxin and Pyrogen Testing,"Methods to detect endotoxins and pyrogens in pharmaceuticals and biologics, ensuring products are free from fever-causing contaminants and meet safety standards.",CLINICAL
+Documentation and Batch Record Review,The examination of production documentation and batch records to verify that manufacturing processes are properly documented and that products are manufactured in accordance with established procedures and regulatory requirements.,BOTH
+Training and Consultancy,,PRECLINICAL
+Recombinant Antibody Production,,PRECLINICAL
+Human Leukocyte Antigen (HLA) Genotyping,,CLINICAL
+Tablet Compression,,CLINICAL
+"Inventory Storage, Management, and Distribution",,CLINICAL
+Behavioral Animal Models,"For studying the effects of drugs on animal behavior, often in the context of neurological or psychiatric conditions.",PRECLINICAL
+Green Chemistry,Development of environmentally friendly synthesis routes,BOTH
+Amplicon Sequencing,"A targeted sequencing method that amplifies specific regions of DNA through PCR, allowing for detailed analysis of genetic variations and mutations within those regions for research and clinical applications.",BOTH
+Life Science Products Manufacturing,,BOTH
+Industrial Machinery Manufacturing,,BOTH
+mRNA Products Manufacturing,,BOTH
+Plant Growth Media and Reagents,,BOTH
+Multiplexed Tissue Analysis,,BOTH
+Cytokine Release Assays,Cytokine release assays measure the amount of cytokines released by cells in response to a stimulus or treatment.,BOTH
+Stable Cell Line Development and Characterization,"Creation of stable cell lines for research and bioproduction and characterization for phenotype, genotype, and functional properties.",BOTH
+Molecular Pathology,"PCR and other molecular techniques for detecting genetic mutations, translocations, and expression levels",BOTH
+Site-Directed Mutagenesis,"Making specific and intentional changes to the DNA sequence of a gene, allowing researchers to study the effects of these mutations on protein function and gene expression.",PRECLINICAL
+Long Read Sequencing/Single Molecule Sequencing (SMS),"Advanced sequencing technologies that read long stretches of DNA or RNA molecules in a single pass, offering improved accuracy in detecting structural variants, repetitive regions, and complex genomic features.",PRECLINICAL
+Hydrogen-Deuterium Exchange (HDX) Mass Spectrometry,Studying protein dynamics and interactions,PRECLINICAL
+Optogenetics,"A technique that uses light to control cells within living tissue that have been genetically modified to express light-sensitive ion channels, enabling precise manipulation of neuronal activity for studying brain function and behavior.",PRECLINICAL
+Drug Neurotoxicology Analysis,Evaluations of adverse effects of chemical and biological agents on the nervous system,PRECLINICAL
+Chemoinformatics,"Use of in silico methods for compound screening, modeling, and prediction of ADMET properties",PRECLINICAL
+Toxicology Animal Models,Acute and chronic toxicity studies in animals to assess the safety of potential pharmaceuticals,BOTH
+Dispensing,,CLINICAL
+Gastrointestinal Disease Models,"Research into drug development, mechanisms, and treatment strategies for diseases affecting the gastrointestinal system, such as inflammatory bowel disease and gastrointestinal cancers.",PRECLINICAL
+Rodent Models,The most commonly used animals for studying disease and testing drugs.,PRECLINICAL
+Tissue Engineering,"Developmenet of biological substitutes that restore, maintain, or improve tissue function",BOTH
+Analysis of Cytokine Networks,Analysis of cytokine networks refers to studying the interactions and regulatory mechanisms among different cytokines in a system.,BOTH
+Hit Identification,Identification of active compounds from high-throughput screening (HTS) campaigns,PRECLINICAL
+Genetic and Genomic Biomarkers,"Analysis of genetic variants, gene expression patterns, and epigenetic modifications as biomarkers",BOTH
+Greenhouse Gas Assessments,Comprehensive evaluations of the sources and amounts of greenhouse gas emissions associated with a specific entity or activity,BOTH
+Oncology and Cancer Biology Cell Line Development,"Cancer cell line development and maintenance; assays for studying cancer cell proliferation, survival, metastasis, and drug resistance",PRECLINICAL
+Gene Editing of Immune Cells,Techniques like CRISPR/Cas9 for modifying immune cells,PRECLINICAL
+"Animal Models for Depression, Anxiety, Schizophrenia","Experimental animal models used to study the underlying mechanisms, behavioral manifestations, and potential treatments for mental health disorders such as depression, anxiety, and schizophrenia",PRECLINICAL
+Dynamic Light Scattering (DLS),"A technique used to measure the size distribution and stability of particles in a solution, such as proteins, nanoparticles, and polymers, by analyzing the scattering of light caused by their Brownian motion.",PRECLINICAL
+Thin layer chromatography (TLC),"Analytical technique used to separate and identify compounds in a mixture, involving the movement of a solvent across a thin layer of adsorbent material, such as silica gel, on a glass or plastic plate.",PRECLINICAL
+"Potency Assays (e.g., Cell-Based Assays)","Tests designed to measure the biological activity and effectiveness of therapeutics, often using living cells to evaluate the potency and functionality of drugs or vaccines.",BOTH
+Polyclonal Antibody Production,Generation of antibodies targeting multiple epitopes on an antigen,PRECLINICAL
+In Situ Hybridization (ISH),Detection and localization of specific nucleic acid sequences directly within tissue sections,BOTH
+Protein Detection,"E.g, Western blot, ELISA, Flow Cytometry",BOTH
+Fuel Analysis,,BOTH
+Custom API Synthesis,"The tailored production of active pharmaceutical ingredients based on specific client requirements, including unique chemical structures, quantities, and quality standards.",BOTH
+Aseptic Processing,The production method that maintains sterile conditions throughout the manufacturing process to ensure that the final drug product is free from microbial contamination.,BOTH
+Plastic Manufacturing,,BOTH
+Neurotoxicity,,PRECLINICAL
+Cell Culture,Primary cell culture and cell line development for various cell types; 3D cell culture systems,PRECLINICAL
+Pharmacometabolomics,Analysis of metabolite profiles in response to drug treatment,BOTH
+Transcriptomics Data Analysis,Analysis of RNA-Seq data for differential gene expression,PRECLINICAL
+Oncology,,CLINICAL
+Behavioral Testing,"Studies for cognitive function, executive function, mood assessment",PRECLINICAL
+Histopathology,Microscopic examination of tissue samples to analyze structure and identify abnormalities,CLINICAL
+Clinical Data Management,"Collection, cleaning, and management of clinical trial data, ensuring accuracy and integrity using electronic data capture (EDC) systems.",CLINICAL
+Pathway Engineering,"Design and optimization of metabolic pathways for the production of pharmaceuticals, biofuels, and industrial chemicals",PRECLINICAL
+Antibody Humanization,"The modification of non-human antibodies to make them more similar to human antibodies, reducing the risk of immune reactions and improving their efficacy and safety for therapeutic use in humans.",PRECLINICAL
+In Vivo Gene Therapy Studies,Evaluating the efficacy and safety of the gene therapy candidate in animal models,PRECLINICAL
+In Vitro Preclinical Studies for Nutraceuticals,In vitro studies for toxicology assessments and mechanism of action of nutraceutical ingredients,PRECLINICAL
+T Cell Receptor (TCR) Profiling,"Analyzing the diversity and specificity of T cell receptors within a sample, providing insights into the immune repertoire, immune response, and potential targets for immunotherapy.",BOTH
+Toxicogenomics,Study of how genetic variations influence individual responses to toxicants,PRECLINICAL
+Novel Compound Synthesis,"Custom synthesis of small molecules, including complex organic compounds",PRECLINICAL
+Flow Cytometry of Immune Cells,For immune cell phenotyping and sorting,BOTH
+Plasmid DNA Manufacturing,Production of high-quality plasmid DNA encoding the therapeutic gene for vector production,BOTH
+Single-Cell Sequencing,Sequencing and analysis of individual cells for high-resolution genomic insights,PRECLINICAL
+Sequence-based genotyping (SBG),,PRECLINICAL
+Restriction site-associated DNA sequencing (RAD-Seq),,PRECLINICAL
+Functional Analysis and Characterization of Therapeutic Proteins,"Comprehensive assessment of therapeutic proteins' biological activity, stability, and physicochemical properties to ensure their efficacy, safety, and quality for clinical use.",BOTH
+High Resolution Imaging,For obtaining high resolution and depth of field images of a sample surface,PRECLINICAL
+Metabolomics Data Analysis,"Interpreting complex data from the study of metabolites, the small molecule chemicals in biological systems.",PRECLINICAL
+Machine Learning and Predictive Modeling,Application of machine learning algorithms for pattern recognition and predictive modeling,PRECLINICAL
+Drug Optimization,Optimization of pharmacokinetic and pharmacodynamic properties of drug candidates,PRECLINICAL
+Clinical Supply Chain Management,"Management of the logistics related to the clinical trial supplies, including drug procurement, storage, and distribution.",CLINICAL
+cDNA synthesis,"The process of synthesizing complementary DNA (cDNA) from an RNA template using reverse transcription, providing a stable and amplifiable copy of the RNA for various molecular biology applications such as cloning and gene expression analysis.",BOTH
+Skin Toxicity,,PRECLINICAL
+Intestinal Toxicity,,PRECLINICAL
+Physiochemical Property Testing,"Including Thermal Gravimetric Analysis (TGA), Mercury Porosimetry (HgP), Surface Area & Porosity (BET), Melting Point (MP), Flash Point (FP), Coupon Corrosivity (CORR), Viscosity (VISC), Laser Light Scattering (LLS), Dynamic Vapor Sorption (DVS)",BOTH
+Spatial Transcriptomics,"A technique that combines histology and RNA sequencing to map gene expression within the spatial context of tissue sections, providing insights into cellular functions and interactions in their native environment.",PRECLINICAL
+Transcriptome Assembly,Transcriptome assembly involves piecing together sequences of RNA transcripts to study the full range of expressed genes in a cell or organism.,PRECLINICAL
+Stroke and Cerebral Ischemia Animal Models,"Experimental animal models used to study the mechanisms, progression, and potential treatments for stroke and cerebral ischemia",PRECLINICAL
+Precision-Cut Tissue Slices,Tissue slices maintained in a way that preserves their physiological function for studying drug metabolism and toxicity.,PRECLINICAL
+API Scale-Up Synthesis,Process and technology transfer from lab scale to pilot and production scale,PRECLINICAL
+Hereditary Cancer Screening,,CLINICAL
+Clinical Packaging and Labeling,"The design, production, and labeling of packaging for clinical trial materials, ensuring that packaging meets regulatory requirements, maintains product integrity, and provides clear, accurate information for trial participants and staff.",CLINICAL
+Genomic Data Analysis,"Analysis of data from whole-genome sequencing, exome sequencing, and targeted sequencing",PRECLINICAL
+Immune Cell Isolation,"The process of separating specific immune cell types, such as peripheral blood mononuclear cells (PBMCs), T cells, B cells, and natural killer (NK) cells, from a heterogeneous cell population",BOTH
+FFPE Block Embedding,"The technique of embedding formalin-fixed, paraffin-embedded (FFPE) tissue samples into paraffin blocks, which preserves the tissue architecture and allows for long-term storage and subsequent histological analysis.",BOTH
+Nutraceutical Safety Testing,"The assessment of the safety and efficacy of nutraceuticals through rigorous testing protocols, including toxicity studies, quality control, and regulatory compliance",BOTH
+Gene Therapy Vector Design and Development,"Selection of appropriate vector type (e.g., AAV, lentivirus) and engineering for optimal delivery and expression of the therapeutic gene",BOTH
+Chemical Synthesis Scale-Up,"For research or industrial applications, from laboratory to pilot and production scale",PRECLINICAL
+Near Infrared (NIR) and Ultraviolet / Visible (UV-VIS) Spectroscopy,"Analytical techniques that measure the absorption or reflectance of NIR and UV-VIS light by a sample, providing information on molecular composition, structure, and concentration.",PRECLINICAL
+Gastro-intestinal pathology,"The study and diagnosis of diseases affecting the gastrointestinal tract, involving the examination of tissue samples, endoscopic biopsies, and surgical specimens to identify conditions such as inflammation, infections, cancer, and other digestive disorders.",CLINICAL
+Oncology and Bone Model,,PRECLINICAL
+Organ-on-a-Chip,"Microfluidic devices that simulate the activities, mechanics, and physiological response of entire organs and organ systems.",PRECLINICAL
+Cardiovascular Models,,PRECLINICAL
+Orthopaedics,,BOTH
+Antibody Internalization Assays,Techniques used to evaluate the ability of antibodies to be internalized by target cells,PRECLINICAL
+Antimicrobial Resistance Testing,Detrmination of the susceptibility or resistance of specifci bacteria or fungi to antibiotics,PRECLINICAL
+Oligonucleotide Synthesis,Synthesis of DNA and RNA oligonucleotides for research and therapeutic applications,BOTH
+Biocompatibility and Bioactivity Studies,Development and testing of materials for tissue scaffolds,BOTH
+Chemokine Quantification and Profiling,Chemokine quantification and profiling are the measurement and analysis of various chemokines in a given biological sample.,BOTH
+Protein Expression Analysis,Mass spectrometry and 2D-gel electrophoresis for protein identification and quantification,BOTH
+Life Cycle Assessments (LCA),Assessing the environmental impact of products or processes over their entire life cycle,BOTH
+Antibody Proteomics,Production and characterization of antibodies against specific proteins,PRECLINICAL
+AI-Driven Drug Discovery,AI-driven drug discovery and precision medicine,PRECLINICAL
+Regenerative Medicine (Neuroscience),Studies on stem cell therapy and neurogenesis,PRECLINICAL
+Fluorescence Resonance Energy Transfer (FRET),For studying proximities and interactions of biomolecules,PRECLINICAL
+Raman Spectroscopy,"Non-destructive, vibrational spectroscopy for molecular identification and structural analysis",PRECLINICAL
+Non-Human Primate Models,Used in research where closer physiological similarities to humans are required.,PRECLINICAL
+Lab Animal Diagnostics,,BOTH
+In Vitro Efficacy of Leads,Biological assays to confirm and quantify the therapeutic effects of lead compounds in relevant disease models.,PRECLINICAL
+Prodrug Design,"Design of prodrugs to improve solubility, bioavailability, or targeting properties of active pharmaceutical ingredients (APIs)",PRECLINICAL
+Non-Compartmental Analysis (NCA),A mathematical method used to estimate basic PK parameters,CLINICAL
+Clinical Trial Feasibility Studies,"Assessment of the feasibility of conducting a clinical trial, including site and investigator selection, patient population availability, and local regulations.",CLINICAL
+DNA Assembly,Large scale DNA assembly for constructing synthetic genomes and complex genetic constructs,PRECLINICAL
+Surface Plasmon Resonance (SPR),"Real-time monitoring of biomolecular interactions; kinetic analysis of binding affinities, rates, and specificities",PRECLINICAL
+Pathway Analysis and Metabolic Network Reconstruction,Evaluating the interconnections and pathways among different metabolic and biological processes in an organism.,PRECLINICAL
+Protein Isolation,"Chromatographic techniques (affinity, ion exchange, size exclusion) for protein purification; tag removal and protein refolding services",BOTH
+Molecular Assay Development and Validation,"Developing and validating bioassays for drug screening, toxicity testing, molecular diagnostics, and specific research needs",BOTH
+Advanced Cell-Imaging Techniques,"Live-cell imaging for studying dynamic cellular processes; fluorescence microscopy, confocal microscopy, and high-resolution imaging",PRECLINICAL
+Protein X-ray Crystallography,Determining 3D structures of proteins,PRECLINICAL
+Small-Angle X-ray Scattering (SAXS),"Studies of protein folding, unfolding, and complex formation",PRECLINICAL
+Pharmacogenetics Analysis,"Pharmacogenetics analysis studies how genetic differences in individuals affect their response to drugs, aiming to personalize medicine.",CLINICAL
+Pharmacovigilance and Safety Monitoring,"Ongoing monitoring and reporting of adverse events, side effects, and other safety data during the clinical trial.",CLINICAL
+Alkylation,,PRECLINICAL
+Mycology Services,"Antifungal susceptibility testing, fungal isolation, and identification of pathogenic and environmental fungi; antifungal susceptibility testing, fungal isolation, and identification",PRECLINICAL
+Necropsy Services,"Comprehensive post-mortem examinations in animals, including tissue collection for further histological and molecular analyses",PRECLINICAL
+Organotypic Cultures,Maintaining an organ or tissue in a culture medium to study its native properties and responses.,PRECLINICAL
+Immunogenicity Assessment,"Testing the potential of a compound, especially biologics, to elicit an immune response.",CLINICAL
+Gut Immunity Animal Models,"Animal models used to study the immune system of the gastrointestinal tract, focusing on how it responds to various stimuli, pathogens, and treatments.",PRECLINICAL
+Isothermal Titration Calorimetry (ITC),Measurement of heat changes during molecular interactions,PRECLINICAL
+Endotoxin Testing,"Quality control testing assessing the microbial contamination of pharmaceutical products, medical devices, and other sterile environments",BOTH
+Drosophila Models,"The use of the fruit fly, Drosophila melanogaster, as a model organism in genetic and biomedical research, enabling the study of gene function, development, and disease mechanisms due to its genetic tractability and short life cycle.",PRECLINICAL
+Dose-Response Assessment,Evaluation of quantitative relationship between the dose administered and the intensity of the PD effect,CLINICAL
+Nutritional Analysis,"Comprehensive nutritional analysis to determine the content of vitamins, minerals, and other nutrients",CLINICAL
+In Vivo Preclinical Studies for Nutraceuticals,Animal studies to evaluate the biological activity and safety of nutraceutical ingredients,PRECLINICAL
+B Cell Immortalization,Immortalization of B cells producing desired antibodies using Epstein-Barr virus (EBV) or other techniques,PRECLINICAL
+"ADMET (Absorption, Distribution, Metabolism, Excretion, and Toxicity) Profiling","Early evaluation of pharmacokinetic properties such as solubility, stability, permeability, metabolic stability, and toxicity in in vitro models",PRECLINICAL
+Analytical Method Development and Validation for Nutraceuticals,"Development of analytical methods for identifying and quantifying nutraceutical compounds, and validating to meet regulatory standards",BOTH
+Immune Checkpoint Studies,Evaluation of checkpoint inhibitors in cancer immunotherapy,BOTH
+ELISA Assays,"ELISA assays are laboratory tests that use antibodies and color change to identify a substance, commonly used for detecting and quantifying proteins in samples.",BOTH
+Specialty Stains for Histopathology,Specialized stains for specific tissues or biomarkers beyound H&E staining for detailed morphological and immunological analysis,BOTH
+Central Nervous System (CNS),,CLINICAL
+Epigenomics Sequencing/Bisulfite Sequencing (Melthy-Seq),"DNA methylation sequencing and histone modification profiling; chromatin accessibility assays (e.g., ATAC-seq) for understanding gene regulation",PRECLINICAL
+Metabolite Biomarker Discovery,Identification and validation of metabolites as biomarkers,PRECLINICAL
+Cell Biobanking,Preservation and storage of cell lines or primary cells for future research.,BOTH
+Integration of Multi-Omics Data,"Combining and analyzing data from different 'omics' fields (like genomics, proteomics, metabolomics) to gain a comprehensive biological understanding.",PRECLINICAL
+Protein Aggregation Assays,"Protein Aggregation Assays measure the formation of protein aggregates, a hallmark of many neurodegenerative diseases like Alzheimer's and Parkinson's.",PRECLINICAL
+Rodent Models for Carcinogenicity Studies,For studying lifetime exposure and carcinogenic risk assessment,PRECLINICAL
+Fourier Transform Infrared (FTIR) Spectroscopy,"For binding studies, protein secondary structure analysis, and biomolecule normalization",PRECLINICAL
+C. elegans Models,"The use of the nematode Caenorhabditis elegans as a model organism in biological research, facilitating the study of genetics, development, and neurobiology due to its simple anatomy, well-mapped genome, and ease of genetic manipulation.",PRECLINICAL
+Companion Diagnostics,Development of biomarker-based diagnostic tests that are paired with therapeutic drugs to determine their suitability for specific patients,CLINICAL
+API Bioavailability Studies,Assessment of API availability at site of action to determine efficacy and safety profile,CLINICAL
+Phase I / First-in-Human,,CLINICAL
+Medical Writing,"Preparation of clinical documents such as protocols, investigator brochures, consent forms, study reports, and regulatory submission documents.",CLINICAL
+Parkinson's Disease Models,,PRECLINICAL
+Chronic Pain Models,,PRECLINICAL
+Osteoporosis and Bone Models,,PRECLINICAL
+Hepatology Models,,PRECLINICAL
+Material Laser Processing and Die Cutting,,BOTH
+Dermathology Models,,PRECLINICAL
+Vetrinary Pathology,"The study and diagnosis of diseases in animals through the examination of tissue samples, organs, and bodily fluids",BOTH
+Agrochemical Safety Testing,,PRECLINICAL
+Viral Titer Testing,,BOTH
+Virus-like Particle (VLP) Vector Production and Packaging,Development and purification of VLP (virus-like particles) vectors and packaging of cargo into VLPs,BOTH
+Cannabis Testing,,BOTH
+Manure and Compost Testing,,BOTH
+Crop Testing,,BOTH
+"Appliances, Electrical, and Electronics Manufacturing",,BOTH
+In Vivo Cell Therapy Studies,,PRECLINICAL
+Protein Refolding,,PRECLINICAL
+Amino Acid Analysis (AAA),Determination of amino acid composition of samples containing proteins or amino acids,PRECLINICAL
+Lipids Synthesis,,PRECLINICAL
+Intermediates Synthesis,,PRECLINICAL
+Organic Synthesis,,PRECLINICAL
+Chemical Recycling,,BOTH
+Viral Clearance Studies,,PRECLINICAL
+Immunotoxicology,,PRECLINICAL
+Swine Models,"The use of pigs in biomedical research as models for human diseases and conditions, owing to their physiological and anatomical similarities to humans, which make them valuable for studying cardiovascular diseases, organ transplantation, and surgical techniques.",PRECLINICAL
+Animal Model Housing,"The provision of specialized environments and care for laboratory animals used in research, ensuring appropriate conditions for their health and well-being, including regulated temperature, humidity, light cycles, and enrichment activities.",PRECLINICAL
+Custom Animal Model Development,Developing specialized study designs and animal models tailored to specific research needs.,PRECLINICAL
+Genetically Engineered Animal Models,Animals engineered to carry genes that cause or predispose them to specific diseases.,PRECLINICAL
+Pharmacokinetic/Pharmacodynamic (PK/PD) Animal Models,"These models are used to understand the dynamics of drug absorption, distribution, metabolism, and excretion, as well as the drug's biochemical and physiological effects.",PRECLINICAL
+Data Safety Monitoring Boards (DSMBs),,CLINICAL
+Quality Management Systems (QMS) and Quality Assurance (QA),,CLINICAL
+Amination,,PRECLINICAL
+Cell and Gene Therapies (CAGT),,CLINICAL
+Dermatology,,CLINICAL
+Materials Chemicals Testing,,BOTH
+Gastrointestinal,,CLINICAL
+Hepatology,,CLINICAL
+Immunology,,CLINICAL
+NASH/MASH,,CLINICAL
+Gynecology,,CLINICAL
+Pain Management,,CLINICAL
+Organ Transplant,,CLINICAL
+Orthopedics,,CLINICAL
+Dentistry,,CLINICAL
+Endocrinology,,CLINICAL
+Pediatrics and Geriatrics,,CLINICAL
+Allergy,,CLINICAL
+"Phase IV, Real-World Evidence and Registry",,CLINICAL
+Cardiology,,CLINICAL
+Neurology,,CLINICAL
+Urology,,CLINICAL
+Nephrology,,CLINICAL
+Topical and Inhalation Safety and Tolerability Studies,,BOTH
+Protein Engineering,Use of directed evolution and rational design to create proteins with enhanced properties or new functionalities,PRECLINICAL
+Fertilizer Analysis,,BOTH
+Thermal Shift Assay (TSA),Assessment of the thermal stability of proteins,PRECLINICAL
+Clinical Pharmacokinetics,Studies during clinical trials to inform dosing regimens and therapeutic strategies,CLINICAL
+Soil Fertility Analysis,Evaluation of the health and nutrient content of soil,BOTH
+Agriculture and Live Stock Genotyping,"The use of genetic testing to analyze and identify genetic variations in crops and livestock, aiding in breeding programs, trait selection, and improving productivity and disease resistance.",BOTH
+Crop Genetic Improvement,"The application of genetic tools and techniques to enhance crop traits such as yield, disease resistance, and environmental adaptability, contributing to agricultural productivity and sustainability.",BOTH
+Raw Material Sourcing,"The process of identifying, procuring, and managing the supply of raw materials needed for production or research",BOTH
+AI-Driven Antibody Design,"The use of artificial intelligence and machine learning to predict and optimize antibody structures, improve binding affinity and specificity, and accelerate the development of therapeutic antibodies by analyzing vast datasets and modeling interactions.",PRECLINICAL
+Hybridoma sequencing,"The sequencing of hybridoma cells, which are created by fusing antibody-producing B cells with myeloma cells, to determine the genetic sequences of the antibodies they produce",PRECLINICAL
+Liquid Biopsy,,CLINICAL
+Ribosome Profiling (Ribo-Seq),Genome-wide analysis of ribosome positions to study translation,PRECLINICAL
+Bioprocess Development,Conducting studies to validate that the bioprocess consistently produces a product meeting its predetermined specifications and quality attributes.,BOTH
+Semi-Solid Dosage Forms,"The production of semi-solid formulations such as creams and ointments, intended for topical application to deliver drugs effectively to the skin or mucous membranes.",BOTH
+Inhalation Products,"The development of drug products designed for inhalation, such as metered-dose inhalers (MDIs) or dry powder inhalers (DPIs), to treat respiratory conditions directly at the site of action in the lungs.",BOTH
+Large Molecule Analysis,"Analyzing proteins, peptides, and antibodies using techniques like ELISA, immunoassays, and mass spectrometry",BOTH
+Digital Pathology,Digital scanning of whole slide images of tissue sections for remote and quantitative analysis,BOTH
+Nanomaterials Applications,"Studies on the application of nanomaterials in drug delivery, imaging, and sensors",BOTH
+FFPE Sample Isolation,Extraction of nucleic acids from formalin-fixed paraffin-embedded blocks,BOTH
+In Vitro Fertilization,"A reproductive technology involving the laboratory-based fertilization of eggs and sperm, followed by implantation of the embryo into the uterus to assist with conception.",CLINICAL
+Custom Vector and Plasmid Construction,"Design and assembly of custom vectors for gene expression, cloning, and other applications",PRECLINICAL
+Human Pathogens Diagnostic,,CLINICAL
+DNA Sequencing and Genotyping,"Next-Generation Sequencing (NGS) for whole-genome, exome, and targeted sequencing, Sanger sequencing, nanopore",BOTH
+Biodiversity Studies,Studies on the impact of human activities on biodiversity,BOTH
+Pore Volume and Size Distribution,,BOTH
+Forensic Lab Material and Component Testing,,BOTH
+Biologics Bioanalytical Services,Laboratory services for analyzing biological samples.,BOTH
+Phylogenetic Studies,Phylogenetic studies involve analyzing the evolutionary relationships among species or genes based on genetic data.,PRECLINICAL
+ATAC-Seq Chromatin Accessibility Studies,Analyzing chromatin accessibility and gene regulation using Assay for Transposase-Accessible Chromatin using sequencing.,PRECLINICAL
+Neurological Biomarker Research,Identification and validation of biomarkers for diagnosis and progression of neurological diseases,PRECLINICAL
+Inductively Coupled Plasma (ICP),,PRECLINICAL
+Multi-Angle Light Scattering (MALS),,PRECLINICAL
+Insect Cell Culture and Bioprocessing,,PRECLINICAL
+Immuno-Oncology Models,,PRECLINICAL
+First-in-Human (FIH) PK/PD Studies,"Initial human studies to evaluate safety, tolerability, PK, and PD of a drug",CLINICAL
+Genetic Testing,,CLINICAL
+Whole Exome Sequencing (WES),,CLINICAL
+SILAC (Stable Isotope Labeling by Amino acids in Cell Culture),Performing comparative quantitation,PRECLINICAL
+Condensation,,PRECLINICAL
+Hofmann Rearrangement,,PRECLINICAL
+Biologics Formulation Development,"Stabilizing the final product in a suitable formulation that ensures its stability, efficacy, and safety during storage and use.",BOTH
+Expression Pathway Analysis,The study of gene expression and biological pathways to understand the functional relationships and regulatory mechanisms in cells or organisms.,PRECLINICAL
+Metabolite Profiling Data by Mass Spectrometry,"Utilizing mass spectrometry to analyze and quantify metabolites in a sample, providing insights into metabolic changes.",PRECLINICAL
+In Vivo Autoimmunity Models,Animal models for acute and chronic inflammation studies,PRECLINICAL
+Fungal Identification,"Identification and characterization of fungi using traditional culture techniques and modern molecular methods,  including ITS sequencing",PRECLINICAL
+Ocular Disease Models,Services for developing and testing treatments for diseases of the eye,PRECLINICAL
+Toxicology Screening,Early-stage toxicological evaluations to identify and mitigate safety risks,PRECLINICAL
+Drug Design,Rational design of new drug candidates using structure-activity relationships (SAR) and structure-based drug design (SBDD),PRECLINICAL
+Product Formulation and Development,"Design and development of nutraceutical formulations, including vitamins, minerals, herbs, and other dietary supplements",CLINICAL
+Preclinical PK/PD Modeling,Use of animal models to predict human pharmacokinetics and pharmacodynamics,PRECLINICAL
+Central Laboratory Services,Providing standardized laboratory testing for clinical trial samples on a global scale.,CLINICAL
+Clinical Monitoring,"On-site and remote monitoring to ensure the conduct of the trial is in compliance with the protocol, standard operating procedures, and regulatory requirements.",CLINICAL
+Genome Engineering,Genetic modification of organisms for research or biotechnological applications,PRECLINICAL
+COVID-19 Testing,"Diagnostic assays to detect the presence of SARS-CoV-2, the virus causing COVID-19, using methods such as PCR, antigen tests, or serological assays.",CLINICAL
+Antimicrobial/Preservative Effectiveness Testing,"Evaluation of the effectiveness of antimicrobial agents or preservatives in preventing microbial growth in products, ensuring their safety and longevity.",BOTH
+Microbiological Testing,"The assessment of products and environments for microbial contamination, including the detection and quantification of bacteria, fungi, and other microorganisms to ensure product safety and compliance.",CLINICAL
+Hydrolysis,,PRECLINICAL
+Methylation,,PRECLINICAL
+Bromination,,PRECLINICAL
+Nitration,,PRECLINICAL
+Cyanation,,PRECLINICAL
+Diazotization Reaction,,PRECLINICAL
+Pyrazines and Pyridines Synthesis,,PRECLINICAL
+Insulin Bioidentity and Biopotency Test,,CLINICAL
+Glucagon Bioidentity Test,,CLINICAL
+In Silico Predictive Toxicology,,BOTH
+Flow Cytometer,,PRECLINICAL
+Imaging Mass Spectrometry (IMS),,PRECLINICAL
+Systematic Evolution of Ligands by EXponential Enrichment (SELEX),,PRECLINICAL
+Capillary Electrophoresis Analysis (CE Purity),,PRECLINICAL
+Inductively Coupled Plasma–Mass Spectrometry (ICP–MS),,PRECLINICAL
+Veterinary Diagnostic Testing,,BOTH
+Gamma Sterilization,"The use of gamma radiation to sterilize medical devices, pharmaceuticals, or other products, providing an effective method for ensuring sterility and safety.",BOTH
+Ethylene Oxide (EO) Residue Testing,The analysis of residual ethylene oxide (EO) levels on sterilized products to ensure that they are within acceptable limits and do not pose a risk to health.,BOTH
+De Novo Protein Sequencing,Determination of an unknown protein's amino acid sequence without prior knowledge of the DNA sequence,PRECLINICAL
+Peptide Library Synthesis,Synthesis of diverse collections of peptides with systematic variations,PRECLINICAL
+Solid-Phase Peptide Synthesis,"A method where the peptide chain is assembled on a solid support, allowing for easy separation and purification of the peptide.",PRECLINICAL
+Bone Marrow Toxicity and Stem Cell Hematotoxicity,,PRECLINICAL
+Phototoxicity Test,,PRECLINICAL
+Dermal Toxicity Test,,PRECLINICAL
+Skin Sensitisation,,PRECLINICAL
+X-ray Computed Tomography (CT),,PRECLINICAL
+Liquid Chromatography-Mass Spectrometry (LCMS),,PRECLINICAL
+Tissue Phenomics,,BOTH
+Slide Reading and Image Analysis,,BOTH
+Gas Chromatography Mass Spectrometry (GCMS),,PRECLINICAL
+Thermal Gravimetric Analysis (TGA),,PRECLINICAL
+Stereology,,PRECLINICAL
+Fibrosis Models,,PRECLINICAL
+Glycobiology Disease Model,,PRECLINICAL
+Xenopus Oocyte,,PRECLINICAL
+Inhalation Testing,,PRECLINICAL
+Amyotrophic Lateral Sclerosis (ALS),,PRECLINICAL
+Cell and GeneTherapies,,BOTH
+Internal Medicine,,CLINICAL
+Infectious Disease Clinical Testings,,CLINICAL
+Cryogenic Freezing and Chilling,,BOTH
+Neuroprotection,Studies on neuroprotective agents and oxidative stress markers,BOTH
+Gene Synthesis,Synthesis of longer DNA sequences,PRECLINICAL
+Genotoxicity Testing,"Assessing potential for DNA damage and mutagenic effects (Ames test, micronucleus assay, comet assay, and chromosomal aberration tests)",PRECLINICAL
+Xenograft Models,,PRECLINICAL
+Flow Cytometry Data Analysis,,BOTH
+RNA Extraction,"Isolating RNA from biological samples, ensuring the purity and integrity of the RNA for subsequent applications such as reverse transcription, quantitative PCR, and RNA sequencing.",BOTH
+Lead Formulation Studies,"Studies of suitable formulations for oral, topical, or parenteral administration",PRECLINICAL
+Bacterial Genome Sequencing,Comprehensive sequencing of bacterial genomes,BOTH
+Genito-urinary pathology,"The study and diagnosis of diseases affecting the genital and urinary systems, involving the analysis of tissue samples and biopsies to identify conditions such as infections, cancers, and structural abnormalities.",CLINICAL
+Tissue Grossing and Cassetting,"The process of examining, measuring, and cutting tissue specimens to prepare them for histological processing, including placing the tissue samples into cassettes for further analysis and diagnosis.",BOTH
+Sterility Testing,"A set of procedures used to detect the presence of microorganisms in pharmaceutical products, medical devices, or other sterile materials, ensuring that the products meet required sterility standards and are safe for use.",CLINICAL
+Pattern Recognition Receptor Analysis,"This refers to examining receptors in the immune system that identify molecular patterns typical of pathogens, thus initiating an immune response.",BOTH
+Microbial Testing,,BOTH
+Radiation Testing and Analysis,,BOTH
+Gene Expression Measurements,"Utilizing technologies such as qPCR, RNA-seq, ddPCR, and microarrays to quantify and analyze gene expression levels for research and clinical studies.",BOTH
+Protein Characterization,Mass spectrometry; circular dichroism (CD) spectroscopy; dynamic light scattering (DLS) and Size Exclusion Chromatography-Multi-Angle Light Scattering (SEC-MALS),BOTH
+Medicinal Chemistry,"Structural modification of lead compounds to improve potency, selectivity, and drug-like properties",PRECLINICAL
+Epigenomics Data Analysis,"Analyzing data related to the epigenome, which encompasses all the chemical modifications to the DNA and histones that regulate gene expression.",PRECLINICAL
+Animal Models for Acute and Chronic Pain,"Experimental animal models designed to mimic conditions of acute and chronic pain, used to study pain mechanisms, evaluate analgesic efficacy, and develop new pain management therapies.",PRECLINICAL
+In Vitro Permeability Assays,"Measuring the ability of drugs to pass through biological membranes (e.g., Caco-2 cell assay)",PRECLINICAL
+Clinical Trial Modeling of Therapeutics,,CLINICAL
+Extraction and Purification of Natural Compounds,"Development of methods for extracting bioactive compounds from natural sources, including purification and concentration",PRECLINICAL
+Antibody Fragmentation,"The process of breaking down antibodies into smaller fragments, such as Fab or F(ab')₂ fragments, to enhance their therapeutic properties, improve tissue penetration, or facilitate targeted delivery in various research and clinical applications.",PRECLINICAL
+Unnatural Amino Acids Synthesis,,PRECLINICAL
+Chiral Synthesis,"Specializing in the synthesis of chiral molecules, which are important in many pharmaceuticals",PRECLINICAL
+Immunohistochemistry (IHC),Detection and localization of specific antigens in tissue sections using antibodies,BOTH
+Phosphospecific antibodies,"Antibodies designed to specifically recognize and bind to phosphorylated forms of proteins, enabling the study of phosphorylation events and signaling pathways in various biological processes and disease states.",PRECLINICAL
+Nucleotide Chemistry,Synthesis and modification of nucleotides and nucleotide analogs for therapeutic applications,PRECLINICAL
+Climate Change Studies,"Research on the effects of climate change on ecosystems, species, and environmental processes",BOTH
+Epigenetics Studies,Analysis of DNA methylation and histone modifications; chromatin immunoprecipitation (ChIP) assays,BOTH
+Nanomaterials Development,"Synthesis and characterization of nanomaterials like nanoparticles, nanocomposites, and nanocoatings",BOTH
+Metagenomics Sequencing,"Identification, sequencing, and analysis of microbial communities from environmental or clinical samples",PRECLINICAL
+Protein Cryo-Electron Microscopy (Cryo-EM),Structural analysis of large protein complexes,PRECLINICAL
+NMR-Based Metabolomics,"Use of Nuclear Magnetic Resonance for metabolite profiling, offering detailed structural information",PRECLINICAL
+X-ray Crystallography,"Determination of the atomic structure of crystalline molecules for in-depth structural analysis of proteins, nucleic acids, and other moleclar complexes",PRECLINICAL
+Genomic Variant Calling,"Process of identifying variations in the genetic sequence from genomic data, such as DNA sequencing.",PRECLINICAL
+Lead Generation,Generation and optimization of lead compounds with desired biological activity,PRECLINICAL
+Excretion Studies,Determining the routes and rates of drug elimination from the body,PRECLINICAL
+NIPT (Non-Invasive Prenatal Testing),"A prenatal screening method that analyzes fetal DNA in the mother's blood to assess the risk of chromosomal abnormalities, such as Down syndrome, without invasive procedures.",CLINICAL
+Vaccine Development and Testing,Preclinical development and testing of novel vaccines,BOTH
+Mechanical Engineering,,BOTH
+Drug-Drug Interaction Studies,Evaluation of the impact of co-administered drugs on ADME processes,PRECLINICAL
+X-Ray Fluorescence (XRF),,PRECLINICAL
+Proteome Profiling,Comparing protein expression across samples,PRECLINICAL
+Post-Market Medical Device Surveillance,For post-approval continuous monitoring the safety and performance,CLINICAL
+Risk Assessment and Data Analysis,Interpretation of toxicological data and risk assessment for human health,BOTH
+Compartmental Modeling,A mathematical method used to model the distribution and elimination of a drug in the body using mathematical compartments,CLINICAL
+Biologics Purification Process Development,Designing methods for separating the biologic product from cellular and media components,BOTH
+Nutritional Content Analysis,"The assessment of food products to determine their nutritional composition, including the levels of vitamins, minerals, proteins, fats, and carbohydrates, to verify label accuracy and support dietary recommendations.",BOTH
+Animal Feed Analysis,"The evaluation of animal feed for its nutritional content, quality, and safety, ensuring that it meets the dietary needs of livestock and complies with regulatory standards.",BOTH
+Bioavailability Profiling and Enhancement,"Formulation Strategies for Improved Absorption: Techniques such as salt formation, complexation, or prodrug approaches to enhance drug absorption",BOTH
+Stability Testing and Shelf-Life Studies,Assessing the stability of drug products under various conditions to ensure their quality and safety,BOTH
+Nanoparticle Formulation,"The design and development of nanoparticles for use in drug delivery, imaging, or diagnostic applications, focusing on optimizing their size, surface properties, and functionality.",BOTH
+Injectable Products,"The manufacturing of injectable drug products, including those packaged in vials or pre-filled syringes, designed for precise dosing and safe administration.",BOTH
+Transdermal Patches,"The design and production of adhesive patches that deliver medication through the skin over a specified period, providing a controlled and sustained release of the drug.",BOTH
+Air Quality Studies,"Monitoring and analysis of air pollutants, including particulate matter, volatile organic compounds (VOCs), and greenhouse gases",BOTH
+Acid Cleaning,"The use of acidic solutions to remove inorganic contaminants, such as mineral deposits or rust, from equipment and surfaces to maintain cleanliness and prevent contamination.",BOTH
+Influenza Testing,,CLINICAL
+Quality Audits and Inspections,"Systematic evaluations of manufacturing processes, facilities, and quality systems to ensure compliance with industry standards and regulatory requirements, identifying areas for improvement and ensuring overall product quality.",BOTH
+Cytotoxicity Assays,"Cytotoxicity assays are used to measure the ability of a substance to kill or inhibit the growth of cells, commonly used in toxicity testing and drug development.",BOTH
+Density Measurement,,BOTH
+Chemisorption Testing,,BOTH
+"Particle Size, Shape, Count, and Stability",,BOTH
+Conservation Studies,Research on the conservation of species and habitats,BOTH
+Dermatopathology,Microscopic examination of skin biopsies,BOTH
+Stem Cell Research,Culturing and differentiation of embryonic and adult stem cells; induced Pluripotent Stem Cell (iPSC) technology,PRECLINICAL
+Protein-Protein and Protein-Ligand Interaction Studies,Surface Plasmon Resonance (SPR) and Isothermal Titration Calorimetry (ITC); co-immunoprecipitation and pull-down assays; Fluorescence Resonance Energy Transfer (FRET) and Bioluminescence Resonance Energy Transfer (BRET) assays,PRECLINICAL
+Large-Scale Chemical Synthesis,Synthesizing chemicals and scaling up production for larger studies or preclinical testing.,PRECLINICAL
+Brunauer-Emmett-Teller (BET),,PRECLINICAL
+Mass Cytometry (CyTOF),,PRECLINICAL
+Endocrinology Models,,PRECLINICAL
+Biofilm Studies,"Evaluation of biofilm formation and testing of anti-biofilm agents; studies on biofilm physiology, genetics, and resistance mechanisms",PRECLINICAL
+Validation of Cleaning Processes,"Quality control testing assessing the microbial contamination of pharmaceutical products, medical devices, and other sterile environments",BOTH
+Colitis Models,,PRECLINICAL
+Dermatitis Models,,PRECLINICAL
+Cancer Models,,PRECLINICAL
+Drug Synthesis Scale-Up,Scale-up synthesis for larger quantity production for advanced testing,PRECLINICAL
+Structure-Activity Relationship (SAR) Analysis,Systematic modification of chemical structures to study the effects on biological activity,PRECLINICAL
+Clinical Trial Project Management,"Coordination and oversight of all aspects of the clinical trial, ensuring milestones are met within timelines and budgets.",CLINICAL
+Tumor Genotyping,,CLINICAL
+Sample Identification/Fingerprinting,Techniques used to verify the identity and purity of biological samples through unique genetic or molecular markers,BOTH
+Cytokine Quantification and Profiling,Cytokine quantification and profiling involve measuring and analyzing the levels of various cytokines in a sample.,BOTH
+Biologics Scale-Up Strategies,Developing strategies to increase production scale from laboratory to industrial scale while maintaining product quality.,BOTH
+Protein Separation and Characterization,"Chromatography (e.g., HPLC) for protein purification and analysis",PRECLINICAL
+Biomolecular Modeling and Simulation,"Computational modeling and molecular dynamics simulations for structure prediction and functional analysis, and  in silico docking studies for drug discovery",PRECLINICAL
+Custom Chemical Synthesis,Custom synthesis refers to the specialized creation of unique chemical compounds on demand for specific research or industrial purposes.,PRECLINICAL
+X-ray Powder Diffraction (XRPD),For phase identification of a crystalline material,PRECLINICAL
+Induced Disease Models,Animals in which disease is induced artificially to study its progression and treatment.,PRECLINICAL
+Lead Bioavailability Studies,Improving the solubility and stability of lead compounds,PRECLINICAL
+Chemical Library Development,Creation of diverse compound libraries for screening purposes,PRECLINICAL
+Pharmacokinetic (PK) Simulation,Simulation studies for dose optimization and to minimize potential risks,PRECLINICAL
+Bioequivalence Studies,"Assessment of therapeutic equivalance of drug products, particularly in the development of generic drugs",CLINICAL
+Clinical Trials Management,"Comprehensive management of Phase I-IV clinical trials, including trial design, planning, execution, monitoring, and close-out.",CLINICAL
+Biostatistics and Statistical Programming for Clinical Trials,"Statistical analysis planning, execution, and reporting of clinical trial data, including the use of advanced statistical software.",CLINICAL
+Regulatory and Compliance Method Development,"The creation of analytical methods that meet regulatory requirements for drug development and manufacturing, ensuring compliance with industry standards and guidelines.",CLINICAL
+Environmental Monitoring of Cleanrooms,"The continuous or periodic assessment of cleanroom environments to detect contaminants, such as particles or microorganisms, ensuring that they meet cleanliness and safety standards.",BOTH
+Regulatory Compliance and Audit Support,"Assistance in navigating regulatory requirements and preparing for audits by regulatory agencies, ensuring that all processes and documentation meet legal and industry standards",BOTH
+Rodent Preservation,"The freezing and long-term storage of rodent models, including genetically modified strains.",PRECLINICAL
+In-Process and Release Testing,Testing conducted during and after the manufacturing process to ensure that products meet predefined quality standards before they are released for distribution.,CLINICAL
+AI-Driven Drug Design,,PRECLINICAL
+In Vitro High-Throughput Screening (HTS),Using automated technologies to rapidly test thousands to millions of compounds for activity against a target.,PRECLINICAL
+Market Access & Real-World Evidence,,CLINICAL
+Infectious Disease Models,"Research into pharmacological strategies for the treatment and prevention of infections caused by various pathogens, including bacteria, viruses, fungi, and parasites.",PRECLINICAL
+Mitochondrial Function Studies,,BOTH
+Small Molecule Process Optimization,"The refinement and enhancement of chemical synthesis processes for small molecule APIs to improve yield, purity, and cost-effectiveness while ensuring regulatory compliance.",BOTH
+High Potency Active Pharmaceutical Ingredient (HPAPI) Handling,"The specialized handling, manufacturing, and containment of highly potent APIs, requiring stringent safety measures to ensure worker protection and product integrity.",BOTH
